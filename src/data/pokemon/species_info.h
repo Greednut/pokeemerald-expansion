@@ -3307,6 +3307,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    FOOTPRINT(Substrale)
    .levelUpLearnset = sSubstraleLevelUpLearnset,
    .teachableLearnset = sSubstraleTeachableLearnset,
+   .eggMoveLearnset = sPermacerosEggMoveLearnset,
    .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_PERMACEROS}),
 },
 
@@ -3365,6 +3366,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    FOOTPRINT(Permaceros)
    .levelUpLearnset = sPermacerosLevelUpLearnset,
    .teachableLearnset = sPermacerosTeachableLearnset,
+   .eggMoveLearnset = sPermacerosEggMoveLearnset,
 },
 
     [SPECIES_FRIJOLERO] =
@@ -7354,7 +7356,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Bretkhelm)
        .levelUpLearnset = sBretkhelmLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_LUNABBIT}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BERFGOYLE}),
     },
         [SPECIES_BERFGOYLE] =
     { 
@@ -7463,7 +7465,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Flubunny)
        .levelUpLearnset = sFlubunnyLevelUpLearnset,
-       .teachableLearnset = sFlubunnyTeachableLearnset,
+       .teachableLearnset = sFlubbunyTeachableLearnset,
        .eggMoveLearnset = sLunabbitEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_LEPOOZE}),
     },
