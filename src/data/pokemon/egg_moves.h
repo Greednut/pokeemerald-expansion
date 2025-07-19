@@ -6712,6 +6712,16 @@ static const u16 sOnsenpuraEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sSimionachEggMoveLearnset[] = {
+    MOVE_LANDS_WRATH,
+    MOVE_BARRIER,
+    MOVE_CIRCLE_THROW,
+    MOVE_SPIRIT_BREAK,
+    MOVE_MYSTICAL_FIRE,
+    MOVE_FLYING_PRESS,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sVirtuitaEggMoveLearnset[] = {
     MOVE_FIRE_SPIN,
     MOVE_GRASS_WHISTLE,

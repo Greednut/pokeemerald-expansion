@@ -23114,6 +23114,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Superpower,
         .validApprenticeMove = TRUE,
     },
+
+
+
     
     // END OF CAPRICCIO MOVES
 
