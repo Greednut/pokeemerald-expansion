@@ -5679,6 +5679,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Doomter)
        .levelUpLearnset = sDoomterLevelUpLearnset,
+       .teachableLearnset = sDoomterTeachableLearnset,
+       .eggMoveLearnset = sHorntubaEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_HORNTUBA}),
     },
 
@@ -5735,6 +5737,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Horntuba)
        .levelUpLearnset = sHorntubaLevelUpLearnset,
+       .teachableLearnset = sHorntubaTeachableLearnset,
+       .eggMoveLearnset = sHorntubaEggMoveLearnset,
     },
 
         [SPECIES_SANICKEL] =

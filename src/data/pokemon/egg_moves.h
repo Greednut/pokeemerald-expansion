@@ -6488,6 +6488,16 @@ static const u16 sBraxitytanEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sHorntubaEggMoveLearnset[] = {
+    MOVE_CLOSE_COMBAT,
+    MOVE_MEGAHORN,
+    MOVE_DARKEST_LARIAT,
+    MOVE_SING,
+    MOVE_YAWN,
+    MOVE_HYDRO_PUMP,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sYardsteinEggMoveLearnset[] = {
     MOVE_BARRAGE,
     MOVE_EERIE_IMPULSE,
