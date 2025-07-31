@@ -39267,7 +39267,7 @@ static const u16 sFractyvernTeachableLearnset[] = {
     MOVE_HOLD_BACK,
     MOVE_CONFUSE_RAY,
     MOVE_SUBSTITUTE,
-    MOVE_HONE_CLAWS
+    MOVE_HONE_CLAWS,
     MOVE_WORK_UP,
     MOVE_NASTY_PLOT,
     MOVE_ZEN_HEADBUTT,
