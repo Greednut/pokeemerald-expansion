@@ -24158,7 +24158,7 @@ static const struct LevelUpMove sHooklingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(100, MOVE_FISSURE),
     LEVEL_UP_END
     };
-static const struct LevelUpMovesFractyvernLevelUpLearnset[] = {
+static const struct LevelUpMove sFractyvernLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PSYBEAM),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
