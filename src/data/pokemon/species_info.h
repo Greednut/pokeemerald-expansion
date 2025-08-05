@@ -7578,7 +7578,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Lunabbit,
        .shinyPalette = gMonShinyPalette_Lunabbit,
        .iconSprite = gMonIcon_Lunabbit,
-       .iconPalIndex = 1,
+       .iconPalIndex = 2,
        FOOTPRINT(Lunabbit)
        .levelUpLearnset = sLunabbitLevelUpLearnset,
        .teachableLearnset = sLunabbitTeachableLearnset,
