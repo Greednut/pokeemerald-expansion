@@ -16620,6 +16620,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Garookie)
        .levelUpLearnset = sGarookieLevelUpLearnset,
+       .teachableLearnset = sGarookieTeachableLearnset,
+       .eggMoveLearnset = sGargarramerEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_GARBLE}),
     },
         [SPECIES_GARBLE] =
@@ -16674,6 +16676,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Garble)
        .levelUpLearnset = sGarbleLevelUpLearnset,
+       .teachableLearnset = sGarbleTeachableLearnset,
+       .eggMoveLearnset = sGargarramerEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GARGARRAMER}),
     },
         [SPECIES_GARGARRAMER_ASLEEP] =
@@ -16730,6 +16734,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Gargarramer)
        .levelUpLearnset = sGargarramerLevelUpLearnset,
+       .teachableLearnset = sGargarramerTeachableLearnset,
+       .eggMoveLearnset = sGargarramerEggMoveLearnset,
        .formSpeciesIdTable = sGargarramerFormSpeciesIdTable,
        .formChangeTable = sGargarramerFormChangeTable,
     },
@@ -16787,6 +16793,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Gargarramer)
        .levelUpLearnset = sGargarramerLevelUpLearnset,
+       .teachableLearnset = sGargarramerTeachableLearnset,
+       .eggMoveLearnset = sGargarramerEggMoveLearnset,
        .formSpeciesIdTable = sGargarramerFormSpeciesIdTable,
        .formChangeTable = sGargarramerFormChangeTable,
     },

@@ -6853,6 +6853,15 @@ static const u16 sCofferuleEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 }; 
 
+static const u16 sGargarramerEggMoveLearnset[] = {
+    MOVE_SPOOK_OUT,
+    MOVE_ROCK_BLAST,
+    MOVE_FINAL_GAMBIT,
+    MOVE_ROCK_WRECKER,
+    MOVE_NOBLE_ROAR,
+    MOVE_WIDE_GUARD,
+    MOVE_UNAVAILABLE,
+}; 
 static const u16 sClobberEggMoveLearnset[] = {
     MOVE_METAL_CLAW,
     MOVE_CLOSE_COMBAT,
