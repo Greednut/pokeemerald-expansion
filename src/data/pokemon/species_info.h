@@ -2664,7 +2664,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 50,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_FIELD },
-       .abilities = { ABILITY_SNIPER, ABILITY_EARLY_BIRD, ABILITY_OBLIVIOUS, ABILITY_SAND_VEIL },
+       .abilities = { ABILITY_SAND_VEIL, ABILITY_EARLY_BIRD, ABILITY_OBLIVIOUS, ABILITY_SKILL_LINK },
        .bodyColor = BODY_COLOR_BROWN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -2699,6 +2699,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Dirtybis)
        .levelUpLearnset = sDirtybisLevelUpLearnset,
+       .teachableLearnset = sDirtybisTeachableLearnset,
+       .eggMoveLearnset = sIbaskEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_IBASK}),
     },
 
@@ -2719,7 +2721,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 50,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_FIELD },
-       .abilities = { ABILITY_SNIPER, ABILITY_EARLY_BIRD, ABILITY_INTIMIDATE, ABILITY_SKILL_LINK },
+       .abilities = { ABILITY_SAND_VEIL, ABILITY_EARLY_BIRD, ABILITY_INTIMIDATE, ABILITY_SKILL_LINK },
        .bodyColor = BODY_COLOR_BROWN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -2755,6 +2757,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Ibask)
        .levelUpLearnset = sIbaskLevelUpLearnset,
+       .teachableLearnset = sIbaskTeachableLearnset,
+       .eggMoveLearnset = sIbaskEggMoveLearnset,
     },
 
         [SPECIES_TURTINI] =
@@ -6072,6 +6076,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Fryzzle)
        .levelUpLearnset = sFryzzleLevelUpLearnset,
+       .teachableLearnset = sFryzzleTeachableLearnset,
+       .eggMoveLearnset = sCarpedianEggMoveLearnset,
     },
         [SPECIES_CARPEDIAN] =
     { 
@@ -6126,6 +6132,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Carpedian)
        .levelUpLearnset = sCarpedianLevelUpLearnset,
+       .teachableLearnset = sCarpedianTeachableLearnset,
+       .eggMoveLearnset = sCarpedianEggMoveLearnset,
     },
 
         [SPECIES_VOLTOCOR] =

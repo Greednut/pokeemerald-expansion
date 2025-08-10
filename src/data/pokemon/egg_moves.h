@@ -6406,6 +6406,16 @@ static const u16 sFlarheaEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sIbaskEggMoveLearnset[] = {
+    MOVE_MUDDY_WATER,
+    MOVE_HEAD_SMASH,
+    MOVE_FINAL_GAMBIT,
+    MOVE_ROTOTILLER,
+    MOVE_MUD_BOMB,
+    MOVE_THUNDEROUS_KICK,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sRavarnishEggMoveLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_ACID_ARMOR,
@@ -6495,6 +6505,16 @@ static const u16 sHorntubaEggMoveLearnset[] = {
     MOVE_SING,
     MOVE_YAWN,
     MOVE_HYDRO_PUMP,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sCarpedianEggMoveLearnset[] = {
+    MOVE_AMNESIA,
+    MOVE_HYDRO_PUMP,
+    MOVE_MINIMIZE,
+    MOVE_NOBLE_ROAR,
+    MOVE_ZING_ZAP,
+    MOVE_MAGNITUDE,
     MOVE_UNAVAILABLE,
 };
 
