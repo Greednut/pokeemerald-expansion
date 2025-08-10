@@ -38616,7 +38616,10 @@ static const u16 sCarpedianTeachableLearnset[] = {
 };
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 static const u16 sYardsteinTeachableLearnset[] = {
