@@ -38615,7 +38615,10 @@ static const u16 sCarpedianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 static const u16 sYardsteinTeachableLearnset[] = {
     MOVE_SHADOW_SNEAK,
     MOVE_THUNDER_WAVE,
