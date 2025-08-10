@@ -3928,6 +3928,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Impfection)
        .levelUpLearnset = sImpfectionLevelUpLearnset,
+       .teachableLearnset = sImpfectionTeachableLearnset,
+       .eggMoveLearnset = sImpfectionEggMoveLearnset,
     },
 
         [SPECIES_INKROW] =

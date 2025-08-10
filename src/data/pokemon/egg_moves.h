@@ -6416,6 +6416,16 @@ static const u16 sIbaskEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sImpfectionEggMoveLearnset[] = {
+    MOVE_TRANSFORM,
+    MOVE_PARTING_SHOT,
+    MOVE_ACID_ARMOR,
+    MOVE_FAKE_TEARS,
+    MOVE_BANEFUL_BUNKER,
+    MOVE_AMNESIA,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sRavarnishEggMoveLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_ACID_ARMOR,
