@@ -890,6 +890,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Whimple)
        .levelUpLearnset = sWhimpleLevelUpLearnset,
+       .teachableLearnset = sWhimpleTeachableLearnset,
+       .eggMoveLearnset = sWhipsicuffsEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_WHIPSCUFFLE}),
        },
 
@@ -946,6 +948,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Whipscuffle)
        .levelUpLearnset = sWhipscuffleLevelUpLearnset,
+       .teachableLearnset = sWhipscuffleTeachableLearnset,
+       .eggMoveLearnset = sWhipsicuffsEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_WHIPSICUFFS}),
     },
 
@@ -1002,6 +1006,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Whipsicuffs)
        .levelUpLearnset = sWhipsicuffsLevelUpLearnset,
+       .teachableLearnset = sWhipsicuffsTeachableLearnset,
+       .eggMoveLearnset = sWhipsicuffsEggMoveLearnset,
     },
 
         [SPECIES_AFLOOF] =
