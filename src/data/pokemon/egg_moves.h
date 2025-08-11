@@ -6302,6 +6302,39 @@ static const u16 sFrigibaxEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_FRIGIBAX
 
+static const u16 sGinocchioEggMoveLearnset[] = {
+    MOVE_CHARM,
+    MOVE_EXTREMESPEED,
+    MOVE_HEALING_WISH,
+    MOVE_LEAF_STORM,
+    MOVE_LEECH_SEED,
+    MOVE_NATURES_MADNESS,
+    MOVE_WOOD_HAMMER,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sSalezerkerEggMoveLearnset[] = {
+    MOVE_AMNESIA,
+    MOVE_BURN_UP,
+    MOVE_ENDURE,
+    MOVE_EXTREME_EDGE,
+    MOVE_GUILLOTINE,
+    MOVE_PUNISHMENT,
+    MOVE_WIDE_GUARD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sLemirethunEggMoveLearnset[] = {
+    MOVE_ACID_SPRAY,
+    MOVE_AMNESIA,
+    MOVE_BRINE,
+    MOVE_PURIFY,
+    MOVE_THOUSAND_WAVES,
+    MOVE_WAVE_CRASH,
+    MOVE_WHIRLPOOL,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sWhipsicuffsEggMoveLearnset[] = {
     MOVE_SPIKES,
     MOVE_CIRCLE_THROW,
@@ -6911,6 +6944,16 @@ static const u16 sClobberEggMoveLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_UNAVAILABLE,
 }; 
+
+static const u16 sCostrikeEggMoveLearnset[] = {
+    MOVE_ARM_THRUST,
+    MOVE_CIRCLE_THROW,
+    MOVE_HEAD_CHARGE,
+    MOVE_HEAD_SMASH,
+    MOVE_RAPID_SPIN,
+    MOVE_SELF_DESTRUCT,
+    MOVE_UNAVAILABLE,
+};
 
 static const u16 sColomboltEggMoveLearnset[] = {
     MOVE_PARABOLIC_CHARGE,
