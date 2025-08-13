@@ -1050,6 +1050,7 @@ static const struct {
     { SPECIES_SKOXIOUS, ITEM_SODA_POP, MOVE_BELCH }, 
     { SPECIES_WATTITUDE, ITEM_ZOOM_LENS , MOVE_ELECTRO_BALL },
     { SPECIES_XENINTER, ITEM_WISE_GLASSES, MOVE_LOCK_ON },
+    { SPECIES_PRIMITEVE, ITEM_RING_TARGET, MOVE_THOUSAND_ARROWS },
 };
 
 static void GiveMoveIfItem(struct Pokemon *mon, struct DayCare *daycare)

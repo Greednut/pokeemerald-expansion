@@ -14140,6 +14140,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Primitool)
        .levelUpLearnset = sPrimitoolLevelUpLearnset,
+      .teachableLearnset = sPrimitoolTeachableLearnset,
+      .eggMoveLearnset = sPrimiteveEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_PRIMITEVE}),
     },
         [SPECIES_PRIMITEVE] =
@@ -14195,6 +14197,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Primiteve)
        .levelUpLearnset = sPrimiteveLevelUpLearnset,
+      .teachableLearnset = sPrimiteveTeachableLearnset,
+      .eggMoveLearnset = sPrimiteveEggMoveLearnset,
     },
        [SPECIES_MOYALITH] =
     { 

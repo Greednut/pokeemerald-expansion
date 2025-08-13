@@ -6489,6 +6489,16 @@ static const u16 sRavarnishEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 SPrimiteveEggMoveLearnset[] = {
+    MOVE_BELLY_DRUM,
+    MOVE_MILK_DRINK,
+    MOVE_DRAIN_PUNCH,
+    MOVE_SWITCHEROO,
+    MOVE_BRANCH_POKE,
+    MOVE_EXTREME_EDGE,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sTarantagonEggMoveLearnset[] = {
     MOVE_OBSTRUCT,
     MOVE_AMNESIA,
