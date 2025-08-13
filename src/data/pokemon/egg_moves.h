@@ -6439,6 +6439,16 @@ static const u16 sFungnetEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sArachnoteEggMoveLearnset[] = {
+    //MOVE_BORE_BITE,
+    MOVE_HEAD_CHARGE,
+    MOVE_FORESIGHT,
+    MOVE_UPROAR,
+    MOVE_LAST_RESORT,
+    MOVE_CHATTER,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sFlarheaEggMoveLearnset[] = {
     MOVE_RAPID_SPIN,
     MOVE_BATON_PASS,
@@ -6561,6 +6571,16 @@ static const u16 sHorntubaEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sSkoxiousEggMoveLearnset[] = {
+    MOVE_GASTRO_ACID,
+    MOVE_WISH,
+    MOVE_MUDDY_WATER,
+    MOVE_YAWN,
+    MOVE_SOAK,
+    MOVE_TOXIC_SPIKES,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sCarpedianEggMoveLearnset[] = {
     MOVE_AMNESIA,
     MOVE_HYDRO_PUMP,
@@ -6673,6 +6693,16 @@ static const u16 sKaustikrokEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sWattitudeEggMoveLearnset[] = {
+    MOVE_OVERDRIVE,
+    MOVE_VOLT_TACKLE,
+    MOVE_FOLLOW_ME,
+    MOVE_DRAIN_PUNCH,
+    MOVE_EERIE_IMPULSE,
+    MOVE_SNARL,
+    MOVE_UNAVAILABLE,
+}; 
+
 static const u16 sMaleentisEggMoveLearnset[] = {
     MOVE_NO_RETREAT,
     MOVE_HEAD_CHARGE,
@@ -6680,6 +6710,16 @@ static const u16 sMaleentisEggMoveLearnset[] = {
     MOVE_DUAL_CHOP,
     MOVE_BRUTAL_SWING,
     MOVE_AQUA_TAIL,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sXeninterEggMoveLearnset[] = {
+    MOVE_AGILITY,
+    MOVE_BANEFUL_BUNKER,
+    MOVE_BELCH,
+    MOVE_ICE_SHARD,
+    MOVE_PURSUIT,
+    MOVE_TOXIC_SPIKES,
     MOVE_UNAVAILABLE,
 };
 
