@@ -2553,6 +2553,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 5,
        FOOTPRINT(Arachnote)
        .levelUpLearnset = sArachnoteLevelUpLearnset,
+       .teachableLearnset = sArachnoteTeachableLearnset,
+       .eggMoveLearnset = sArachnoteEggMoveLearnset,
        },
 
         [SPECIES_BURNUGGET] =
@@ -17499,6 +17501,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Drattel)
        .levelUpLearnset = sDrattelLevelUpLearnset,
+       .teachableLearnset = sDrattelTeachableLearnset,
+       .eggMoveLearnset = sZillichinaEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ZILLICHINA}),
     },
 
@@ -17555,6 +17559,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Zillichina)
        .levelUpLearnset = sZillichinaLevelUpLearnset,
+       .teachableLearnset = sZillichinaTeachableLearnset,
+       .eggMoveLearnset = sZillichinaEggMoveLearnset,
     },
         [SPECIES_ICEHUGGER] =
     { 
@@ -17609,7 +17615,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Icehugger)
        .levelUpLearnset = sIcehuggerLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_XENINTER}),
+       .teachableLearnset = sIcehuggerTeachableLearnset,
+       .eggMoveLearnset = sXeninterEggMoveLearnset,
+       .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_XENINTER}),
     },
         [SPECIES_XENINTER] =
     { 
@@ -17664,6 +17672,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Xeninter)
        .levelUpLearnset = sXeninterLevelUpLearnset,
+       .teachableLearnset = sXeninterTeachableLearnset,
+       .eggMoveLearnset = sXeninterEggMoveLearnset,
     },
         [SPECIES_SPHARE] =
     { 

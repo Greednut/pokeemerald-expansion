@@ -6733,6 +6733,17 @@ static const u16 sXeninterEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sZillichinaEggMoveLearnset[] = {
+    MOVE_BULLET_PUNCH,
+    MOVE_FLARE_BLITZ,
+    MOVE_HEAT_CRASH,
+    MOVE_HEAVY_SLAM,
+    MOVE_REVENGE,
+    MOVE_SPIKE_CANNON,
+    MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sLunabbitEggMoveLearnset[] = {
     MOVE_HORN_LEECH,
     MOVE_FAKE_OUT,
