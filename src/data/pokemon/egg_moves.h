@@ -6509,6 +6509,16 @@ static const u16 sTarantagonEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sHybrotamusEggMoveLearnset[] = {
+    //MOVE_CRITICAL_MASS,
+    MOVE_HEAD_CHARGE,
+    MOVE_METAL_BURST,
+    MOVE_FLARE_BLITZ,
+    MOVE_HEAVY_SLAM,
+    MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sVinebombEggMoveLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_FLARE_BLITZ,

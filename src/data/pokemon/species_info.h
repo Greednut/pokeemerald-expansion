@@ -4575,6 +4575,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Commutant)
        .levelUpLearnset = sCommutantLevelUpLearnset,
+       .teachableLearnset = sCommutantTeachableLearnset,
+       .eggMoveLearnset = sHybrotamusEggMoveLearnset,
+       .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_HYBROTAMUS}),
     },
 
         [SPECIES_HYBROTAMUS] =
@@ -4630,6 +4633,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Hybrotamus)
        .levelUpLearnset = sHybrotamusLevelUpLearnset,
+       .teachableLearnset = sCommutantTeachableLearnset,
+       .eggMoveLearnset = sCommutantEggMoveLearnset,
     },
 
         [SPECIES_CATOBIRRAFE] =
@@ -4685,7 +4690,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Cheepouf)
        .levelUpLearnset = sCatobiraffeLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CAMELODUCTOR}),
+       .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_CAMELODUCTOR}),
     },
 
         [SPECIES_CAMELODUCTOR] =
