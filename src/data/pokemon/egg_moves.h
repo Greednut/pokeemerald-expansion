@@ -6520,12 +6520,22 @@ static const u16 sTarantagonEggMoveLearnset[] = {
 };
 
 static const u16 sHybrotamusEggMoveLearnset[] = {
-    //MOVE_CRITICAL_MASS,
     MOVE_HEAD_CHARGE,
-    MOVE_METAL_BURST,
-    MOVE_FLARE_BLITZ,
     MOVE_HEAVY_SLAM,
+    MOVE_METAL_BURST,
+    MOVE_SLACK_OFF,
+    MOVE_QUICK_ATTACK,
     MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sCameloductorEggMoveLearnset[] = {
+    MOVE_BARRIER,
+    MOVE_DRAGON_HAMMER,
+    MOVE_THUNDEROUS_KICK,
+    MOVE_FIRE_SPIN,
+    MOVE_BURN_UP,
+    MOVE_INFERNO,
     MOVE_UNAVAILABLE,
 };
 

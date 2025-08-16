@@ -1932,6 +1932,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Jermin)
        .levelUpLearnset = sJerminLevelUpLearnset,
+       .teachableLearnset = sJerminTeachableLearnset,
+       .eggMoveLearnset = sJerminEggMoveLearnset,
        .formSpeciesIdTable = sJerminFormSpeciesIdTable,
        .formChangeTable = sJerminFormChangeTable,
     },
@@ -1988,6 +1990,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Jermin)
        .levelUpLearnset = sJerminLevelUpLearnset,
+       .teachableLearnset = sJerminTeachableLearnset,
+       .eggMoveLearnset = sJerminEggMoveLearnset,
        .formSpeciesIdTable = sJerminFormSpeciesIdTable,
        .formChangeTable = sJerminFormChangeTable,
     },
@@ -4665,7 +4669,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .height = 11,
        .weight = 2082,
        .description = COMPOUND_STRING(
-           "A Pokémon widely used to collect natural\n"
+           "A Pokémon widely used to collect\n"
            "electricity on the island as a natural\n"
            "lightning rod, though its too weak to \n"
            "hold up its head while young."),
@@ -4690,6 +4694,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Cheepouf)
        .levelUpLearnset = sCatobiraffeLevelUpLearnset,
+       .teachableLearnset = sCatobiraffeTeachableLearnset,
+       .eggMoveLearnset = sCameloductorEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_CAMELODUCTOR}),
     },
 
@@ -4746,6 +4752,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Cheesetah)
        .levelUpLearnset = sCameloductorLevelUpLearnset,
+       .teachableLearnset = sCameloductorTeachableLearnset,
+       .eggMoveLearnset = sCameloductorEggMoveLearnset,
     },
 
         [SPECIES_VINEDUP] =
