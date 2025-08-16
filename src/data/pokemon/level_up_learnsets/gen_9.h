@@ -26177,7 +26177,7 @@ static const struct LevelUpMove sAdentityLevelUpLearnset[] = {
     LEVEL_UP_MOVE(67, MOVE_DESTINY_BOND),
    LEVEL_UP_END
    };
-static const struct LevelUpMove sEMEFFYUMELevelUpLearnset[] = {
+static const struct LevelUpMove sEmeffyumeLevelUpLearnset[] = {
    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
    LEVEL_UP_MOVE( 1, MOVE_LEER),
    LEVEL_UP_MOVE( 4, MOVE_EMBER),
