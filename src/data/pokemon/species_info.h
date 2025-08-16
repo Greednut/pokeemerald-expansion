@@ -340,7 +340,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ginocchio)
        .levelUpLearnset = sGinocchioLevelUpLearnset,
-       .teachableLearnset = sGinocchiotTeachableLearnset,
+       .teachableLearnset = sGinocchioTeachableLearnset,
        .eggMoveLearnset = sGinocchioEggMoveLearnset,
        },
 
@@ -4634,7 +4634,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Hybrotamus)
        .levelUpLearnset = sHybrotamusLevelUpLearnset,
        .teachableLearnset = sCommutantTeachableLearnset,
-       .eggMoveLearnset = sCommutantEggMoveLearnset,
+       .eggMoveLearnset = sHybrotamusEggMoveLearnset,
     },
 
         [SPECIES_CATOBIRRAFE] =
@@ -9765,7 +9765,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 10,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_WATER_2 },
-       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDROTHERMAL, ABILITY_FLAME_BODY, ABILITY_MISTY_SURGE}, //GTODO Replace soundproof with Concert when ability is finalized
+       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDROTHERMAL, ABILITY_FLAME_BODY, ABILITY_MISTY_SURGE}, 
        .bodyColor = BODY_COLOR_RED,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -15992,10 +15992,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     { 
        .baseHP        = 93,
        .baseAttack    = 69,
-       .baseDefense   = 103,
-       .baseSpeed     = 65,
-       .baseSpAttack  = 121,
-       .baseSpDefense = 60,
+       .baseDefense   = 110,
+       .baseSpeed     = 71,
+       .baseSpAttack  = 130,
+       .baseSpDefense = 72,
        .types = { TYPE_FIRE, TYPE_STEEL },
        .catchRate = 66,
        .expYield = 122,

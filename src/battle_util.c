@@ -5761,7 +5761,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             }
             case ABILITY_SWARMING:
-                if (gBattleMons[battler].level < 30)
+                if (gBattleMons[battler].level < 35)
                     break;
             // Fallthrough
             case ABILITY_ZEN_MODE:
@@ -6603,7 +6603,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             || (gMovesInfo[gCurrentMove].type == TYPE_WATER))
             && (gMovesInfo[gCurrentMove].additionalEffects->moveEffect != MOVE_EFFECT_BURN)
             && IsBattlerTurnDamaged(gBattlerTarget) // Need to actually hit the target
-            && RandomPercentage(RNG_HYDROTHERMAL, 10))
+            && RandomPercentage(RNG_HYDROTHERMAL, 20))
             {
                 gBattleScripting.moveEffect = MOVE_EFFECT_BURN;
                 BattleScriptPushCursor();
@@ -12866,7 +12866,7 @@ u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct Addi
     u16 secondaryEffectChance = additionalEffect->chance;
 
     if (hasHydrothermal && (gMovesInfo[gCurrentMove].type == TYPE_FIRE || TYPE_WATER) && additionalEffect->moveEffect == MOVE_EFFECT_BURN)
-        secondaryEffectChance += 10;
+        secondaryEffectChance += 20;
     if (hasRainbow && hasSereneGrace && additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
         return secondaryEffectChance * 2;
     if (hasSereneGrace)

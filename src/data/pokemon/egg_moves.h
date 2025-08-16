@@ -6366,6 +6366,16 @@ static const u16 sMogeriaEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sJerminEggMoveLearnset[] = {
+    MOVE_TOXIC_SPIKES,
+    MOVE_DEFEND_ORDER,
+    MOVE_PUNISHMENT,
+    MOVE_ASSIST,
+    MOVE_BATON_PASS,
+    MOVE_DISABLE,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sPedestoneEggMoveLearnset[] = {
     MOVE_SHORE_UP,
     MOVE_ACCELEROCK,
@@ -6489,7 +6499,7 @@ static const u16 sRavarnishEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 SPrimiteveEggMoveLearnset[] = {
+static const u16 sPrimiteveEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_MILK_DRINK,
     MOVE_DRAIN_PUNCH,
