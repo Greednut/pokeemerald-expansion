@@ -4637,7 +4637,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Hybrotamus)
        .levelUpLearnset = sHybrotamusLevelUpLearnset,
-       .teachableLearnset = sCommutantTeachableLearnset,
+       .teachableLearnset = sHybrotamusTeachableLearnset,
        .eggMoveLearnset = sHybrotamusEggMoveLearnset,
     },
 
@@ -9773,7 +9773,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 10,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_WATER_2 },
-       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDROTHERMAL, ABILITY_FLAME_BODY, ABILITY_MISTY_SURGE}, 
+       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDROTHERMAL, ABILITY_FLAME_BODY, ABILITY_MISTY_SURGE}, //GTODO Replace soundproof with Concert when ability is finalized
        .bodyColor = BODY_COLOR_RED,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -16000,10 +16000,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     { 
        .baseHP        = 93,
        .baseAttack    = 69,
-       .baseDefense   = 110,
-       .baseSpeed     = 71,
-       .baseSpAttack  = 130,
-       .baseSpDefense = 72,
+       .baseDefense   = 103,
+       .baseSpeed     = 65,
+       .baseSpAttack  = 121,
+       .baseSpDefense = 60,
        .types = { TYPE_FIRE, TYPE_STEEL },
        .catchRate = 66,
        .expYield = 122,
