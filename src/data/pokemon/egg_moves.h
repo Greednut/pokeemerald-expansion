@@ -6973,7 +6973,7 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     
 };
 
-static const u16 sEMEFFYUMEEggMoveLearnset[] = {
+static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_AUTOTOMIZE,
     //MOVE_CRITICAL_MASS,
     MOVE_ENCORE,

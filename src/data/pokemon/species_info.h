@@ -16047,9 +16047,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_Emeffyume,
        .iconPalIndex = 0,
        FOOTPRINT(Emeffyume)
-       .levelUpLearnset = sEMEFFYUMELevelUpLearnset,
-       .teachableLearnset = sEMEFFYUMETeachableLearnset,
-       .eggMoveLearnset = sEMEFFYUMEEggMoveLearnset,
+       .levelUpLearnset = sEmeffyumeLevelUpLearnset,
+       .teachableLearnset = sEmeffyumeTeachableLearnset,
+       .eggMoveLearnset = sEmeffyumeEggMoveLearnset,
     },
 
         [SPECIES_PEGUI] =

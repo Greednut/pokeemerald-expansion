@@ -45687,7 +45687,7 @@ static const u16 sTowhorseTeachableLearnset[] = {
     MOVE_STRENGTH,
     MOVE_UNAVAILABLE,
 };
-static const u16 sEMEFFYUMETeachableLearnset[] = { 
+static const u16 sEmeffyumeTeachableLearnset[] = { 
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
     MOVE_MEGA_PUNCH,
