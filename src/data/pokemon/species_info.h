@@ -6119,6 +6119,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sFryzzleLevelUpLearnset,
        .teachableLearnset = sFryzzleTeachableLearnset,
        .eggMoveLearnset = sCarpedianEggMoveLearnset,
+       .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_CARPEDIAN}),
     },
         [SPECIES_CARPEDIAN] =
     { 
@@ -7683,7 +7684,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Helmata,
        .shinyPalette = gMonShinyPalette_Helmata,
        .iconSprite = gMonIcon_Helmata,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Helmata)
        .levelUpLearnset = sHelmataLevelUpLearnset,
        .teachableLearnset = sHelmataTeachableLearnset,
@@ -7741,7 +7742,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Punkuyu,
        .shinyPalette = gMonShinyPalette_Punkuyu,
        .iconSprite = gMonIcon_Punkuyu,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Punkuyu)
        .levelUpLearnset = sPunkuyuLevelUpLearnset,
        .teachableLearnset = sPunkuyuTeachableLearnset,
@@ -7799,7 +7800,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Chamelee,
        .shinyPalette = gMonShinyPalette_Chamelee,
        .iconSprite = gMonIcon_Chamelee,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Chamelee)
        .levelUpLearnset = sChameleeLevelUpLearnset,
        .teachableLearnset = sChameleeTeachableLearnset,
@@ -14970,7 +14971,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Ankhurah,
        .shinyPalette = gMonShinyPalette_Ankhurah,
        .iconSprite = gMonIcon_Ankhurah,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Ankhurah)
        .levelUpLearnset = sAnkhurahLevelUpLearnset,
     },
@@ -15024,7 +15025,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Squithee,
        .shinyPalette = gMonShinyPalette_Squithee,
        .iconSprite = gMonIcon_Squithee,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Squithee)
        .levelUpLearnset = sSquitheeLevelUpLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOBLAZER}),
@@ -15079,7 +15080,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Goblazer,
        .shinyPalette = gMonShinyPalette_Goblazer,
        .iconSprite = gMonIcon_Goblazer,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Goblazer)
        .levelUpLearnset = sGoblazerLevelUpLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_WARGHORK}),
@@ -15134,7 +15135,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Warghork,
        .shinyPalette = gMonShinyPalette_Warghork,
        .iconSprite = gMonIcon_Warghork,
-       .iconPalIndex = 5,
+       .iconPalIndex = 0,
        FOOTPRINT(Warghork)
        .levelUpLearnset = sWarghorkLevelUpLearnset,
     },
@@ -18516,7 +18517,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Apocamise,
        .shinyPalette = gMonShinyPalette_Apocamise,
        .iconSprite = gMonIcon_Apocamise,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Apocamise)
        .levelUpLearnset = sApocamiseLevelUpLearnset,
     },
