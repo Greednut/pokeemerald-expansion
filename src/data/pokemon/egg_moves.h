@@ -6965,10 +6965,10 @@ static const u16 sOryugamiEggMoveLearnset[] = {
 static const u16 sTowhorseEggMoveLearnset[] = {
     MOVE_HIGH_JUMP_KICK,
     MOVE_EXTREME_SPEED,
-    MOVE_TWINEEDLE, // Placeholder
-    MOVE_POWER_TRIP, // Placeholder
-    MOVE_BITE, // Placeholder
-    MOVE_CRUNCH, // Placeholder
+    MOVE_WIDE_GUARD,
+    MOVE_FLYING_PRESS,
+    MOVE_HEAD_CHARGE
+    MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
     
 };
