@@ -6356,13 +6356,12 @@ static const u16 sYokiteEggMoveLearnset[] = {
 };
 
 static const u16 sMogeriaEggMoveLearnset[] = {
-    MOVE_DECORATE,
+    MOVE_TEETER_DANCE,
     MOVE_POLLEN_PUFF,
-    MOVE_ANCIENT_POWER,
+    MOVE_MOONBLAST,
     MOVE_AGILITY,
-    MOVE_PERISH_SONG,
     MOVE_SING,
-    MOVE_MORNING_SUN,
+    MOVE_SYNTHESIS,
     MOVE_UNAVAILABLE,
 };
 
@@ -6967,7 +6966,7 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     MOVE_EXTREME_SPEED,
     MOVE_WIDE_GUARD,
     MOVE_FLYING_PRESS,
-    MOVE_HEAD_CHARGE
+    MOVE_HEAD_CHARGE,
     MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
     
