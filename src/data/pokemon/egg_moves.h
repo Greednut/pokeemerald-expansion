@@ -6356,7 +6356,7 @@ static const u16 sYokiteEggMoveLearnset[] = {
 };
 
 static const u16 sMogeriaEggMoveLearnset[] = {
-    MOVE_TEETER_DANCE,
+    MOVE_WISH,
     MOVE_POLLEN_PUFF,
     MOVE_MOONBLAST,
     MOVE_AGILITY,
@@ -6790,6 +6790,16 @@ static const u16 sChameleeEggMoveLearnset[] = {
     MOVE_DRAGON_PULSE,
     MOVE_QUICK_SAND,
     MOVE_METEOR_MASH,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPiuretteEggMoveLearnset[] = {
+    MOVE_ACID_ARMOR,
+    MOVE_HEART_SWAP,
+    MOVE_FIRE_SPIN,
+    MOVE_HEART_STAMP,
+    MOVE_MUDDY_WATER,
+    MOVE_SOAK,
     MOVE_UNAVAILABLE,
 };
 
