@@ -43419,7 +43419,7 @@ static const u16 sPiuretteTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_CURSE,
     MOVE_SURF,
-    MOVE_WATERFALL
+    MOVE_WATERFALL,
     MOVE_ROCK_CLIMB,
     MOVE_STRENGTH,
     MOVE_DIVE,
