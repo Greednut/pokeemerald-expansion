@@ -17184,7 +17184,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Molterra,
        .shinyPalette = gMonShinyPalette_Molterra,
        .iconSprite = gMonIcon_Molterra,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Molterra)
        .levelUpLearnset = sMolterraLevelUpLearnset,
     },
