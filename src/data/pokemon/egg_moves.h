@@ -6356,13 +6356,12 @@ static const u16 sYokiteEggMoveLearnset[] = {
 };
 
 static const u16 sMogeriaEggMoveLearnset[] = {
-    MOVE_DECORATE,
+    MOVE_WISH,
     MOVE_POLLEN_PUFF,
-    MOVE_ANCIENT_POWER,
+    MOVE_MOONBLAST,
     MOVE_AGILITY,
-    MOVE_PERISH_SONG,
     MOVE_SING,
-    MOVE_MORNING_SUN,
+    MOVE_SYNTHESIS,
     MOVE_UNAVAILABLE,
 };
 
@@ -6794,6 +6793,16 @@ static const u16 sChameleeEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sPiuretteEggMoveLearnset[] = {
+    MOVE_ACID_ARMOR,
+    MOVE_HEART_SWAP,
+    MOVE_FIRE_SPIN,
+    MOVE_HEART_STAMP,
+    MOVE_MUDDY_WATER,
+    MOVE_SOAK,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sKorokamiEggMoveLearnset[] = {
     MOVE_SMELLING_SALTS,
     MOVE_BONE_RUSH,
@@ -6965,10 +6974,10 @@ static const u16 sOryugamiEggMoveLearnset[] = {
 static const u16 sTowhorseEggMoveLearnset[] = {
     MOVE_HIGH_JUMP_KICK,
     MOVE_EXTREME_SPEED,
-    MOVE_TWINEEDLE, // Placeholder
-    MOVE_POWER_TRIP, // Placeholder
-    MOVE_BITE, // Placeholder
-    MOVE_CRUNCH, // Placeholder
+    MOVE_WIDE_GUARD,
+    MOVE_FLYING_PRESS,
+    MOVE_HEAD_CHARGE,
+    MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
     
 };

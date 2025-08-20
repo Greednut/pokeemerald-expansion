@@ -8916,6 +8916,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Piurette)
        .levelUpLearnset = sPiuretteLevelUpLearnset,
+       .teachableLearnset = sPiuretteTeachableLearnset,
+       .eggMoveLearnset = sPiuretteEggMoveLearnset,
     },
         [SPECIES_PASCAL] =
     { 
