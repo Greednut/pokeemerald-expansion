@@ -11,7 +11,6 @@
 #include "battle_setup.h"
 #include "battle_tower.h"
 #include "battle_z_move.h"
-#include "bw_summary_screen.h"
 #include "data.h"
 #include "dexnav.h"
 #include "event_data.h"
@@ -6443,11 +6442,7 @@ static void Task_PokemonSummaryAnimateAfterDelay(u8 taskId)
     if (--gTasks[taskId].sAnimDelay == 0)
     {
         StartMonSummaryAnimation(READ_PTR_FROM_TASK(taskId, 0), gTasks[taskId].sAnimId);
-        if (gTasks[taskId].tIsShadow && BW_SUMMARY_SCREEN == TRUE)
-            SummaryScreen_SetShadowAnimDelayTaskId_BW(TASK_NONE); // needed to track anim delay task for mon shadow in BW summary screen
-        else
-            SummaryScreen_SetAnimDelayTaskId(TASK_NONE);
-
+        SummaryScreen_SetAnimDelayTaskId(TASK_NONE);
         DestroyTask(taskId);
     }
 }
@@ -6519,12 +6514,7 @@ void PokemonSummaryDoMonAnimation(struct Sprite *sprite, u16 species, bool8 oneF
         gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimId;
         gTasks[taskId].sAnimDelay = gSpeciesInfo[species].frontAnimDelay;
         gTasks[taskId].tIsShadow = isShadow;  // needed to track anim delay task for mon shadow in BW summary screen
-
-        if (isShadow && BW_SUMMARY_SCREEN == TRUE)
-            SummaryScreen_SetShadowAnimDelayTaskId_BW(taskId);
-        else
-            SummaryScreen_SetAnimDelayTaskId(taskId);
-
+        SummaryScreen_SetAnimDelayTaskId(taskId);
         SetSpriteCB_MonAnimDummy(sprite);
     }
     else
