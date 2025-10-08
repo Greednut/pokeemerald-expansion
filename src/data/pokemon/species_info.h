@@ -19510,6 +19510,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Klasicope)
        .levelUpLearnset = sKlasicopeLevelUpLearnset,
+       .teachableLearnset = sKlasicopeTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_ESSENTION}),
     },
     
@@ -19569,6 +19571,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Essention)
        .levelUpLearnset = sEssentionLevelUpLearnset,
+       .teachableLearnset = sEssentionTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 66, SPECIES_TERMAGNIUS}),
     },
     
@@ -19628,6 +19632,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Termagnius)
        .levelUpLearnset = sTermagniusLevelUpLearnset,
+       .teachableLearnset = sTermagniusTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
     },
     
         [SPECIES_FORGOTNO] =

@@ -7140,3 +7140,13 @@ static const u16 sSchizstarfEggMoveLearnset[] = {
 
 };
 
+static const u16 sTermagniusEggMoveLearnset[] = {
+    MOVE_FLARE_BLITZ,
+    MOVE_UPROOT,
+    MOVE_LASER_FOCUS,
+    MOVE_REFLECT_TYPE,
+    MOVE_TRI_ATTACK,
+    MOVE_DRAGON_RAGE,
+    MOVE_UNAVAILABLE,
+}; 
+
