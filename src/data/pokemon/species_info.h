@@ -1253,6 +1253,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Hamstatic)
        .levelUpLearnset = sHamstaticLevelUpLearnset,
+       .teachableLearnset = HamstaticTeachableLearnset,
+       .eggMoveLearnset = sAmpstarEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_AMPSTAR}),
     },
 
@@ -1310,6 +1312,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Ampstar)
        .levelUpLearnset = sAmpstarLevelUpLearnset,
+       .teachableLearnset = AmpstarTeachableLearnset,
+       .eggMoveLearnset = sAmpstarEggMoveLearnset,
     },
 
         [SPECIES_FLORIBEL] =

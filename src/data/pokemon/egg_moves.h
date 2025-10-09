@@ -6345,6 +6345,16 @@ static const u16 sWhipsicuffsEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sAmpstarEggMoveLearnset[] = {
+    MOVE_FLAME_BURST,
+    MOVE_BATON_PASS,
+    MOVE_TEETER_DANCE,
+    MOVE_FLATTER,
+    MOVE_SWITCHEROO,
+    MOVE_FLAIL,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sYokiteEggMoveLearnset[] = {
     MOVE_FINAL_GAMBIT,
     MOVE_QUICK_GUARD,
