@@ -6398,12 +6398,12 @@ static const u16 sPedestoneEggMoveLearnset[] = {
 
 
 static const u16 sWalkalackEggMoveLearnset[] = {
-    MOVE_CRASH_HOPPER, 
-    MOVE_FIRST_IMPRESSION,
+    MOVE_CROSS_CHOP, 
+    MOVE_FELL_STINGER,
     MOVE_HI_JUMP_KICK,
-    MOVE_STICKY_WEB,
+    //MOVE_CRITICAL_MASS,
     MOVE_TOXIC_SPIKES,
-    MOVE_EXPLOSION,
+    MOVE_X_SCISSOR,
     MOVE_UNAVAILABLE,
 };
 
