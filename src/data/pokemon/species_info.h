@@ -5,6 +5,7 @@
 // Macros for ease of use.
 
 #define EVOLUTION(...) (const struct Evolution[]) { __VA_ARGS__, { EVOLUTIONS_END }, }
+#define CONDITIONS(...) ((const struct EvolutionParam[]) { __VA_ARGS__, {CONDITIONS_END} })
 
 #define ANIM_FRAMES(...) (const union AnimCmd *const[]) { sAnim_GeneralFrame0, (const union AnimCmd[]) { __VA_ARGS__ ANIMCMD_END, }, }
 
@@ -122,7 +123,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_CircledQuestionMark,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(QuestionMark)
+        SHADOW(-1, 0, SHADOW_SIZE_M)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -1371,7 +1374,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sFloribelLevelUpLearnset,
        .teachableLearnset = sFloribelTeachableLearnset,
        .eggMoveLearnset = sMogeriaEggMoveLearnset,
-       .evolutions = EVOLUTION({EVO_MOVE, MOVE_PETAL_DANCE, SPECIES_MOGERIA}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MOGERIA, CONDITIONS({IF_KNOWS_MOVE, MOVE_PETAL_DANCE})}),
     },
 
         [SPECIES_MOGERIA] =
@@ -1486,7 +1489,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sKiwiLevelUpLearnset,
        .teachableLearnset = sKiwiTeachableLearnset,
        .eggMoveLearnset = sIwikEggMoveLearnset,
-       .evolutions = EVOLUTION({EVO_MOVE, MOVE_INVERSE_ROOM, SPECIES_IWIK}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_IWIK, CONDITIONS({IF_KNOWS_MOVE, MOVE_INVERSE_ROOM})}),
     },
 
         [SPECIES_IWIK] =
@@ -1657,7 +1660,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sGrumpoonLevelUpLearnset,
        .teachableLearnset = sGrumpoonTeachableLearnset,
        .eggMoveLearnset = sKonekothEggMoveLearnset,
-       .evolutions = EVOLUTION({EVO_FRIENDSHIP, 250, SPECIES_KONEKOTH}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KONEKOTH, CONDITIONS({IF_MIN_FRIENDSHIP, 250})}),
     },
 
         [SPECIES_KONEKOTH] =
@@ -2060,7 +2063,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Skuba)
        .levelUpLearnset = sSkubaProLevelUpLearnset,
        .formSpeciesIdTable = sSkubaFormSpeciesIdTable,
-       .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_SKUB , SPECIES_SKUBMARINE_PRO}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SKUBMARINE_PRO, CONDITIONS({IF_HOLD_ITEM, ITEM_SKUB})}), 
     },
 
         [SPECIES_SKUBA_ANTI] =
@@ -2117,7 +2120,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Skuba)
        .levelUpLearnset = sSkubaAntiLevelUpLearnset,
        .formSpeciesIdTable = sSkubaFormSpeciesIdTable,
-       .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_SKUB , SPECIES_SKUBMARINE_ANTI}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SKUBMARINE_ANTI, CONDITIONS({IF_HOLD_ITEM, ITEM_SKUB})}), 
     },
 
         [SPECIES_SKUBMARINE_ANTI] =
@@ -2287,7 +2290,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sPedestoneLevelUpLearnset,
        .eggMoveLearnset = sPedestoneEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_EROCHRE},
-                               {EVO_ITEM_HOLD, ITEM_MIRACLE_SEED, SPECIES_PILLAIA}),
+                               {EVO_ITEM, ITEM_MIRACLE_SEED, SPECIES_PILLAIA}),               
     },
 
         [SPECIES_EROCHRE] =
@@ -6747,7 +6750,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Hookling)
        .levelUpLearnset = sHooklingLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_DRAGON_SCALE, SPECIES_FRACTYVERN}),
+       .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_FRACTYVERN}),
+       
     },
 
         [SPECIES_FRACTYVERN] =
@@ -6858,7 +6862,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Dogan)
        .levelUpLearnset = sDoganLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_ITEM_HOLD, ITEM_DRAGON_SCALE, SPECIES_SMOGARS}),
+       .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_SMOGARS}),
+       
     },
 
         [SPECIES_SMOGARS] =
@@ -8373,7 +8378,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Yuukiino)
        .levelUpLearnset = sYuukiinoLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_FRIENDSHIP, 200, SPECIES_AQUADIIVA}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_AQUADIIVA, CONDITIONS({IF_MIN_FRIENDSHIP, 200})}),
     },
     
         [SPECIES_AQUADIIVA] =
@@ -8711,8 +8716,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Knitten)
        .levelUpLearnset = sKnittenLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_FRIENDSHIP, 150, SPECIES_SABSUTE},
-        {EVO_ITEM, ITEM_MOON_STONE, SPECIES_DOLLGHOST})
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SABSUTE, CONDITIONS({IF_MIN_FRIENDSHIP, 150})},
+                               {EVO_ITEM, ITEM_MOON_STONE, SPECIES_DOLLGHOST}),
     },
         [SPECIES_SABSUTE] =
     { 
@@ -10435,7 +10440,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Brashalisk)
        .levelUpLearnset = sBrashaliskLevelUpLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_KOKAIJU},
-                               {EVO_ITEM_HOLD, ITEM_SHARP_BEAK, SPECIES_LEVITITAN}),
+                               {EVO_LEVEL, 0, SPECIES_LEVITITAN, CONDITIONS({IF_HOLD_ITEM, ITEM_SHARP_BEAK})}), 
     },
         [SPECIES_KOKAIJU] =
     { 
@@ -15209,7 +15214,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sDubsnakeLevelUpLearnset,
        .teachableLearnset = sDubsnakeTeachableLearnset,
        .eggMoveLearnset = sDubsnakeEggMoveLearnset,
-       .evolutions = EVOLUTION({EVO_MOVE, MOVE_FLAME_BURST, SPECIES_HYDROIL},
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_HYDROIL, CONDITIONS({IF_KNOWS_MOVE, MOVE_FLAME_BURST})},
                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_COILSPILL}),
     },
         [SPECIES_HYDROIL] =
@@ -16176,8 +16181,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Pechit)
        .levelUpLearnset = sPechitLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 40, SPECIES_COPOLAR_FEMALE},
-                               {EVO_LEVEL_MALE, 40, SPECIES_COPOLAR_MALE}),
+       .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_COPOLAR_FEMALE, CONDITIONS({IF_GENDER, MON_FEMALE})},
+                               {EVO_LEVEL, 40, SPECIES_COPOLAR_MALE, CONDITIONS({IF_GENDER, MON_MALE})}),
     },
 
         [SPECIES_COPOLAR_MALE] =
