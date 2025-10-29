@@ -23053,7 +23053,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ABSORB,
+            .moveEffect = MOVE_EFFECT_TOXIC,
             .chance = 20,
         }),
         .strikeCount = 3,
@@ -23113,28 +23113,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {COMBO_STARTER_LOCK_ON, COMBO_STARTER_MIND_READER},
         .battleAnimScript = gBattleAnimMove_Superpower,
         .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_ALLA_PRIMA] =
-    {
-        .name = COMPOUND_STRING("Alla Prima"),
-        .description = COMPOUND_STRING(
-            "Super effective on Water-\n"
-            "types. Drains the foe."),
-        .effect = EFFECT_ALLA_PRIMA,
-        .power = 25,
-        .type = TYPE_STEEL,
-        .accuracy = 100,
-        .pp = 10,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .argument = { .type = TYPE_WATER },
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_FreezeDry,
     },
 
 

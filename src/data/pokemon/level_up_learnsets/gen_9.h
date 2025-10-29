@@ -25935,8 +25935,8 @@ static const struct LevelUpMove sCanvelliaLevelUpLearnset[] = {
     LEVEL_UP_END 
     };
 static const struct LevelUpMove sGuertenityLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_ALLA_PRIMA),
-    LEVEL_UP_MOVE( 1, MOVE_ALLA_PRIMA),
+    LEVEL_UP_MOVE( 0, MOVE_ASSIMILATE),
+    LEVEL_UP_MOVE( 1, MOVE_ASSIMILATE),
     LEVEL_UP_MOVE( 1, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_FLOWER_SHIELD),

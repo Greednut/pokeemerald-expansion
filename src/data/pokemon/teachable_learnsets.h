@@ -40249,7 +40249,7 @@ static const u16 sCyclonianTeachableLearnset[] = {
     MOVE_FIRE_PUNCH,
     MOVE_THUNDER_PUNCH,
     MOVE_ICE_PUNCH,
-    //MOVE_LUNAR_IMPACT,
+    MOVE_LUNAR_IMPACT,
     MOVE_THUNDER_DROP,
     MOVE_TAILWIND,
     MOVE_ICY_WIND,
@@ -41263,7 +41263,7 @@ static const u16 sYardsteinTeachableLearnset[] = {
 };
 
 static const u16 sNebuliteTeachableLearnset[] = {
-    //MOVE_LUNAR_IMPACT,
+    MOVE_LUNAR_IMPACT,
     MOVE_FLIP_TURN,
     MOVE_SCALD,
     MOVE_WATER_PLEDGE,
@@ -41693,7 +41693,7 @@ static const u16 sPolybrawnTeachableLearnset[] = {
 };
 
 static const u16 sEccosmicTeachableLearnset[] = {
-    //MOVE_LUNAR_IMPACT,
+    MOVE_LUNAR_IMPACT,
     MOVE_FLIP_TURN,
     MOVE_SCALD,
     MOVE_WATER_PLEDGE,
@@ -43686,7 +43686,7 @@ static const u16 sLunabbitTeachableLearnset[] = {
     MOVE_SEISMIC_TOSS,
     MOVE_SUPER_FANG,
     MOVE_PSYCHIC_FANGS,
-    //MOVE_LUNAR_IMPACT,
+    MOVE_LUNAR_IMPACT,
     MOVE_AURA_SPHERE,
     MOVE_BODY_SLAM,
     MOVE_SUPERPOWER,
@@ -45563,7 +45563,7 @@ static const u16 sDevanteTeachableLearnset[] = {
     MOVE_FAEBLADE, 
     MOVE_SACRED_SWORD, 
     MOVE_DOUBLE_EDGE, 
-    // MOVE_LUNAR_IMPACT,
+    MOVE_LUNAR_IMPACT,
     MOVE_LOW_KICK, 
     MOVE_LOW_SWEEP, 
     MOVE_MEGA_PUNCH, 
