@@ -3614,6 +3614,7 @@ BattleScript_SoulCrusherHeal:
 	printfromtable gAbsorbDrainStringIds
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_TrySoulCrusherBoost
+	
 
 BattleScript_TrySoulCrusherBoost::
 	tryfaintmon BS_TARGET

@@ -1256,6 +1256,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Hamstatic)
        .levelUpLearnset = sHamstaticLevelUpLearnset,
+       .teachableLearnset = sHamstaticTeachableLearnset,
+       .eggMoveLearnset = sAmpstarEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_AMPSTAR}),
     },
 
@@ -1313,6 +1315,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Ampstar)
        .levelUpLearnset = sAmpstarLevelUpLearnset,
+       .teachableLearnset = sAmpstarTeachableLearnset,
+       .eggMoveLearnset = sAmpstarEggMoveLearnset,
     },
 
         [SPECIES_FLORIBEL] =
@@ -1597,6 +1601,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Larvitty)
        .levelUpLearnset = sLarvittyLevelUpLearnset,
+       .teachableLearnset = sLarvittyTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_GRUMPOON}),
     },
 
@@ -1652,6 +1658,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Grumpoon)
        .levelUpLearnset = sGrumpoonLevelUpLearnset,
+       .teachableLearnset = sGrumpoonTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KONEKOTH, CONDITIONS({IF_MIN_FRIENDSHIP, 250})}),
     },
 
@@ -1708,6 +1716,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Konekoth)
        .levelUpLearnset = sKonekothLevelUpLearnset,
+       .teachableLearnset = sKonekothTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
     },
 
         [SPECIES_MONKITE] =
@@ -2448,6 +2458,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Triactite)
        .levelUpLearnset = sTriactiteLevelUpLearnset,
+       .teachableLearnset = sTriactiteTeachableLearnset,
        .eggMoveLearnset = sWalkalackEggMoveLearnset,
     },
 
@@ -2504,6 +2515,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Walkalack)
        .levelUpLearnset = sWalkalackLevelUpLearnset,
+       .teachableLearnset = sTritanicTeachableLearnset,
        .eggMoveLearnset = sWalkalackEggMoveLearnset,
     },
 
@@ -19515,6 +19527,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Klasicope)
        .levelUpLearnset = sKlasicopeLevelUpLearnset,
+       .teachableLearnset = sKlasicopeTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_ESSENTION}),
     },
     
@@ -19574,6 +19588,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Essention)
        .levelUpLearnset = sEssentionLevelUpLearnset,
+       .teachableLearnset = sEssentionTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 66, SPECIES_TERMAGNIUS}),
     },
     
@@ -19633,6 +19649,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Termagnius)
        .levelUpLearnset = sTermagniusLevelUpLearnset,
+       .teachableLearnset = sTermagniusTeachableLearnset,
+       .eggMoveLearnset = sTermagniusEggMoveLearnset,
     },
     
         [SPECIES_FORGOTNO] =

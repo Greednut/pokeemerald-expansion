@@ -935,5 +935,6 @@ extern const u8 BattleScript_EffectDrumroll[];
 extern const u8 BattleScript_EffectSuperpower[];
 extern const u8 BattleScript_EffectLunarImpact[];
 extern const u8 BattleScript_EffectBrutalPunishment[];
+extern const u8 BattleScript_EffectAllaPrima[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H
