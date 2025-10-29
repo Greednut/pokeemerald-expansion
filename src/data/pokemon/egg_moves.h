@@ -6418,6 +6418,16 @@ static const u16 sIwikEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sKonekothEggMoveLearnset[] = {
+    MOVE_BABY_DOLL_EYES,
+    MOVE_COPYCAT,
+    MOVE_CLOSE_COMBAT,
+    MOVE_FURY_CUTTER,
+    MOVE_POLLEN_PUFF,
+    MOVE_RAGE_POWDER,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sMogumoleEggMoveLearnset[] = {
     MOVE_CRUSH_CLAW,
     MOVE_RAPID_SPIN,

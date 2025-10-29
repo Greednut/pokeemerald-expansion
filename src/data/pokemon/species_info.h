@@ -1598,6 +1598,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Larvitty)
        .levelUpLearnset = sLarvittyLevelUpLearnset,
+       .teachableLearnset = sLarvittyTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_GRUMPOON}),
     },
 
@@ -1653,6 +1655,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Grumpoon)
        .levelUpLearnset = sGrumpoonLevelUpLearnset,
+       .teachableLearnset = sGrumpoonTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 250, SPECIES_KONEKOTH}),
     },
 
@@ -1709,6 +1713,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Konekoth)
        .levelUpLearnset = sKonekothLevelUpLearnset,
+       .teachableLearnset = sKonekothTeachableLearnset,
+       .eggMoveLearnset = sKonekothEggMoveLearnset,
     },
 
         [SPECIES_MONKITE] =
