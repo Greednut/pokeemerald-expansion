@@ -6729,6 +6729,16 @@ static const u16 sVoliathEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sBarabyssEggMoveLearnset[] = {
+    MOVE_YAWN,
+    MOVE_REFLECT_TYPE,
+    MOVE_DREAM_EATER,
+    MOVE_NOBLE_ROAR,
+    MOVE_CLAMP, 
+    MOVE_MACH_PUNCH,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sFractyvernEggMoveLearnset[] = {
     MOVE_DRAGON_RUSH,
     MOVE_HEAD_SMASH,
