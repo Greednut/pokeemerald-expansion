@@ -23248,6 +23248,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+    [MOVE_ABYSSAL_WAVE] =
+    {
+        .name = COMPOUND_STRING("Abyssal Wave"),
+        .description = COMPOUND_STRING(
+            "A punch is thrown at blinding\n"
+            "speed on a single droplet of\n"
+            "water making it hit the foe at\n"
+            "blinding speeds. Usually goes first."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .punchingMove = TRUE,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_JetPunch,
+    },
+
 
 
     
