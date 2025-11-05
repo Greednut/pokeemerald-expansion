@@ -6445,6 +6445,16 @@ static const u16 sMogumoleEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sNaughtycootEggMoveLearnset[] = {
+    MOVE_REVELATION_DANCE,
+    MOVE_TWISTER,
+    MOVE_WIDE_GUARD,
+    MOVE_AGILITY,
+    MOVE_FIRE_SPIN,
+    MOVE_BONE_CLUB,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sPermacerosEggMoveLearnset[] = {
     MOVE_AURORA_BEAM,
     MOVE_HEAD_SMASH,
