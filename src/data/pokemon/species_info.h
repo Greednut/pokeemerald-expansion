@@ -3243,6 +3243,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .iconPalIndex = 5,
    FOOTPRINT(Bandicute)
    .levelUpLearnset = sBandicuteLevelUpLearnset,
+   .teachableLearnset = sBandicuteTeachableLearnset,
+   .eggMoveLearnset = sNaughtycootEggMoveLearnset,
    .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_NAUGHTYCOOT}),
 },
 
@@ -3299,6 +3301,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .iconPalIndex = 5,
    FOOTPRINT(Naughtycoot)
    .levelUpLearnset = sNaughtycootLevelUpLearnset,
+   .teachableLearnset = sNaughtycootTeachableLearnset,
+   .eggMoveLearnset = sNaughtycootEggMoveLearnset,
 },
 
     [SPECIES_SUBSTRALE] =
@@ -7701,7 +7705,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Helmata,
        .shinyPalette = gMonShinyPalette_Helmata,
        .iconSprite = gMonIcon_Helmata,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Helmata)
        .levelUpLearnset = sHelmataLevelUpLearnset,
        .teachableLearnset = sHelmataTeachableLearnset,
@@ -7759,7 +7763,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Punkuyu,
        .shinyPalette = gMonShinyPalette_Punkuyu,
        .iconSprite = gMonIcon_Punkuyu,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Punkuyu)
        .levelUpLearnset = sPunkuyuLevelUpLearnset,
        .teachableLearnset = sPunkuyuTeachableLearnset,
@@ -7817,7 +7821,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Chamelee,
        .shinyPalette = gMonShinyPalette_Chamelee,
        .iconSprite = gMonIcon_Chamelee,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Chamelee)
        .levelUpLearnset = sChameleeLevelUpLearnset,
        .teachableLearnset = sChameleeTeachableLearnset,
