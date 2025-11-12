@@ -6597,6 +6597,16 @@ static const u16 sBlubbastardEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sJunkgeistEggMoveLearnset[] = {
+    MOVE_MUDDY_WATER,
+    MOVE_TRICK_OR_TREAT,
+    MOVE_METAL_SOUND,
+    MOVE_ENCORE, // Karma please dont fucking kill me i couldnt think of anything
+    MOVE_BANEFUL_BUNKER,
+    MOVE_YAWN,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sFoxcetEggMoveLearnset[] = {
     MOVE_BATON_PASS,
     MOVE_WHIRLPOOL,
@@ -6840,6 +6850,16 @@ static const u16 sChameleeEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sParmiausanEggMoveLearnset[] = {
+    MOVE_LAST_RESORT,
+    MOVE_WISH,
+    MOVE_HOLD_HANDS,
+    MOVE_BATON_PASS,
+    MOVE_FOLLOW_ME,
+    MOVE_PSYCH_UP,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sPiuretteEggMoveLearnset[] = {
     MOVE_ACID_ARMOR,
     MOVE_HEART_SWAP,
@@ -6929,6 +6949,16 @@ static const u16 sBambuyaEggMoveLearnset[] = {
     MOVE_AROMATHERAPY,
     MOVE_TRI_ATTACK,
     MOVE_NEEDLE_ARM,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sJumblegoreEggMoveLearnset[] = {
+    MOVE_FLARE_BLITZ,
+    MOVE_LAST_RESORT,
+    MOVE_TRICK_OR_TREAT,
+    MOVE_ACID_ARMOR,
+    MOVE_POWER_SPLIT,
+    MOVE_POWER_TRICK,
     MOVE_UNAVAILABLE,
 };
 

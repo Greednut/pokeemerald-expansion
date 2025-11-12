@@ -5119,6 +5119,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Poltire)
        .levelUpLearnset = sPoltireLevelUpLearnset,
+       .teachableLearnset = sPoltireTeachableLearnset,
+       .eggMoveLearnset = sJunkgeistEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_JUNKGEIST}),
     },
 
@@ -5176,6 +5178,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Junkgeist)
        .levelUpLearnset = sJunkgeistLevelUpLearnset,
+       .teachableLearnset = sJunkgeistTeachableLearnset,
+       .eggMoveLearnset = sJunkgeistEggMoveLearnset,
     },
 
         [SPECIES_FOXCET] =
@@ -8883,6 +8887,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Parmiausan)
        .levelUpLearnset = sParmiausanLevelUpLearnset,
+       .teachableLearnset = sParmiausanTeachableLearnset,
+       .eggMoveLearnset = sParmiausanEggMoveLearnset,
     },
         [SPECIES_PIURETTE] =
     { 
@@ -15555,6 +15561,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Jumblegore)
        .levelUpLearnset = sJumblegoreLevelUpLearnset,
+       .teachableLearnset = sJumblegoreTeachableLearnset,
+       .eggMoveLearnset = sJumblegoreEggMoveLearnset,
     },
 
         [SPECIES_JUMBLINART] =
