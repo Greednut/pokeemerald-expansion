@@ -23254,8 +23254,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A punch is thrown at blinding\n"
             "speed on a single droplet of\n"
-            "water making it hit the foe at\n"
-            "blinding speeds. Usually goes first."),
+            "water at the foe. Goes first."),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_WATER,
