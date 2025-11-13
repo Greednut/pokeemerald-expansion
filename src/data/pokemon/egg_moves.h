@@ -6962,6 +6962,16 @@ static const u16 sJumblegoreEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sJumblinartEggMoveLearnset[] = {
+    MOVE_WAVE_CRASH,
+    MOVE_HYPNOSIS,
+    MOVE_TRICK_OR_TREAT,
+    MOVE_ACID_ARMOR,
+    MOVE_POWER_SPLIT,
+    MOVE_POWER_TRICK,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sOnsenpuraEggMoveLearnset[] = {
     MOVE_FIRE_LASH,
     MOVE_LAVA_PLUME,

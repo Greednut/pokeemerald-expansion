@@ -15617,6 +15617,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Jumblinart)
        .levelUpLearnset = sJumblinartLevelUpLearnset,
+       .teachableLearnset = sJumblinartTeachableLearnset,
+       .eggMoveLearnset = sJumblinartEggMoveLearnset,
     },
 
         [SPECIES_POLYBRAWN_NORMAL] =
