@@ -8105,6 +8105,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Shroomalice)
        .levelUpLearnset = sShroomaliceLevelUpLearnset,
+       .teachableLearnset = sShroomaliceTeachableLearnset,
+       .eggMoveLearnset = sShroomaliceEggMoveLearnset,
        },
     
         [SPECIES_SPORESTOOL] =

@@ -6850,6 +6850,16 @@ static const u16 sChameleeEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sShroomaliceEggMoveLearnset[] = {
+    MOVE_LUNAR_DANCE,
+    MOVE_DREAM_EATER,
+    MOVE_MIMIC,
+    MOVE_POISON_POWDER,
+    MOVE_POLLEN_PUFF,
+    MOVE_PETAL_DANCE,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sParmiausanEggMoveLearnset[] = {
     MOVE_LAST_RESORT,
     MOVE_WISH,
