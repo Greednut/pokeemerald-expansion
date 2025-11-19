@@ -7079,6 +7079,16 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     
 };
 
+static const u16 sAmalgumEggMoveLearnset[] = {
+    MOVE_DECORATE,
+    MOVE_PURIFY,
+    MOVE_DRAIN_PUNCH,
+    MOVE_MIST_BALL,
+    MOVE_ACID_SPRAY,
+    MOVE_SPIRIT_BREAK,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_AUTOTOMIZE,
     //MOVE_CRITICAL_MASS,

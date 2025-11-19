@@ -11942,6 +11942,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Lober)
        .levelUpLearnset = sLoberLevelUpLearnset,
+       .teachableLearnset = sLoberTeachableLearnset,
+       .eggMoveLearnset = sClobberEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_CLOBBER}),
     },
         [SPECIES_CLOBBER] =
@@ -11997,6 +11999,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Clobber)
        .levelUpLearnset = sClobberLevelUpLearnset,
+       .teachableLearnset = sClobberTeachableLearnset,
+       .eggMoveLearnset = sClobberEggMoveLearnset,
     },
 
         [SPECIES_SPIRANHA] =
@@ -12384,6 +12388,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Amalgum)
        .levelUpLearnset = sAmalgumLevelUpLearnset,
+       .teachableLearnset = sAmalgumTeachableLearnset,
+       .eggMoveLearnset = sAmalgumEggMoveLearnset,
     },
 
         [SPECIES_VORTRIX] =
