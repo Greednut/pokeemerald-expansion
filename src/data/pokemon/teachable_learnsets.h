@@ -47346,19 +47346,16 @@ static const u16 sTowhorseTeachableLearnset[] = {
     };
 static const u16 sAmalgumTeachableLearnset[] = { 
     MOVE_LUNAR_IMPACT,
-    MOVE_BODY_PRESS, //?????
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE, 
-    MOVE_DARKEST_LARIAT,//?????
     MOVE_OMINOUS_WIND,
     MOVE_GUNK_SHOT,
     MOVE_SLUDGE_WAVE,
-    //MOVE_ACID_REFLEX, //??????
     MOVE_TERRAIN_PULSE,
     MOVE_PSYCHIC_TERRAIN,
     MOVE_MISTY_TERRAIN,
     MOVE_MISTY_EXPLOSION,
-    MOVE_MOP, //??????
+    MOVE_MOP, 
     MOVE_HEAL_BELL,
     MOVE_PRESENT,
     MOVE_PAY_DAY,
@@ -47368,7 +47365,7 @@ static const u16 sAmalgumTeachableLearnset[] = {
     MOVE_MAGIC_ROOM,
     MOVE_WONDER_ROOM,
     MOVE_INVERSE_ROOM,
-    MOVE_FOUL_PLAY, //??????
+    MOVE_FOUL_PLAY, 
     MOVE_MIRROR_COAT,
     MOVE_MAGIC_COAT,
     MOVE_GRAVITY,
@@ -47392,16 +47389,16 @@ static const u16 sAmalgumTeachableLearnset[] = {
     MOVE_TAUNT,
     MOVE_HYPER_BEAM,
     MOVE_PROTECT,
-    MOVE_GIGA_DRAIN, //?????
+    MOVE_GIGA_DRAIN, 
     MOVE_SAFEGUARD,
     MOVE_FRUSTRATION,
-    MOVE_SOLAR_BEAM,//?????
+    MOVE_SOLAR_BEAM,
     MOVE_RETURN,
     MOVE_PSYCHIC,
     MOVE_SHADOW_BALL,
     MOVE_DOUBLE_TEAM,
     MOVE_REFLECT,
-    MOVE_SLUDGE_BOMB, //?????
+    MOVE_SLUDGE_BOMB, 
     MOVE_TORMENT,
     MOVE_FACADE,
     MOVE_REST,
@@ -47414,7 +47411,7 @@ static const u16 sAmalgumTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_DRAINING_KISS,
     MOVE_VENOSHOCK,
-    MOVE_PAIN_SPLIT, //?????
+    MOVE_PAIN_SPLIT, 
     MOVE_RECYCLE,
     MOVE_PLAY_ROUGH,
     MOVE_LASH_OUT,
