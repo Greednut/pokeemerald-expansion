@@ -7079,6 +7079,16 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     
 };
 
+static const u16 sGlucursEggMoveLearnset[] = {
+    MOVE_METEOR_MASH,
+    MOVE_PURIFY,
+    MOVE_EXPLOSION,
+    MOVE_LEECH_LIFE,
+    MOVE_HYPNOSIS,
+    MOVE_MEAN_LOOK, 
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sAmalgumEggMoveLearnset[] = {
     MOVE_DECORATE,
     MOVE_PURIFY,
