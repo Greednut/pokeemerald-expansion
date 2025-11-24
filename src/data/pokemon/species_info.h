@@ -12278,6 +12278,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Saccestoda)
        .levelUpLearnset = sSaccestodaLevelUpLearnset,
+       .teachableLearnset = sSaccestodaTeachableLearnset,
+       .eggMoveLearnset = sSaccestodaEggMoveLearnset,
     },
 
         [SPECIES_GLUCURS] =
@@ -12333,6 +12335,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Glucurs)
        .levelUpLearnset = sGlucursLevelUpLearnset,
+       .teachableLearnset = sGlucursTeachableLearnset,
+       .eggMoveLearnset = sGlucursEggMoveLearnset,
     },
 
         [SPECIES_AMALGUM] =

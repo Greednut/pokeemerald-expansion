@@ -7079,12 +7079,22 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     
 };
 
+static const u16 sSaccestodaEggMoveLearnset[] = {
+    MOVE_LIGHT_OF_RUIN,
+    MOVE_LEECH_SEED,
+    MOVE_SCREECH,
+    MOVE_SPIRIT_BREAK,
+    MOVE_BATON_PASS,
+    MOVE_SPEED_SWAP, 
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sGlucursEggMoveLearnset[] = {
     MOVE_METEOR_MASH,
     MOVE_PURIFY,
     MOVE_SELF_DESTRUCT,
     MOVE_LEECH_LIFE,
-    MOVE_HYPNOSIS,
+    MOVE_SPEED_SWAP,
     MOVE_MEAN_LOOK, 
     MOVE_UNAVAILABLE,
 };
