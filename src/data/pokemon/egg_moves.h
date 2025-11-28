@@ -7200,6 +7200,16 @@ static const u16 sColomboltEggMoveLearnset[] = {
     MOVE_HEAD_CHARGE,
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
+};
+
+static const u16 sEmojinnEggMoveLearnset[] = {
+    MOVE_FOLLOW_ME,
+    MOVE_MEMENTO,
+    MOVE_BARRIER,
+    MOVE_HYDRO_PUMP,
+    MOVE_ME_FIRST,
+    MOVE_TRUMP_CARD,
+    MOVE_UNAVAILABLE,
 }; 
 
 static const u16 sUlmiraintEggMoveLearnset[] = {

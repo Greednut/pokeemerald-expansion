@@ -18179,6 +18179,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Emojinn)
        .levelUpLearnset = sEmojinnLevelUpLearnset,
+       .teachableLearnset = sEmojinnTeachableLearnset,
+       .eggMoveLearnset = sEmojinnEggMoveLearnset,
        .formSpeciesIdTable = sEmojinnFormSpeciesIdTable,
        .formChangeTable = sEmojinnFormChangeTable,
     },
@@ -18235,6 +18237,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Emojinn)
        .levelUpLearnset = sEmojinnLevelUpLearnset,
+       .teachableLearnset = sEmojinnTeachableLearnset,
+       .eggMoveLearnset = sEmojinnEggMoveLearnset,
        .formSpeciesIdTable = sEmojinnFormSpeciesIdTable,
        .formChangeTable = sEmojinnFormChangeTable,
     },
@@ -18291,6 +18295,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Emojinn)
        .levelUpLearnset = sEmojinnLevelUpLearnset,
+       .teachableLearnset = sEmojinnTeachableLearnset,
+       .eggMoveLearnset = sEmojinnEggMoveLearnset,
        .formSpeciesIdTable = sEmojinnFormSpeciesIdTable,
        .formChangeTable = sEmojinnFormChangeTable,
     },
@@ -18347,6 +18353,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Emojinn)
        .levelUpLearnset = sEmojinnLevelUpLearnset,
+       .teachableLearnset = sEmojinnTeachableLearnset,
+       .eggMoveLearnset = sEmojinnEggMoveLearnset,
        .formSpeciesIdTable = sEmojinnFormSpeciesIdTable,
        .formChangeTable = sEmojinnFormChangeTable,
     },
@@ -19900,6 +19908,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Theforest)
        .levelUpLearnset = sTheforestLevelUpLearnset,
+       .teachableLearnset = sTheforestTeachableLearnset,
     },
         [SPECIES_DOOMSDAY] =
     { 
