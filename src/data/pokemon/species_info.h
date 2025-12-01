@@ -8162,6 +8162,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Sporestool)
        .levelUpLearnset = sSporestoolLevelUpLearnset,
+       .teachableLearnset = sSporestoolTeachableLearnset,
+       .eggMoveLearnset = sVirtuitaEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_VIRTUITA}),
     },
     
