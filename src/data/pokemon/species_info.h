@@ -14370,6 +14370,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
       .iconPalIndex = 0,
       FOOTPRINT(Wawho)
       .levelUpLearnset = sWawhoLevelUpLearnset,
+      .teachableLearnset = sWawhoTeachableLearnset,
+      .eggMoveLearnset = sWawhoEggMoveLearnset,
     },
         [SPECIES_REGIRODE] =
     { 
