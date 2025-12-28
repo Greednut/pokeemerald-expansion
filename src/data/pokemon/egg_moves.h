@@ -6342,6 +6342,16 @@ static const u16 sLemirethunEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sBuggyEggMoveLearnset[] = {
+    MOVE_PIN_MISSILE,
+    MOVE_RAGE_POWDER,
+    MOVE_LOCK_ON,
+    MOVE_FAKE_OUT,
+    MOVE_METAL_BURST,
+    MOVE_BARRAGE,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sWhipsicuffsEggMoveLearnset[] = {
     MOVE_SPIKES,
     MOVE_CIRCLE_THROW,
@@ -7170,6 +7180,16 @@ static const u16 sGargarramerEggMoveLearnset[] = {
     MOVE_ROCK_WRECKER,
     MOVE_NOBLE_ROAR,
     MOVE_WIDE_GUARD,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sSkallaxyEggMoveLearnset[] = {
+    MOVE_DRAGON_RUSH,
+    MOVE_COSMIC_POWER,
+    MOVE_SKY_ATTACK,
+    MOVE_AGILITY,
+    MOVE_BURN_UP,
+    MOVE_FLAME_CHARGE,
     MOVE_UNAVAILABLE,
 }; 
 static const u16 sClobberEggMoveLearnset[] = {

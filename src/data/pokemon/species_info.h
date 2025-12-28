@@ -746,6 +746,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Buggy)
        .levelUpLearnset = sBuggyLevelUpLearnset,
+       .teachableLearnset = sBuggyTeachableLearnset,
+       .eggMoveLearnset = sBuggyEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_BUGATTI},
                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_BULLEPEDE}),                           
     },
@@ -802,6 +804,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Bugatti)
        .levelUpLearnset = sBugattiLevelUpLearnset,
+       .teachableLearnset = sBugattiTeachableLearnset,
+       .eggMoveLearnset = sBuggyEggMoveLearnset,
     },
 
         [SPECIES_BULLEPEDE] =
@@ -857,6 +861,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Bullepede)
        .levelUpLearnset = sBullepedeLevelUpLearnset,
+       .teachableLearnset = sBullepedeTeachableLearnset,
+       .eggMoveLearnset = sBuggyEggMoveLearnset,
     },
 
         [SPECIES_WHIMPLE] =
@@ -14426,6 +14432,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Regirode)
        .levelUpLearnset = sRegirodeLevelUpLearnset,
+       .teachableLearnset = sRegirodeTeachableLearnset,
     },
         [SPECIES_REGIMELT] =
     { 
@@ -14480,6 +14487,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Regimelt)
        .levelUpLearnset = sRegimeltLevelUpLearnset,
+       .teachableLearnset = sRegimeltTeachableLearnset,
     },
         [SPECIES_REGIRUST] =
     { 
@@ -14534,6 +14542,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Regirust)
        .levelUpLearnset = sRegirustLevelUpLearnset,
+       .teachableLearnset = sRegirustTeachableLearnset,
     },
         [SPECIES_REGISHORT] =
     { 
@@ -14588,6 +14597,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Regishort)
        .levelUpLearnset = sRegishortLevelUpLearnset,
+       .teachableLearnset = sRegishortTeachableLearnset,
     },
         [SPECIES_REGICIDE] =
     { 
@@ -14642,6 +14652,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Regicide)
        .levelUpLearnset = sRegicideLevelUpLearnset,
+       .teachableLearnset = sRegicideTeachableLearnset,
     },
         [SPECIES_REGIGIGONE] =
     { 
@@ -14696,6 +14707,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Regigigone)
        .levelUpLearnset = sRegigigoneLevelUpLearnset,
+       .teachableLearnset = sRegigigoneTeachableLearnset,
     },
         [SPECIES_GLACIUN] =
     { 
@@ -16957,6 +16969,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Borkosmos)
        .levelUpLearnset = sBorkosmosLevelUpLearnset,
+       .teachableLearnset = sBorkosmosTeachableLearnset,
+       .eggMoveLearnset = sSkallaxyEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SKALLAXY}),
     },
 
@@ -17013,6 +17027,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Skallaxy)
        .levelUpLearnset = sSkallaxyLevelUpLearnset,
+       .teachableLearnset = sSkallaxyTeachableLearnset,
+       .eggMoveLearnset = sSkallaxyEggMoveLearnset,
     },
 
         [SPECIES_AIRUITE] =
