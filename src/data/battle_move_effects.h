@@ -2419,4 +2419,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectLunarImpact,
         .battleTvScore = 1,
     },
+
+    [EFFECT_BORE_BITE] = 
+    {
+        .battleScript = BattleScript_EffectBoreBite,
+        .battleTvScore = 1,
+    },
 };
