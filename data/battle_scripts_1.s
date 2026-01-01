@@ -5685,6 +5685,26 @@ BattleScript_EffectCamouflage::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectBoreBite::
+	call BattleScript_EffectHit_Ret
+	tryfaintmon BS_TARGET
+	jumpiftype BS_TARGET, TYPE_STEEL, BattleScript_BoreBiteDefenseDown
+	goto BattleScript_MoveEnd
+BattleScript_BoreBiteDefenseDown:
+	setstatchanger STAT_DEF, 2, TRUE
+	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_EffectBoreBiteEnd
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_BoreBiteDefenseDownDoAnim
+	pause B_WAIT_TIME_SHORTEST
+	goto BattleScript_EffectBoreBiteEnd
+BattleScript_BoreBiteDefenseDownDoAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_EffectBoreBiteEnd
+BattleScript_EffectBoreBiteEnd:
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectTrickStab::
 	call BattleScript_EffectHit_Ret
 	tryfaintmon BS_TARGET

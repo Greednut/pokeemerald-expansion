@@ -23268,7 +23268,51 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_JetPunch,
     },
 
+    [MOVE_BORE_BITE] =
+    {
+        .name = COMPOUND_STRING("Bore Bite"),
+        .description = COMPOUND_STRING(
+            "A burrowing bite that\n"
+            "sharply lowers the defense\n"
+            "of Steel-types."),
+        .effect = EFFECT_BORE_BITE,
+        .power = 90,
+        .type = TYPE_BUG,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_BugBite,
+    },
 
+        [MOVE_FLINT_FANG] =
+    {
+        .name = COMPOUND_STRING("Flint Fang"),
+        .description = COMPOUND_STRING(
+            "May cause flinching.\n"
+            "Will burn Steel-type foes."),
+        .effect = EFFECT_HIT,
+        .power = 65,
+        .type = TYPE_ROCK,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .bitingMove = TRUE,
+        .argument = { .type = TYPE_GRASS },
+        .additionalEffects = ADDITIONAL_EFFECTS(
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }
+        ),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .battleAnimScript = gBattleAnimMove_FireFang,
+    },
 
     
     // END OF CAPRICCIO MOVES
