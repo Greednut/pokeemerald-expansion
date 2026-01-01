@@ -6445,6 +6445,16 @@ static const u16 sKonekothEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sStrixnightEggMoveLearnset[] = {
+    MOVE_CLEAR_SMOG,
+    MOVE_NIGHT_DAZE, 
+    MOVE_FEATHER_DANCE, //New Move
+    MOVE_MIRROR_MOVE,
+    MOVE_EERIE_SPELL, //New Move
+    MOVE_PHANTOM_FORCE, //New Move
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sMogumoleEggMoveLearnset[] = {
     MOVE_CRUSH_CLAW,
     MOVE_RAPID_SPIN,
@@ -6542,6 +6552,16 @@ static const u16 sRavarnishEggMoveLearnset[] = {
     MOVE_OCTAZOOKA,
     MOVE_BANEFUL_BUNKER,
     MOVE_ACID_SPRAY,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKrackodemonEggMoveLearnset[] = {
+    MOVE_HURRICANE,
+    MOVE_TWINEEDLE,
+    MOVE_SPIKE_CANNON,
+    MOVE_HEAD_SMASH,
+    MOVE_AURORA_BEAM,
+    MOVE_ACID_ARMOR,
     MOVE_UNAVAILABLE,
 };
 
@@ -6952,6 +6972,16 @@ static const u16 sCristaniumEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sEpipherorEggMoveLearnset[] = {
+    MOVE_DOOM_DESIRE, 
+    MOVE_HURRICANE, 
+    MOVE_BOOMBURST, 
+    MOVE_FREEZING_GLARE, 
+    MOVE_SING, 
+    MOVE_NIGHTMARE, 
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sLeopawnEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_REVENGE,
@@ -6999,6 +7029,16 @@ static const u16 sOnsenpuraEggMoveLearnset[] = {
     MOVE_ACID_SPRAY,
     MOVE_SOAK,
     MOVE_WRAP,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sHaarshogunEggMoveLearnset[] = {
+    MOVE_ARM_THRUST,
+    MOVE_PARTING_SHOT,
+    MOVE_MIST_BALL,
+    MOVE_TOXIC_SPIKES,
+    MOVE_ICICLE_CRASH,
+    MOVE_EXTREME_EDGE,
     MOVE_UNAVAILABLE,
 };
 

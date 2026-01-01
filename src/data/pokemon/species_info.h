@@ -3084,6 +3084,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Stowlet)
        .levelUpLearnset = sStowletLevelUpLearnset,
+       .teachableLearnset = sStowletTeachableLearnset,
+       .eggMoveLearnset = sStrixnightEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_STRIXNIGHT}),
     },
 
@@ -3139,6 +3141,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Strixnight)
        .levelUpLearnset = sStrixnightLevelUpLearnset,
+       .teachableLearnset = sStrixnightTeachableLearnset,
+       .eggMoveLearnset = sStrixnightEggMoveLearnset,
     },
         [SPECIES_MOGUMOLE] =
     { 
@@ -4378,6 +4382,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Krissy)
        .levelUpLearnset = sKrissyLevelUpLearnset,
+       .teachableLearnset = sKrissyTeachableLearnset,
+       .eggMoveLearnset = sKrackodemonEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_KRACKODEMON}),
     },
 
@@ -4434,6 +4440,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Krackodemon)
        .levelUpLearnset = sKrackodemonLevelUpLearnset,
+       .teachableLearnset = sKrackodemonTeachableLearnset,
+       .eggMoveLearnset = sKrackodemonEggMoveLearnset,
        },
 
        [SPECIES_TRIDERLING] =
@@ -9905,6 +9913,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Peasol)
        .levelUpLearnset = sPeasolLevelUpLearnset,
+       .teachableLearnset = sPeasolTeachableLearnset,
+       .eggMoveLearnset = sHaarshogunEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_VAPONOBI}),
     },
         [SPECIES_VAPONOBI] =
@@ -9960,6 +9970,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Vaponobi)
        .levelUpLearnset = sVaponobiLevelUpLearnset,
+       .teachableLearnset = sVaponobiTeachableLearnset,
+       .eggMoveLearnset = sHaarshogunEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_HAARSHOGUN}),
     },
         [SPECIES_HAARSHOGUN] =
@@ -10015,6 +10027,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Haarshogun)
        .levelUpLearnset = sHaarshogunLevelUpLearnset,
+       .teachableLearnset = sHaarshogunTeachableLearnset,
+       .eggMoveLearnset = sHaarshogunEggMoveLearnset,
     },
         [SPECIES_SIMIONACH_UNFOCUSED] =
     { 
@@ -10181,6 +10195,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Epipheror)
        .levelUpLearnset = sEpipherorLevelUpLearnset,
+       .teachableLearnset = sEpipherorTeachableLearnset,
+       .eggMoveLearnset = sEpipherorEggMoveLearnset,
     },
         [SPECIES_LEOPAWN] =
     { 
