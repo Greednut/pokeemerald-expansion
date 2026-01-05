@@ -6362,6 +6362,16 @@ static const u16 sWhipsicuffsEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sDisbearyEggMoveLearnset[] = {
+    MOVE_ENCORE,
+    MOVE_POWER_TRIP,
+    MOVE_REVENGE,
+    MOVE_BATON_PASS,
+    MOVE_PARTING_SHOT,
+    MOVE_YAWN,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sAmpstarEggMoveLearnset[] = {
     MOVE_FLAME_BURST,
     MOVE_BATON_PASS,
@@ -6506,7 +6516,7 @@ static const u16 sFungnetEggMoveLearnset[] = {
 };
 
 static const u16 sArachnoteEggMoveLearnset[] = {
-    //MOVE_BORE_BITE,
+    MOVE_BORE_BITE,
     MOVE_HEAD_CHARGE,
     MOVE_FORESIGHT,
     MOVE_UPROAR,
@@ -6694,6 +6704,16 @@ static const u16 sSkoxiousEggMoveLearnset[] = {
     MOVE_YAWN,
     MOVE_SOAK,
     MOVE_TOXIC_SPIKES,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sRootchewEggMoveLearnset[] = {
+    MOVE_AROMATHERAPY,
+    MOVE_BELCH,
+    MOVE_HEAD_SMASH,
+    MOVE_FOLLOW_ME,
+    MOVE_SPIKY_SHIELD,
+    MOVE_WISH,
     MOVE_UNAVAILABLE,
 };
 
@@ -6913,7 +6933,7 @@ static const u16 sPiuretteEggMoveLearnset[] = {
 static const u16 sKorokamiEggMoveLearnset[] = {
     MOVE_SMELLING_SALTS,
     MOVE_BONE_RUSH,
-    MOVE_STRUGGLE_BUG, ////BORE BITE
+    MOVE_BORE_BITE, 
     MOVE_SPOOK_OUT,
     MOVE_SHADOW_BONE,
     MOVE_MIND_READER,
@@ -6973,12 +6993,12 @@ static const u16 sCristaniumEggMoveLearnset[] = {
 };
 
 static const u16 sEpipherorEggMoveLearnset[] = {
-    MOVE_DOOM_DESIRE, 
-    MOVE_HURRICANE, 
     MOVE_BOOMBURST, 
+    MOVE_DOOM_DESIRE, 
     MOVE_FREEZING_GLARE, 
-    MOVE_SING, 
-    MOVE_NIGHTMARE, 
+    MOVE_MEMENTO, 
+    MOVE_METAL_SOUND, 
+    MOVE_NIGHTMARE,
     MOVE_UNAVAILABLE,
 };
 
@@ -7125,6 +7145,16 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     MOVE_FLYING_PRESS,
     MOVE_HEAD_CHARGE,
     MOVE_FINAL_GAMBIT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sRendalopodEggMoveLearnset[] = {
+    MOVE_PURSUIT,
+    MOVE_RAPID_SPIN,
+    MOVE_SCARY_FACE,
+    MOVE_VOLT_TACKLE,
+    MOVE_WHIRLPOOL,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
     
 };

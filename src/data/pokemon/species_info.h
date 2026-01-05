@@ -1091,6 +1091,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Afloof)
        .levelUpLearnset = sAfloofLevelUpLearnset,
+       .teachableLearnset = sAfloofTeachableLearnset,
+       .eggMoveLearnset = sDisbearyEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DISBEARY_NICE}),
     },
 
@@ -1147,6 +1149,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Disbeary)
        .levelUpLearnset = sDisbearyLevelUpLearnset,
+       .teachableLearnset = sDisbearyTeachableLearnset,
+       .eggMoveLearnset = sDisbearyEggMoveLearnset,
        .formSpeciesIdTable = sDisbearyFormSpeciesIdTable,
        .formChangeTable = sDisbearyFormChangeTable,
     },
@@ -1204,6 +1208,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Disbeary)
        .levelUpLearnset = sDisbearyLevelUpLearnset,
+       .teachableLearnset = sDisbearyTeachableLearnset,
+       .eggMoveLearnset = sDisbearyEggMoveLearnset,
        .formSpeciesIdTable = sDisbearyFormSpeciesIdTable,
        .formChangeTable = sDisbearyFormChangeTable,
     },
@@ -5876,6 +5882,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Sanickel)
        .levelUpLearnset = sSanickelLevelUpLearnset,
+       .teachableLearnset = sSanickelTeachableLearnset,
+       .eggMoveLearnset = sSkoxiousEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_SKOXIOUS}),
     },
     
@@ -5932,6 +5940,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Skoxious)
        .levelUpLearnset = sSkoxiousLevelUpLearnset,
+       .teachableLearnset = sSkoxiousTeachableLearnset,
+       .eggMoveLearnset = sSkoxiousEggMoveLearnset,
     },
     
         [SPECIES_ROOTCHEW] =
@@ -5987,6 +5997,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Rootchew)
        .levelUpLearnset = sRootchewLevelUpLearnset,
+       .teachableLearnset = sRootchewTeachableLearnset,
+       .eggMoveLearnset = sRootchewEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_HOGNAW},
                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_TOOFGREW}),
     },
@@ -6044,6 +6056,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Toofgrew)
        .levelUpLearnset = sToofgrewLevelUpLearnset,
+       .teachableLearnset = sToofgrewTeachableLearnset,
+       .eggMoveLearnset = sRootchewEggMoveLearnset,
     },
     
         [SPECIES_HOGNAW] =
@@ -6099,6 +6113,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Hognaw)
        .levelUpLearnset = sHognawLevelUpLearnset,
+       .teachableLearnset = sHognawTeachableLearnset,
+       .eggMoveLearnset = sRootchewEggMoveLearnset,
     },
 
         [SPECIES_FRYZZLE] =
@@ -12247,6 +12263,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Rendalopod)
        .levelUpLearnset = sRendalopodLevelUpLearnset,
+       .teachableLearnset = sRendalopodTeachableLearnset,
+       .eggMoveLearnset = sRendalopodEggMoveLearnset,
        },
 
         [SPECIES_SACCESTODA] =

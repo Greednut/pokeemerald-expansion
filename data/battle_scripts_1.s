@@ -2002,7 +2002,7 @@ BattleScript_ToxicThreadPrintString::
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_ToxicThreadTryPsn::
-	seteffectprimary MOVE_EFFECT_POISON
+	seteffectprimary MOVE_EFFECT_TOXIC
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectVenomDrench::
