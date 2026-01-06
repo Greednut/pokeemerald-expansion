@@ -23858,7 +23858,7 @@ static const struct LevelUpMove sCommutantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_AUTOTOMIZE), 
     LEVEL_UP_MOVE(35, MOVE_HEAT_CRASH), 
     LEVEL_UP_MOVE(39, MOVE_WILD_CHARGE), 
-    //LEVEL_UP_MOVE(43, MOVE_CRITICAL_MASS), 
+    LEVEL_UP_MOVE(43, MOVE_CRITICAL_MASS), 
     LEVEL_UP_MOVE(48, MOVE_GEAR_GRIND), 
     LEVEL_UP_MOVE(54, MOVE_FLARE_BLITZ), 
     LEVEL_UP_MOVE(58, MOVE_VOLT_TACKLE), 
@@ -23886,7 +23886,7 @@ static const struct LevelUpMove sHybrotamusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_AUTOTOMIZE), 
     LEVEL_UP_MOVE(35, MOVE_HEAT_CRASH), 
     LEVEL_UP_MOVE(39, MOVE_WILD_CHARGE), 
-    //LEVEL_UP_MOVE(43, MOVE_CRITICAL_MASS), 
+    LEVEL_UP_MOVE(43, MOVE_CRITICAL_MASS), 
     LEVEL_UP_MOVE(48, MOVE_GEAR_GRIND), 
     LEVEL_UP_MOVE(54, MOVE_FLARE_BLITZ), 
     LEVEL_UP_MOVE(58, MOVE_VOLT_TACKLE), 
@@ -23969,7 +23969,7 @@ static const struct LevelUpMove sVinedupLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_EXPLOSION),        
     LEVEL_UP_MOVE(52, MOVE_PYRO_BALL),    
     LEVEL_UP_MOVE(57, MOVE_POWER_WHIP), 
-    LEVEL_UP_MOVE(63, MOVE_SELF_DESTRUCT), //// HOLY DUTY REPLACEMENT    
+    LEVEL_UP_MOVE(63, MOVE_CRITICAL_MASS),  
     LEVEL_UP_MOVE(68, MOVE_MIND_BLOWN),                                                           
     LEVEL_UP_END
     };
@@ -23996,7 +23996,7 @@ static const struct LevelUpMove sRamboomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_EXPLOSION),        
     LEVEL_UP_MOVE(52, MOVE_PYRO_BALL),    
     LEVEL_UP_MOVE(57, MOVE_POWER_WHIP), 
-    LEVEL_UP_MOVE(63, MOVE_SELF_DESTRUCT), //// HOLY DUTY REPLACEMENT    
+    LEVEL_UP_MOVE(63, MOVE_CRITICAL_MASS),    
     LEVEL_UP_MOVE(68, MOVE_MIND_BLOWN),                                                           
     LEVEL_UP_END
     };
@@ -24024,7 +24024,7 @@ static const struct LevelUpMove sVinebombLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_EXPLOSION),        
     LEVEL_UP_MOVE(52, MOVE_PYRO_BALL),    
     LEVEL_UP_MOVE(57, MOVE_POWER_WHIP), 
-    LEVEL_UP_MOVE(63, MOVE_SELF_DESTRUCT), //// HOLY DUTY REPLACEMENT    
+    LEVEL_UP_MOVE(63, MOVE_CRITICAL_MASS), 
     LEVEL_UP_MOVE(68, MOVE_MIND_BLOWN),                                                           
     LEVEL_UP_END
     };
@@ -25214,7 +25214,7 @@ static const struct LevelUpMove sXeninterLevelUpLearnset[] = {
    LEVEL_UP_MOVE(42, MOVE_SLUDGE_BOMB),
    LEVEL_UP_MOVE(45, MOVE_LEECH_LIFE),
    LEVEL_UP_MOVE(50, MOVE_RECOVER),
-   //LEVEL_UP_MOVE(54, MOVE_NUCLEAR_WINTER),
+   LEVEL_UP_MOVE(54, MOVE_NUCLEAR_WINTER),
    LEVEL_UP_MOVE(60, MOVE_ICE_BURN),
    LEVEL_UP_MOVE(66, MOVE_FUSION_FLARE),
    LEVEL_UP_MOVE(66, MOVE_FUSION_BOLT),
@@ -26415,7 +26415,7 @@ static const struct LevelUpMove sHydroilLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(55, MOVE_STEAM_ERUPTION),
     LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(60, MOVE_OVERHEAT), // Replace with Holy Duty once implemented
+    LEVEL_UP_MOVE(60, MOVE_CRITICAL_MASS), 
    LEVEL_UP_END
    };
 static const struct LevelUpMove sCoilspillLevelUpLearnset[] = {
@@ -27236,7 +27236,7 @@ static const struct LevelUpMove sEpilateLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_SACRED_FIRE),
     LEVEL_UP_MOVE(51, MOVE_EXPLOSION),
     LEVEL_UP_MOVE(55, MOVE_AEROBLAST),
-    LEVEL_UP_MOVE(60, MOVE_EXPLOSION), // Replace with the holy duty replacement whenever done
+    LEVEL_UP_MOVE(60, MOVE_CRITICAL_MASS), 
     LEVEL_UP_END
    };
 static const struct LevelUpMove sMoblinLevelUpLearnset[] = {

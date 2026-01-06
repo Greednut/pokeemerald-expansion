@@ -6428,7 +6428,7 @@ static const u16 sWalkalackEggMoveLearnset[] = {
     MOVE_CROSS_CHOP, 
     MOVE_FELL_STINGER,
     MOVE_HI_JUMP_KICK,
-    //MOVE_CRITICAL_MASS,
+    MOVE_CRITICAL_MASS,
     MOVE_TOXIC_SPIKES,
     MOVE_X_SCISSOR,
     MOVE_UNAVAILABLE,
@@ -7191,7 +7191,7 @@ static const u16 sAmalgumEggMoveLearnset[] = {
 
 static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_AUTOTOMIZE,
-    //MOVE_CRITICAL_MASS,
+    MOVE_CRITICAL_MASS,
     MOVE_ENCORE,
     MOVE_MAGMA_STORM,
     MOVE_METEOR_MASH,

@@ -23365,6 +23365,58 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Crunch,
     },
 
+    [MOVE_CRITICAL_MASS] =
+    {
+        .name = COMPOUND_STRING("Critical Mass"),
+        .description = COMPOUND_STRING(
+            "Inflicts severe damage but\n"
+            "makes the user faint."),
+        .effect = EFFECT_EXPLOSION,
+        .power = 200,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .criticalHitStage = 2,
+        .pp = 5,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .parentalBondBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_SelfDestruct,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_NUCLEAR_WINTER] =
+    {
+        .name = COMPOUND_STRING("Nuclear Winter"),
+        .description = COMPOUND_STRING(
+            "Super effective on Poison-\n"
+            "types. May cause frostbite."),
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
+        .power = 110,
+        .type = TYPE_ICE,
+        .accuracy = 70,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .alwaysHitsInHailSnow = TRUE,
+        .argument = { .type = TYPE_POISON },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Blizzard,
+    },
+
+
 
     
     // END OF CAPRICCIO MOVES

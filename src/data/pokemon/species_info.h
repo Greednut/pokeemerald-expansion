@@ -3256,7 +3256,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Bandicute,
    .shinyPalette = gMonShinyPalette_Bandicute,
    .iconSprite = gMonIcon_Bandicute,
-   .iconPalIndex = 5,
+   .iconPalIndex = 2,
    FOOTPRINT(Bandicute)
    .levelUpLearnset = sBandicuteLevelUpLearnset,
    .teachableLearnset = sBandicuteTeachableLearnset,
@@ -3314,7 +3314,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Naughtycoot,
    .shinyPalette = gMonShinyPalette_Naughtycoot,
    .iconSprite = gMonIcon_Naughtycoot,
-   .iconPalIndex = 5,
+   .iconPalIndex = 2,
    FOOTPRINT(Naughtycoot)
    .levelUpLearnset = sNaughtycootLevelUpLearnset,
    .teachableLearnset = sNaughtycootTeachableLearnset,
@@ -5707,7 +5707,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Braxitytan,
        .shinyPalette = gMonShinyPalette_Braxitytan,
        .iconSprite = gMonIcon_Braxitytan,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Braxitytan)
        .levelUpLearnset = sBraxitytanLevelUpLearnset,
        .teachableLearnset = sBraxitytanTeachableLearnset,
