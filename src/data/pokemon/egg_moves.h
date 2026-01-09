@@ -6808,6 +6808,16 @@ static const u16 sBarabyssEggMoveLearnset[] = {
     MOVE_MACH_PUNCH,
     MOVE_UNAVAILABLE,
 };
+static const u16 sStrollgeEggMoveLearnset[] = {
+    MOVE_THUNDER_CAGE, 
+    MOVE_WISH, 
+    MOVE_MEMENTO, 
+    MOVE_REFLECT_TYPE, 
+    MOVE_DESTINY_BOND, 
+    MOVE_NATURES_MADNESS, 
+MOVE_UNAVAILABLE, 
+}; 
+
 
 static const u16 sFractyvernEggMoveLearnset[] = {
     MOVE_DRAGON_RUSH,
@@ -6907,6 +6917,15 @@ static const u16 sShroomaliceEggMoveLearnset[] = {
     MOVE_POISON_POWDER,
     MOVE_POLLEN_PUFF,
     MOVE_PETAL_DANCE,
+    MOVE_UNAVAILABLE,
+};
+static const u16 sKnittenEggMoveLearnset[] = {
+    MOVE_SNARL,
+    MOVE_WISH,
+    MOVE_FAKE_TEARS,
+    MOVE_COPYCAT,
+    MOVE_TEATIME,
+    MOVE_LAST_RESORT,
     MOVE_UNAVAILABLE,
 };
 
@@ -7186,6 +7205,16 @@ static const u16 sAmalgumEggMoveLearnset[] = {
     MOVE_MIST_BALL,
     MOVE_ACID_SPRAY,
     MOVE_SPIRIT_BREAK,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sOccloneEggMoveLearnset[] = {
+    MOVE_FAKE_OUT,
+    MOVE_WIDE_GUARD, 
+    MOVE_FELL_STINGER, 
+    MOVE_STICKY_WEB, 
+    MOVE_FIRE_SPIN,
+    MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
 

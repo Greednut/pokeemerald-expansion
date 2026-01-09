@@ -3256,7 +3256,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Bandicute,
    .shinyPalette = gMonShinyPalette_Bandicute,
    .iconSprite = gMonIcon_Bandicute,
-   .iconPalIndex = 2,
+   .iconPalIndex = 0,
    FOOTPRINT(Bandicute)
    .levelUpLearnset = sBandicuteLevelUpLearnset,
    .teachableLearnset = sBandicuteTeachableLearnset,
@@ -3544,7 +3544,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Picantero,
    .shinyPalette = gMonShinyPalette_Picantero,
    .iconSprite = gMonIcon_Picantero,
-   .iconPalIndex = 0,
+   .iconPalIndex = 1,
    FOOTPRINT(Picantero)
    .levelUpLearnset = sPicanteroLevelUpLearnset,
    .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SHERIFUEGO}),
@@ -3600,7 +3600,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Sherifuego,
    .shinyPalette = gMonShinyPalette_Sherifuego,
    .iconSprite = gMonIcon_Sherifuego,
-   .iconPalIndex = 0,
+   .iconPalIndex = 1,
    FOOTPRINT(Sherifuego)
    .levelUpLearnset = sSherifuegoLevelUpLearnset,
     },
@@ -3768,7 +3768,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Shroomag,
        .shinyPalette = gMonShinyPalette_Shroomag,
        .iconSprite = gMonIcon_Shroomag,
-       .iconPalIndex = 1,
+       .iconPalIndex = 2,
        FOOTPRINT(Shroomag)
        .levelUpLearnset = sShroomagLevelUpLearnset,
        .teachableLearnset = sShroomagTeachableLearnset,
@@ -3825,7 +3825,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Fungnet,
        .shinyPalette = gMonShinyPalette_Fungnet,
        .iconSprite = gMonIcon_Fungnet,
-       .iconPalIndex = 1,
+       .iconPalIndex = 2,
        FOOTPRINT(Fungnet)
        .levelUpLearnset = sFungnetLevelUpLearnset,
        .teachableLearnset = sFungnetTeachableLearnset,
@@ -6456,6 +6456,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Seaman)
        .levelUpLearnset = sSeamanLevelUpLearnset,
+       .teachableLearnset = sSeamanTeachableLearnset,
+       .eggMoveLearnset = sBarabyssEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_BARABYSS}),
     },
 
@@ -6512,6 +6514,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Barabyss)
        .levelUpLearnset = sBarabyssLevelUpLearnset,
+       .teachableLearnset = sBarabyssTeachableLearnset,
+       .eggMoveLearnset = sBarabyssEggMoveLearnset,
     },
 
         [SPECIES_STROLLGE] =
@@ -6566,6 +6570,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Strollge)
        .levelUpLearnset = sStrollgeLevelUpLearnset,
+       .teachableLearnset = sStrollgeTeachableLearnset,
+       .eggMoveLearnset = sStrollgeEggMoveLearnset,
     },
 
         [SPECIES_WINKHULU] =
@@ -8758,6 +8764,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Knitten)
        .levelUpLearnset = sKnittenLevelUpLearnset,
+       .teachableLearnset = sKnittenTeachableLearnset,
+       .eggMoveLearnset = sKnittenEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SABSUTE, CONDITIONS({IF_MIN_FRIENDSHIP, 150})},
                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_DOLLGHOST}),
     },
@@ -8813,6 +8821,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Sabsute)
        .levelUpLearnset = sSabsuteLevelUpLearnset,
+       .teachableLearnset = sSabsuteTeachableLearnset,
+       .eggMoveLearnset = sKnittenEggMoveLearnset,
     },
         [SPECIES_DOLLGHOST] =
     { 
@@ -8867,6 +8877,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Dollghost)
        .levelUpLearnset = sDollghostLevelUpLearnset,
+       .teachableLearnset = sDollghostTeachableLearnset,
+       .eggMoveLearnset = sKnittenEggMoveLearnset,
     },
         [SPECIES_PARMIAUSAN] =
     { 
@@ -12424,7 +12436,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .frontAnimId = ANIM_GROW_VIBRATE,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
-       .backPic = gMonBackPic_Amalgum,
+       .backPic = gMonBackPic_,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
@@ -12490,7 +12502,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_Vortrix,
        .iconPalIndex = 1,
        FOOTPRINT(Vortrix)
-       .levelUpLearnset = sVortrixLevelUpLearnset,
+       .levelUpLearnset = sOccloneLevelUpLearnset,
+       .teachableLearnset = sOccloneTeachableLearnset,
+       .eggMoveLearnset = sOccloneEggMoveLearnset,
     },
 
         [SPECIES_JAHL] =
