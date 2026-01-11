@@ -6575,6 +6575,16 @@ static const u16 sKrackodemonEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sIndigniflyEggMoveLearnset[] = {
+    MOVE_CHILI_POWDER,
+    MOVE_POLLEN_PUFF,
+    MOVE_REFLECT_TYPE,
+    MOVE_WHIRLWIND,
+    MOVE_HEAL_BLOCK,
+    MOVE_PSYCHO_SHIFT,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sPrimiteveEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_MILK_DRINK,
@@ -6967,7 +6977,6 @@ static const u16 sSepultureEggMoveLearnset[] = {
     MOVE_METAL_SOUND,
     MOVE_TOXIC_SPIKES,
     MOVE_UNAVAILABLE,
-    MOVE_UNAVAILABLE,
 };
 
 
@@ -7228,6 +7237,16 @@ static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sPeguiEggMoveLearnset[] = {
+    MOVE_SUBMISSION,
+    MOVE_MEGAHORN,
+    MOVE_AGILITY,
+    MOVE_AURORA_VEIL,
+    MOVE_AIR_SLASH,
+    MOVE_MIST,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sBitteragonEggMoveLearnset[] = {
     MOVE_BOOMBURST,
     MOVE_ICICLE_SPEAR,
@@ -7284,7 +7303,7 @@ static const u16 sGargarramerEggMoveLearnset[] = {
 
 static const u16 sSkallaxyEggMoveLearnset[] = {
     MOVE_DRAGON_RUSH,
-    MOVE_COSMIC_POWER,
+    MOVE_INFERNO,
     MOVE_SKY_ATTACK,
     MOVE_AGILITY,
     MOVE_BURN_UP,
@@ -7340,6 +7359,16 @@ static const u16 sUlmiraintEggMoveLearnset[] = {
     MOVE_INFERNO,
     MOVE_UNAVAILABLE,
 
+};
+
+static const u16 sCrolordEggMoveLearnset[] = {
+    MOVE_TELEPORT,
+    MOVE_LIFE_DEW,
+    MOVE_DEFEND_ORDER,
+    MOVE_SHADOW_SNEAK,
+    MOVE_FREEZING_GLARE,
+    MOVE_AEROBLAST,
+    MOVE_UNAVAILABLE,
 };
 
 static const u16 sNoxiliumEggMoveLearnset[] = {

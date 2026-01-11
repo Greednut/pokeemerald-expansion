@@ -13919,6 +13919,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Indignifly)
        .levelUpLearnset = sIndigniflyLevelUpLearnset,
+      .teachableLearnset = sIndigniflyTeachableLearnset,
+      .eggMoveLearnset = sIndigniflyEggMoveLearnset,
     },
 
         [SPECIES_VANITWIN_MALE] =
@@ -16215,6 +16217,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Pegui)
        .levelUpLearnset = sPeguiLevelUpLearnset,
+       .teachableLearnset = sPeguiTeachableLearnset,
+       .eggMoveLearnset = sPeguiEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_PECHIT}),
     },
 
@@ -16269,8 +16273,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .shinyPalette = gMonShinyPalette_Pechit,
        .iconSprite = gMonIcon_Pechit,
        .iconPalIndex = 0,
-       FOOTPRINT(Pechit)
+       FOOTPRINT(Pechit) 
        .levelUpLearnset = sPechitLevelUpLearnset,
+       .teachableLearnset = sPechitTeachableLearnset,
+       .eggMoveLearnset = sPeguiEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_COPOLAR_FEMALE, CONDITIONS({IF_GENDER, MON_FEMALE})},
                                {EVO_LEVEL, 40, SPECIES_COPOLAR_MALE, CONDITIONS({IF_GENDER, MON_MALE})}),
     },
@@ -16327,7 +16333,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_Copolar,
        .iconPalIndex = 0,
        FOOTPRINT(Copolar)
-       .levelUpLearnset = sCopolarLevelUpLearnset,
+       .levelUpLearnset = sCopolarMLevelUpLearnset,
+       .teachableLearnset = sCopolarMTeachableLearnset,
+       .eggMoveLearnset = sPeguiEggMoveLearnset,
        .formSpeciesIdTable = sCopolarFormSpeciesIdTable,
     },
 
@@ -16383,7 +16391,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_CopolarFemale,
        .iconPalIndex = 0,
        FOOTPRINT(Copolar)
-       .levelUpLearnset = sCopolarLevelUpLearnset,
+       .levelUpLearnset = sCopolarFLevelUpLearnset,
+       .teachableLearnset = sCopolarFTeachableLearnset,
+       .eggMoveLearnset = sPeguiEggMoveLearnset,
        .formSpeciesIdTable = sCopolarFormSpeciesIdTable,
     },
 
@@ -18695,6 +18705,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Crolord)
        .levelUpLearnset = sCrolordLevelUpLearnset,
+       .teachableLearnset = sCrolordTeachableLearnset,
+       .eggMoveLearnset = sCrolordEggMoveLearnset,
     },
         [SPECIES_JARUMITE] =
     { 
