@@ -8426,6 +8426,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Yuukiino)
        .levelUpLearnset = sYuukiinoLevelUpLearnset,
+       .teachableLearnset = sYuukiinoTeachableLearnset,
+       .eggMoveLearnset = sYuukiinoEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_AQUADIIVA, CONDITIONS({IF_MIN_FRIENDSHIP, 200})}),
     },
     
@@ -8482,6 +8484,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Aquadiiva)
        .levelUpLearnset = sAquadiivaLevelUpLearnset,
+       .teachableLearnset = sAquadiivaTeachableLearnset,
+       .eggMoveLearnset = sAquadiivaEggMoveLearnset,
     },
 
         [SPECIES_FIRVID] =  

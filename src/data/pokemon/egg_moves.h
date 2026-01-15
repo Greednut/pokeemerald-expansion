@@ -7176,6 +7176,16 @@ static const u16 sTowhorseEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sAquadiivaEggMoveLearnset[] = {
+    MOVE_ENCORE,
+    MOVE_AGILITY,
+    MOVE_ENDURE,
+    MOVE_HELPING_HAND,
+    MOVE_WISH,
+    MOVE_PERISH_SONG,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sRendalopodEggMoveLearnset[] = {
     MOVE_PURSUIT,
     MOVE_RAPID_SPIN,
