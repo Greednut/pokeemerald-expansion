@@ -6889,6 +6889,16 @@ static const u16 sXeninterEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sMolterraEggMoveLearnset[] = {
+    MOVE_CROSS_CHOP,
+    MOVE_ANCIENT_POWER, //New Move
+    MOVE_INFERNO, 
+    MOVE_LANDS_WRATH, //New Move
+    MOVE_FLARE_BLITZ, //New Move
+    MOVE_SEARING_SHOT, //New Move
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sZillichinaEggMoveLearnset[] = {
     MOVE_BULLET_PUNCH,
     MOVE_FLARE_BLITZ,
@@ -7378,6 +7388,7 @@ static const u16 sCrolordEggMoveLearnset[] = {
     MOVE_SHADOW_SNEAK,
     MOVE_FREEZING_GLARE,
     MOVE_AEROBLAST,
+    MOVE_AIR_CUTTER,
     MOVE_UNAVAILABLE,
 };
 

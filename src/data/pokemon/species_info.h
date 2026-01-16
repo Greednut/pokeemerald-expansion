@@ -17256,6 +17256,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 3,
        FOOTPRINT(Moltama)
        .levelUpLearnset = sMoltamaLevelUpLearnset,
+       .teachableLearnset = sMoltamaTeachableLearnset,
+       .eggMoveLearnset = sMolterraEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MOLTERRA}),
     },
 
@@ -17312,6 +17314,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Molterra)
        .levelUpLearnset = sMolterraLevelUpLearnset,
+       .teachableLearnset = sMolterraTeachableLearnset,
+       .eggMoveLearnset = sMolterraEggMoveLearnset,
     },
 
         [SPECIES_FETTORCH] =
