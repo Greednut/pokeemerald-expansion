@@ -6499,7 +6499,7 @@ static const u16 sEquuanEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_CHARM,
     MOVE_HEAD_CHARGE,
-    MOVE_REVERSAL,
+    MOVE_THUNDEROUS_KICK,
     MOVE_FLARE_BLITZ,
     MOVE_CLOSE_COMBAT,
     MOVE_UNAVAILABLE,
@@ -6597,7 +6597,7 @@ static const u16 sPrimiteveEggMoveLearnset[] = {
 
 static const u16 sTarantagonEggMoveLearnset[] = {
     MOVE_OBSTRUCT,
-    MOVE_AMNESIA,
+    MOVE_LEECH_LIFE,
     MOVE_CRAFTY_SHIELD,
     MOVE_FLATTER,
     MOVE_FEINT_ATTACK,
@@ -6870,7 +6870,7 @@ static const u16 sWattitudeEggMoveLearnset[] = {
 }; 
 
 static const u16 sMaleentisEggMoveLearnset[] = {
-    MOVE_NO_RETREAT,
+    MOVE_ACID_REFLEX,
     MOVE_HEAD_CHARGE,
     MOVE_STICKY_WEB,
     MOVE_DUAL_CHOP,
