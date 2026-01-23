@@ -4221,6 +4221,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Hyduck)
        .levelUpLearnset = sHyduckLevelUpLearnset,
+       .teachableLearnset = sBluduckTeachableLearnset,
+       .eggMoveLearnset = sHyduckEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BLUDUCK},
                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_PLATYLICS}),                           
     },
@@ -4278,6 +4280,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Bluduck)
        .levelUpLearnset = sBluduckLevelUpLearnset,
+       .teachableLearnset = sBluduckTeachableLearnset,
+       .eggMoveLearnset = sHyduckEggMoveLearnset,
     },
 
         [SPECIES_PLATYLICS] =
@@ -4333,6 +4337,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Platylics)
        .levelUpLearnset = sPlatylicsLevelUpLearnset,
+       .teachableLearnset = sPlatylicsTeachableLearnset,
+       .eggMoveLearnset = sHyduckEggMoveLearnset,
     },
 
         [SPECIES_KRISSY] =
@@ -18605,6 +18611,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Venireal)
        .levelUpLearnset = sVenirealLevelUpLearnset,
+       .teachableLearnset = sVenirealTeachableLearnset,
+       .eggMoveLearnset = sApocamiseEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_APOCAMISE}),
     },
         [SPECIES_APOCAMISE] =
@@ -18659,6 +18667,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Apocamise)
        .levelUpLearnset = sApocamiseLevelUpLearnset,
+       .teachableLearnset = sApocamiseTeachableLearnset,
+       .eggMoveLearnset = sApocamiseEggMoveLearnset,
     },
         [SPECIES_CROLORD] =
     { 
