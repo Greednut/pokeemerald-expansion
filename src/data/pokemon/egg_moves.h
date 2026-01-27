@@ -6908,6 +6908,17 @@ static const u16 sMolterraEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sDraklownEggMoveLearnset[] = {
+MOVE_COPYCAT, 
+MOVE_DESTINY_BOND, 
+MOVE_HEAD_SMASH, 
+MOVE_MOP, 
+MOVE_OVERBITE, 
+MOVE_TOPSY_TURVY, 
+MOVE_UNAVAILABLE, 
+};
+
+
 static const u16 sZillichinaEggMoveLearnset[] = {
     MOVE_BULLET_PUNCH,
     MOVE_FLARE_BLITZ,

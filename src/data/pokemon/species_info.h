@@ -8433,7 +8433,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Yuukiino)
        .levelUpLearnset = sYuukiinoLevelUpLearnset,
        .teachableLearnset = sYuukiinoTeachableLearnset,
-       .eggMoveLearnset = sYuukiinoEggMoveLearnset,
+       .eggMoveLearnset = sAquadiivaEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_AQUADIIVA, CONDITIONS({IF_MIN_FRIENDSHIP, 200})}),
     },
     
@@ -12446,7 +12446,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .frontAnimId = ANIM_GROW_VIBRATE,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
-       .backPic = gMonBackPic_,
+       .backPic = gMonBackPic_Amalgum,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
@@ -17544,6 +17544,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Trickling)
        .levelUpLearnset = sTricklingLevelUpLearnset,
+       .teachableLearnset = sTricklingTeachableLearnset,
+       .eggMoveLearnset = sDraklownEggMoveLearnset,
     },
 
         [SPECIES_DRAKLOWN] =
@@ -17599,6 +17601,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Draklown)
        .levelUpLearnset = sDraklownLevelUpLearnset,
+       .teachableLearnset = sDraklownTeachableLearnset,
+       .eggMoveLearnset = sDraklownEggMoveLearnset,
        },
 
         [SPECIES_DRATTEL] =
