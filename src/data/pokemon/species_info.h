@@ -6230,7 +6230,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Carpedian,
        .shinyPalette = gMonShinyPalette_Carpedian,
        .iconSprite = gMonIcon_Carpedian,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Carpedian)
        .levelUpLearnset = sCarpedianLevelUpLearnset,
        .teachableLearnset = sCarpedianTeachableLearnset,

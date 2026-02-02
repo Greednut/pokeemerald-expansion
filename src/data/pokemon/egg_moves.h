@@ -6494,6 +6494,16 @@ static const u16 sPermacerosEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sSherifuegoEggMoveLearnset[] = {
+    MOVE_PHANTOM_FORCE,
+    MOVE_BURN_UP,
+    MOVE_FORESTS_CURSE,
+    MOVE_BATON_PASS,
+    MOVE_BIDE,
+    MOVE_NATURE_POWER,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sEquuanEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_CHARM,
