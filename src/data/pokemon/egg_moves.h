@@ -6966,7 +6966,7 @@ static const u16 sCamerexEggMoveLearnset[] = {
     MOVE_BARRAGE,
     MOVE_GEAR_UP,
     MOVE_METAL_BURST,
-    MOVE_MAGNET_BOMB,
+    MOVE_FLATTER,
     MOVE_UNAVAILABLE,
 };
 
