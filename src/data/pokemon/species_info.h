@@ -7926,6 +7926,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Camerex)
        .levelUpLearnset = sCamerexLevelUpLearnset,
+       .teachableLearnset = sCamerexTeachableLearnset,
+       .eggMoveLearnset = sCamerexEggMoveLearnset,
     },
 
         [SPECIES_TAMANAUT] =
