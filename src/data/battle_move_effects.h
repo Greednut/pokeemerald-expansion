@@ -2425,4 +2425,9 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectBoreBite,
         .battleTvScore = 1,
     },
+    [EFFECT_FLINT_FANG] = 
+    {
+        .battleScript = BattleScript_EffectFlintFang,
+        .battleTvScore = 1,
+    },
 };

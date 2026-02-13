@@ -5705,6 +5705,34 @@ BattleScript_BoreBiteDefenseDownDoAnim:
 BattleScript_EffectBoreBiteEnd:
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectFlintFang::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	jumpiftype BS_TARGET, TYPE_STEEL, BattleScript_FlintFangBurn
+	setadditionaleffects
+	goto BattleScript_MoveEnd
+BattleScript_FlintFangBurn:
+	seteffectsecondary MOVE_EFFECT_BURN
+	setadditionaleffects
+	goto BattleScript_MoveEnd
+
+
 BattleScript_EffectTrickStab::
 	call BattleScript_EffectHit_Ret
 	tryfaintmon BS_TARGET

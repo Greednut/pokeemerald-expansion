@@ -7296,6 +7296,16 @@ static const u16 sOccloneEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sFusjahlEggMoveLearnset[] = {
+    MOVE_WIDE_GUARD,
+    MOVE_ANCIENT_POWER,
+    MOVE_FOCUS_ENERGY,
+    MOVE_CLOSE_COMBAT,
+    MOVE_SELF_DESTRUCT,
+    MOVE_SNARL,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_AUTOTOMIZE,
     MOVE_CRITICAL_MASS,

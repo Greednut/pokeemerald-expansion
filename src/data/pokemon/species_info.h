@@ -12586,6 +12586,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Jahl)
        .levelUpLearnset = sJahlLevelUpLearnset,
+       .teachableLearnset = sJahlTeachableLearnset,
+       .eggMoveLearnset = sFusjahlEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_FUSJAHL}),
     },
 
@@ -12641,6 +12643,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Fusjahl)
        .levelUpLearnset = sFusjahlLevelUpLearnset,
+       .teachableLearnset = sFusjahlTeachableLearnset,
+       .eggMoveLearnset = sFusjahlEggMoveLearnset,
     },
 
         [SPECIES_EPILATE] =

@@ -23296,7 +23296,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "May cause flinching.\n"
             "Will burn Steel-type foes."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_FLINT_FANG,
         .power = 65,
         .type = TYPE_ROCK,
         .accuracy = 100,
@@ -23306,7 +23306,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .bitingMove = TRUE,
-        .argument = { .type = TYPE_GRASS },
         .additionalEffects = ADDITIONAL_EFFECTS(
         {
             .moveEffect = MOVE_EFFECT_FLINCH,

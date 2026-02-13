@@ -937,5 +937,6 @@ extern const u8 BattleScript_EffectLunarImpact[];
 extern const u8 BattleScript_EffectBrutalPunishment[];
 extern const u8 BattleScript_EffectAllaPrima[];
 extern const u8 BattleScript_EffectBoreBite[];
+extern const u8 BattleScript_EffectFlintFang[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H
