@@ -6604,6 +6604,16 @@ static const u16 sIndigniflyEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sCockenEggMoveLearnset[] = {
+    MOVE_DRAGON_HAMMER,
+    MOVE_BRAVE_BIRD,
+    MOVE_EGG_BOMB,
+    MOVE_SKULL_BASH,
+    MOVE_POWER_TRIP,
+    MOVE_BREAKING_SWIPE,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sPrimiteveEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_MILK_DRINK,

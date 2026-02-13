@@ -14118,6 +14118,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 5,
        FOOTPRINT(Dinomight)
        .levelUpLearnset = sDinomightLevelUpLearnset,
+       .teachableLearnset = sDinomightTeachableLearnset,
+       .eggMoveLearnset = sCockenEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_COCKEN}),
     },
         [SPECIES_COCKEN] =
@@ -14174,6 +14176,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .formSpeciesIdTable = sCockenFormSpeciesIdTable,
        .formChangeTable = sCockenFormChangeTable,
        .levelUpLearnset = sCockenLevelUpLearnset,
+       .teachableLearnset = sCockenTeachableLearnset,
+       .eggMoveLearnset = sCockenEggMoveLearnset,
     },
 
         [SPECIES_COCKEN_MEGA] =
@@ -14231,6 +14235,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .formSpeciesIdTable = sCockenFormSpeciesIdTable,
        .formChangeTable = sCockenFormChangeTable,
        .levelUpLearnset = sCockenLevelUpLearnset,
+       .teachableLearnset = sCockenTeachableLearnset,
+       .eggMoveLearnset = sCockenEggMoveLearnset,
     },
         [SPECIES_PRIMITOOL] =
     { 
