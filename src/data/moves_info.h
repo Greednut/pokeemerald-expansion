@@ -4472,7 +4472,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Kicks the foe 3 times in a\n"
             "row with rising intensity."),
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 10,
+        .power = 20,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 10,

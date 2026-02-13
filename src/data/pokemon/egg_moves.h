@@ -6760,7 +6760,6 @@ static const u16 sYardsteinEggMoveLearnset[] = {
     MOVE_BARRAGE,
     MOVE_EERIE_IMPULSE,
     MOVE_FOLLOW_ME,
-    MOVE_TOXIC_SPIKES,
     MOVE_WIDE_GUARD,
     MOVE_IRON_DEFENSE,
     MOVE_FINAL_GAMBIT,
@@ -6844,8 +6843,18 @@ static const u16 sStrollgeEggMoveLearnset[] = {
     MOVE_REFLECT_TYPE, 
     MOVE_DESTINY_BOND, 
     MOVE_NATURES_MADNESS, 
-MOVE_UNAVAILABLE, 
+    MOVE_UNAVAILABLE, 
 }; 
+
+static const u16 sRetwinaEggMoveLearnset[] = {
+    MOVE_ASSURANCE,
+    MOVE_LEECH_LIFE,
+    MOVE_MIRACLE_EYE,
+    MOVE_NIGHT_DAZE,
+    MOVE_POWER_TRIP,
+    MOVE_RAPID_SPIN,
+    MOVE_UNAVAILABLE,
+};
 
 
 static const u16 sFractyvernEggMoveLearnset[] = {
@@ -6941,7 +6950,7 @@ static const u16 sZillichinaEggMoveLearnset[] = {
 };
 
 static const u16 sLunabbitEggMoveLearnset[] = {
-    MOVE_HORN_LEECH,
+    MOVE_ENCORE,
     MOVE_FAKE_OUT,
     MOVE_COSMIC_POWER,
     MOVE_WAKE_UP_SLAP,
@@ -7095,7 +7104,7 @@ static const u16 sBambuyaEggMoveLearnset[] = {
     MOVE_FLAIL,
     MOVE_LUNAR_DANCE,
     MOVE_AROMATHERAPY,
-    MOVE_TRI_ATTACK,
+    MOVE_NATURE_POWER,
     MOVE_NEEDLE_ARM,
     MOVE_UNAVAILABLE,
 };
@@ -7299,7 +7308,7 @@ static const u16 sEmeffyumeEggMoveLearnset[] = {
 
 static const u16 sPeguiEggMoveLearnset[] = {
     MOVE_SUBMISSION,
-    MOVE_MEGAHORN,
+    MOVE_FINAL_GAMBIT,
     MOVE_AGILITY,
     MOVE_AURORA_VEIL,
     MOVE_AIR_SLASH,
@@ -7370,6 +7379,16 @@ static const u16 sSkallaxyEggMoveLearnset[] = {
     MOVE_FLAME_CHARGE,
     MOVE_UNAVAILABLE,
 }; 
+
+static const u16 sKaquapoEggMoveLearnset[] = {
+    MOVE_PARTING_SHOT,
+    MOVE_AMNESIA,
+    MOVE_ENCORE,
+    MOVE_WISH,
+    MOVE_YAWN,
+    MOVE_BRINE,
+    MOVE_UNAVAILABLE,
+}; 
 static const u16 sClobberEggMoveLearnset[] = {
     MOVE_METAL_CLAW,
     MOVE_CLOSE_COMBAT,
@@ -7432,6 +7451,26 @@ static const u16 sCrolordEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sDredgodEggMoveLearnset[] = {
+    MOVE_SPIRIT_SHACKLE,
+    MOVE_ANCHOR_SHOT,
+    MOVE_SCREECH,
+    MOVE_TWINEEDLE,
+    MOVE_OVERBITE,
+    MOVE_MEAN_LOOK,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKumataroEggMoveLearnset[] = {
+    MOVE_NIGHT_DAZE,
+    MOVE_SPIRIT_SHACKLE,
+    MOVE_PUNISHMENT,
+    MOVE_PURSUIT,
+    MOVE_MORNING_SUN,
+    MOVE_BELCH,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sApocamiseEggMoveLearnset[] = {
     MOVE_ANCIENT_POWER,
     MOVE_AGILITY,
@@ -7471,6 +7510,17 @@ static const u16 sWawhoEggMoveLearnset[] = {
     MOVE_SHELL_TRAP,
     MOVE_PUNCH_OUT,
     MOVE_UNAVAILABLE,
+};
+
+static const u16 sLarvatriceEggMoveLearnset[] = {
+    MOVE_BREAKING_SWIPE,
+    MOVE_SKY_ATTACK,
+    MOVE_ANCIENT_POWER,
+    MOVE_NIGHT_DAZE,
+    MOVE_BELCH,
+    MOVE_MIRROR_MOVE,
+    MOVE_UNAVAILABLE,
+    
 };
 
 static const u16 sDisplacerkEggMoveLearnset[] = {
@@ -7513,6 +7563,16 @@ static const u16 sTermagniusEggMoveLearnset[] = {
     MOVE_REFLECT_TYPE,
     MOVE_TRI_ATTACK,
     MOVE_DRAGON_RAGE,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sDoomsayEggMoveLearnset[] = {
+    MOVE_CRABHAMMER,
+    MOVE_PSYWAVE,
+    MOVE_DREAM_EATER,
+    MOVE_AMNESIA,
+    MOVE_SUPERSONIC,
+    MOVE_WRAP,
     MOVE_UNAVAILABLE,
 }; 
 
