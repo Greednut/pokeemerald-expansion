@@ -2058,6 +2058,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
                 ADJUST_SCORE(-6);
             break;
+        case EFFECT_ALLA_PRIMA:
+            if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
+                ADJUST_SCORE(-6);
+            break;
         case EFFECT_STRENGTH_SAP:
             if (aiData->abilities[battlerDef] == ABILITY_CONTRARY)
                 ADJUST_SCORE(-10);
@@ -2315,6 +2319,16 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             if (predictedMove != MOVE_NONE
               && AI_IsSlower(battlerAtk, battlerDef, move)
               && GetMoveEffect(predictedMove) == EFFECT_SEMI_INVULNERABLE)
+                ADJUST_SCORE(-10); // Don't Fly/dig/etc if opponent is going to fly/dig/etc after you
+
+            if (BattlerWillFaintFromWeather(battlerAtk, aiData->abilities[battlerAtk])
+              && GetMoveTwoTurnAttackStatus(move) == STATUS3_ON_AIR)
+                ADJUST_SCORE(-10); // Attacker will faint while in the air
+            break;
+        case EFFECT_QUANTUM_POUNCE:
+            if (predictedMove != MOVE_NONE
+              && AI_IsSlower(battlerAtk, battlerDef, move)
+              && GetMoveEffect(predictedMove) == EFFECT_QUANTUM_POUNCE)
                 ADJUST_SCORE(-10); // Don't Fly/dig/etc if opponent is going to fly/dig/etc after you
 
             if (BattlerWillFaintFromWeather(battlerAtk, aiData->abilities[battlerAtk])
@@ -3858,6 +3872,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         IncreaseSleepScore(battlerAtk, battlerDef, move, &score);
         break;
     case EFFECT_ABSORB:
+        if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_BIG_ROOT && effectiveness >= UQ_4_12(1.0))
+            ADJUST_SCORE(DECENT_EFFECT);
+        break;
+    case EFFECT_ALLA_PRIMA:
         if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_BIG_ROOT && effectiveness >= UQ_4_12(1.0))
             ADJUST_SCORE(DECENT_EFFECT);
         break;

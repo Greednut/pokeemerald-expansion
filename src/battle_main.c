@@ -5797,6 +5797,9 @@ u32 TrySetAteType(u32 move, u32 battlerAtk, u32 attackerAbility)
     default:
         ateType = TYPE_NONE;
         break;
+        case ABILITY_LIZARDBRAIN:
+        ateType = TYPE_DRAGON;
+        break;
     }
 
     return ateType;

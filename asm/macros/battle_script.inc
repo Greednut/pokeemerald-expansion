@@ -1674,6 +1674,10 @@
 	callnative BS_TryGulpMissile
 	.endm
 
+	.macro tryultraposition
+	callnative BS_TryUltraposition
+	.endm
+
 	.macro tryactivategulpmissile
 	callnative BS_TryActivateGulpMissile
 	.endm

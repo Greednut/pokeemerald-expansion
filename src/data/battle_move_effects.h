@@ -2430,4 +2430,18 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectFlintFang,
         .battleTvScore = 1,
     },
+
+    [EFFECT_QUANTUM_POUNCE] =
+    {
+        .battleScript = BattleScript_EffectTwoTurnsAttack,
+        .battleTvScore = 3,
+        .twoTurnEffect = TRUE,
+        .semiInvulnerableEffect = TRUE,
+    },
+
+    [EFFECT_ALLA_PRIMA] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 4,
+    },
 };

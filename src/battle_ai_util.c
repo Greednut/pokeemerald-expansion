@@ -405,6 +405,8 @@ bool32 IsTruantMonVulnerable(u32 battlerAI, u32 opposingBattler)
             return TRUE;
         if (effect == EFFECT_SEMI_INVULNERABLE && AI_IsSlower(battlerAI, opposingBattler, GetAIChosenMove(battlerAI)))
             return TRUE;
+        if (effect == EFFECT_QUANTUM_POUNCE && AI_IsSlower(battlerAI, opposingBattler, GetAIChosenMove(battlerAI)))
+            return TRUE;
     }
     return FALSE;
 }

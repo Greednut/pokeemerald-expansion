@@ -2485,10 +2485,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
 
-    [ABILITY_BIG_GUY] =
+    [ABILITY_COLOSSAL] =
     {
-        .name = _("Big Guy"),
-        .description = COMPOUND_STRING("Sets Gravity."),
+        .name = _("Colossal"),
+        .description = COMPOUND_STRING("Sets Gravity upon switch in."),
         .aiRating = 10,
     },
 
@@ -2712,9 +2712,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSuppressed = TRUE,
     },
 
-    [ABILITY_PHANTASMA] =
+    [ABILITY_SECOND_SHADOW] =
     {
-        .name = _("Phantasmagoric"),
+        .name = _("Second Shadow"),
         .description = COMPOUND_STRING("Powers up Ghost type moves and \nGives Ghost Immunities."),
         .aiRating = 4,
     },
@@ -2731,6 +2731,24 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Collapsing Ruin"),
         .description = COMPOUND_STRING("Removes Rock-type weakness.\nSets stealth rocks upon fatal\nblow."),
         .aiRating = 5,
-    }
+    },
+
+    [ABILITY_ULTRAPOSITION] =
+    {
+        .name = _("Ultraposition"),
+        .description = COMPOUND_STRING("After disappearing into another dimension, this Pokemon reemerges at full power."),
+        .aiRating = 3,
+        .cantBeCopied = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
+    [ABILITY_LIZARDBRAIN] =
+    {
+        .name = _("Lizardbrain"),
+        .description = COMPOUND_STRING("Normal moves become Dragon."),
+        .aiRating = 8,
+    },
 
 };

@@ -23392,27 +23392,82 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Nuclear Winter"),
         .description = COMPOUND_STRING(
-            "Super effective on Poison-\n"
-            "types. May cause frostbite."),
-        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
-        .power = 110,
+            "A powerful storm of nuclear\n"
+            "residue that may badly poison\n"
+            "the foe."),
+        .effect = EFFECT_HIT,
+        .power = 105,
         .type = TYPE_ICE,
-        .accuracy = 70,
-        .pp = 20,
+        .accuracy = 90,
+        .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .alwaysHitsInHailSnow = TRUE,
-        .argument = { .type = TYPE_POISON },
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE,
-            .chance = 10,
+            .moveEffect = MOVE_EFFECT_TOXIC,
+            .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Blizzard,
+    },
+
+    [MOVE_QUANTUM_POUNCE] =
+    {
+        .name = COMPOUND_STRING("Quantum Pounce"),
+        .description = COMPOUND_STRING(
+            "Fades into a Portal and then\n"
+            "strikes next turn."),
+        .effect = EFFECT_QUANTUM_POUNCE,
+        .power = 120,
+        .type = TYPE_DRAGON,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .assistBanned = TRUE,
+        .skyBattleBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId =  STRINGID_PKMNHIDUNDERWATER, .status = COMPRESS_BITS(STATUS3_UNDERWATER) },
+        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE_ONCE,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_HYPERSPACE_HOLE,
+        .contestComboMoves = {COMBO_STARTER_HYPERSPACE_HOLE},
+        .battleAnimScript = gBattleAnimMove_ShadowForce,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_ALLA_PRIMA] =
+    {
+        .name = COMPOUND_STRING("Alla Prima"),
+        .description = COMPOUND_STRING(
+            "A tide of paint that deals\n"
+            "super-effective damage\n"
+            "to Water-types. Heals for\n"
+            "half the damage dealt."),
+        .effect = EFFECT_ALLA_PRIMA,
+        .power = 70,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .absorbPercentage = 50 },
+        .ignoresKingsRock = TRUE,
+        .healingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Scald,
+        .validApprenticeMove = TRUE,
     },
 
 

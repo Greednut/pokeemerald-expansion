@@ -2074,6 +2074,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Skuba)
        .levelUpLearnset = sSkubaProLevelUpLearnset,
+       .teachableLearnset = sSkubaProTeachableLearnset,
+       .eggMoveLearnset = sSkubaProEggMoveLearnset,
        .formSpeciesIdTable = sSkubaFormSpeciesIdTable,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SKUBMARINE_PRO, CONDITIONS({IF_HOLD_ITEM, ITEM_SKUB})}), 
     },
@@ -2131,6 +2133,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Skuba)
        .levelUpLearnset = sSkubaAntiLevelUpLearnset,
+       .teachableLearnset = sSkubaAntiTeachableLearnset,
+       .eggMoveLearnset = sSkubaAntiEggMoveLearnset,
        .formSpeciesIdTable = sSkubaFormSpeciesIdTable,
        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SKUBMARINE_ANTI, CONDITIONS({IF_HOLD_ITEM, ITEM_SKUB})}), 
     },
@@ -2188,6 +2192,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Skubmarine)
        .levelUpLearnset = sSkubmarineAntiLevelUpLearnset,
+       .teachableLearnset = sSkubmarineAntiTeachableLearnset,
+       .eggMoveLearnset = sSkubaAntiEggMoveLearnset,
        .formSpeciesIdTable = sSkubmarineFormSpeciesIdTable,
     },
 
@@ -2244,6 +2250,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Skubmarine)
        .levelUpLearnset = sSkubmarineProLevelUpLearnset,
+       .teachableLearnset = sSkubmarineProTeachableLearnset,
+       .eggMoveLearnset = sSkubaProEggMoveLearnset,
        .formSpeciesIdTable = sSkubmarineFormSpeciesIdTable,
     },
 
@@ -6254,7 +6262,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 90,
        .growthRate = GROWTH_MEDIUM_FAST,
        .eggGroups = { EGG_GROUP_DRAGON, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_MULTISCALE, ABILITY_ELECTRIC_SURGE },
+       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_ELECTRIC_SURGE, ABILITY_MULTISCALE },
        .bodyColor = BODY_COLOR_GREEN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -6312,7 +6320,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 90,
        .growthRate = GROWTH_MEDIUM_FAST,
        .eggGroups = { EGG_GROUP_DRAGON, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_MULTISCALE, ABILITY_ELECTRIC_SURGE },
+       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_ELECTRIC_SURGE, ABILITY_MULTISCALE },
        .bodyColor = BODY_COLOR_GREEN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -6370,7 +6378,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 90,
        .growthRate = GROWTH_MEDIUM_FAST,
        .eggGroups = { EGG_GROUP_DRAGON, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_MULTISCALE, ABILITY_ELECTRIC_SURGE },
+       .abilities = { ABILITY_VOLT_ABSORB, ABILITY_FRISK, ABILITY_ELECTRIC_SURGE, ABILITY_MULTISCALE },
        .bodyColor = BODY_COLOR_GREEN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -6918,6 +6926,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Dogan)
        .levelUpLearnset = sDoganLevelUpLearnset,
+       .teachableLearnset = sDoganTeachableLearnset,
+       .eggMoveLearnset = sSmogarsEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_SMOGARS}),
        
     },
@@ -6974,6 +6984,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Smogars)
        .levelUpLearnset = sSmogarsLevelUpLearnset,
+       .teachableLearnset = sSmogarsTeachableLearnset,
+       .eggMoveLearnset = sSmogarsEggMoveLearnset,
     },
 
         [SPECIES_BUBBASAUR] =
@@ -8672,6 +8684,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Mamini)
        .levelUpLearnset = sMaminiLevelUpLearnset,
+       .teachableLearnset = sMaminiTeachableLearnset,
+       .eggMoveLearnset = sMammountEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MAMINI}),
     },
     
@@ -8728,7 +8742,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_Mammount,
        .iconPalIndex = 0,
        FOOTPRINT(Mammount)
-       .levelUpLearnset = sMammountLevelUpLearnset, 
+       .levelUpLearnset = sMammountLevelUpLearnset,
+       .teachableLearnset = sMammountTeachableLearnset,
+       .eggMoveLearnset = sMammountEggMoveLearnset, 
     },
         [SPECIES_KNITTEN] =
     { 
@@ -8956,13 +8972,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
         [SPECIES_PIURETTE] =
     { 
-       .baseHP        = 63,
-       .baseAttack    = 65,
-       .baseDefense   = 119,
-       .baseSpeed     = 62,
+       .baseHP        = 74,
+       .baseAttack    = 55,
+       .baseDefense   = 106,
+       .baseSpeed     = 90,
        .baseSpAttack  = 126,
-       .baseSpDefense = 90,
-       .types = { TYPE_ROCK, TYPE_WATER },
+       .baseSpDefense = 70,
+       .types = { TYPE_ROCK, TYPE_FAIRY },
        .catchRate = 70,
        .expYield = 116,
        .evYield_HP  = 1,
@@ -8971,7 +8987,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_NONE },
-       .abilities = { ABILITY_WATER_ABSORB, ABILITY_NONE, ABILITY_HUSTLE, ABILITY_INNARDS_OUT}, 
+       .abilities = { ABILITY_INNARDS_OUT, ABILITY_NONE, ABILITY_SAND_FORCE, ABILITY_WATER_ABSORB}, 
        .bodyColor = BODY_COLOR_BROWN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -10694,6 +10710,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Medusith)
        .levelUpLearnset = sMedusithLevelUpLearnset,
+       .teachableLearnset = sMedusithTeachableLearnset,
+       .eggMoveLearnset = sMedusithEggMoveLearnset,
     },
         [SPECIES_DISPLACERK] =
     { 
@@ -10712,7 +10730,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_INNER_FOCUS, ABILITY_LONG_REACH, ABILITY_ILLUSION, ABILITY_PHANTASMA }, 
+       .abilities = { ABILITY_INNER_FOCUS, ABILITY_LONG_REACH, ABILITY_ILLUSION, ABILITY_SECOND_SHADOW }, 
        .bodyColor = BODY_COLOR_BLACK,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -11004,7 +11022,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_INTIMIDATE, ABILITY_PHANTASMA, ABILITY_GUTS, ABILITY_LEVITATE}, //Replace shadow tag with Phantasma once added
+       .abilities = { ABILITY_INTIMIDATE, ABILITY_SECOND_SHADOW, ABILITY_GUTS, ABILITY_LEVITATE}, 
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -12134,6 +12152,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Spiranha)
        .levelUpLearnset = sSpiranhaLevelUpLearnset,
+       .teachableLearnset = sSpiranhaTeachableLearnset,
+       .eggMoveLearnset = sSpiranhaEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_SELAGHAST},
                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_KARKUTLASS}),
     },
@@ -12191,6 +12211,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Selaghast)
        .levelUpLearnset = sSelaghastLevelUpLearnset,
+       .teachableLearnset = sSelaghastTeachableLearnset,
+       .eggMoveLearnset = sSpiranhaEggMoveLearnset,
     },
 
         [SPECIES_KARKUTLASS] =
@@ -12246,6 +12268,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Karkutlass)
        .levelUpLearnset = sKarkutlassLevelUpLearnset,
+       .teachableLearnset = sKarkutlassTeachableLearnset,
+       .eggMoveLearnset = sSpiranhaEggMoveLearnset,
     },
 
         [SPECIES_RENDALOPOD] =
@@ -14197,7 +14221,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 190,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_DRAGON, EGG_GROUP_FLYING },
-       .abilities = { ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE},//REPLACE BY WHATEVER WE NAME THE HE WILL BE DRAGON REPLACEMENT 
+       .abilities = { ABILITY_LIZARDBRAIN, ABILITY_LIZARDBRAIN, ABILITY_LIZARDBRAIN, ABILITY_LIZARDBRAIN},//REPLACE BY WHATEVER WE NAME THE HE WILL BE DRAGON REPLACEMENT 
        .bodyColor = BODY_COLOR_WHITE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -14369,7 +14393,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
       .friendship = 100,
       .growthRate = GROWTH_MEDIUM_SLOW,
       .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_NONE },
-      .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_STALL, ABILITY_BIG_GUY}, 
+      .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_STALL, ABILITY_COLOSSAL}, 
       .bodyColor = BODY_COLOR_BROWN,
       .isLegendary = FALSE,
       .perfectIVCount = FALSE,
@@ -19496,7 +19520,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-       .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_SUPER_LUCK, ABILITY_PSYCHIC_SURGE },
+       .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_PSYCHIC_SURGE, ABILITY_ULTRAPOSITION },
        .bodyColor = BODY_COLOR_WHITE,
        .isLegendary = TRUE,
        .perfectIVCount = FALSE,
@@ -19552,7 +19576,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-       .abilities = { ABILITY_BOUNDARY, ABILITY_NONE, ABILITY_BOUNDARY, ABILITY_BOUNDARY },
+       .abilities = { ABILITY_ULTRAPOSITION, ABILITY_NONE, ABILITY_ULTRAPOSITION, ABILITY_ULTRAPOSITION },
        .bodyColor = BODY_COLOR_WHITE,
        .isLegendary = TRUE,
        .perfectIVCount = FALSE,

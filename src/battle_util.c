@@ -3891,7 +3891,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_BIG_GUY:
+        case ABILITY_COLOSSAL:
             if (TryChangeBattleTerrain (battler, STATUS_FIELD_GRAVITY, &gFieldTimers.gravityTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_BigGuyActivates);
@@ -5022,6 +5022,31 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         TryBattleFormChange(battler, FORM_CHANGE_HIT_BY_MOVE);
                         BattleScriptPushCursor();
                         gBattlescriptCurrInstr = BattleScript_GulpMissileGulping;
+                        effect++;
+                        break;
+                }
+            }
+            break;
+        case ABILITY_ULTRAPOSITION:
+            if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerAlive(gBattlerAttacker)
+             && gBattleMons[gBattlerTarget].species != SPECIES_SHIRIBIKO_PLAYING)
+            {
+                if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                {
+                    gBattleStruct->moveDamage[gBattlerAttacker] = GetNonDynamaxMaxHP(gBattlerAttacker) / 4;
+                    if (gBattleStruct->moveDamage[gBattlerAttacker] == 0)
+                        gBattleStruct->moveDamage[gBattlerAttacker] = 1;
+                }
+
+                switch(gBattleMons[gBattlerTarget].species)
+                {
+                    case SPECIES_SHIRIBIKO_PLAYING:
+                        TryBattleFormChange(battler, FORM_CHANGE_BATTLE_BEFORE_MOVE);
+                        BattleScriptPushCursor();
+                        gBattlescriptCurrInstr = BattleScript_GulpMissileGorging;
                         effect++;
                         break;
                 }
@@ -9227,7 +9252,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (moveType == TYPE_ROCK)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_PHANTASMA:
+    case ABILITY_SECOND_SHADOW:
         if (moveType == TYPE_GHOST)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
@@ -10521,6 +10546,10 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
         mod = UQ_4_12(1.0);
     if (gMovesInfo[move].effect == EFFECT_KINESIS && defType == TYPE_STEEL)
         mod = UQ_4_12(2.0);
+    if (gMovesInfo[move].effect == EFFECT_QUANTUM_POUNCE && defType == TYPE_FAIRY)
+        mod = UQ_4_12(1.0);
+    if (gMovesInfo[move].effect == EFFECT_ALLA_PRIMA && defType == TYPE_WATER)
+        mod = UQ_4_12(2.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (moveType == TYPE_STELLAR && GetActiveGimmick(battlerDef) == GIMMICK_TERA)
@@ -10654,11 +10683,11 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
 
     
     }
-    else if (defAbility == ABILITY_PHANTASMA && moveType == TYPE_FIGHTING)
+    else if (defAbility == ABILITY_SECOND_SHADOW && moveType == TYPE_FIGHTING)
     {
         modifier = UQ_4_12(0.0);
     }
-    else if (defAbility == ABILITY_PHANTASMA && moveType == TYPE_NORMAL)
+    else if (defAbility == ABILITY_SECOND_SHADOW && moveType == TYPE_NORMAL)
     {
         modifier = UQ_4_12(0.0);
     }
