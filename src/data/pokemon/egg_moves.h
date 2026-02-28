@@ -6436,10 +6436,9 @@ static const u16 sPedestoneEggMoveLearnset[] = {
     MOVE_SHORE_UP,
     MOVE_ACCELEROCK,
     MOVE_TAR_SHOT,
-    MOVE_THOUSAND_WAVES,
+    MOVE_SPIKE_CANNON,
     MOVE_WIDE_GUARD,
     MOVE_AROMATHERAPY,
-    MOVE_SPIKE_CANNON,
     MOVE_UNAVAILABLE,
 };
 
@@ -6793,6 +6792,17 @@ static const u16 sYardsteinEggMoveLearnset[] = {
     MOVE_WIDE_GUARD,
     MOVE_IRON_DEFENSE,
     MOVE_FINAL_GAMBIT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sAnkhurahEggMoveLearnset[] = {
+    MOVE_HEART_SWAP,
+    MOVE_ENCORE,
+    MOVE_NATURES_MADNESS,
+    MOVE_FIERY_DANCE,
+    MOVE_HEAL_PULSE,
+    MOVE_NOBLE_ROAR,
+    MOVE_UNAVAILABLE,
     MOVE_UNAVAILABLE,
 };
 
@@ -7355,6 +7365,16 @@ static const u16 sFusjahlEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sEpilateEggMoveLearnset[] = {
+    MOVE_AEROBLAST,
+    MOVE_BATON_PASS,
+    MOVE_FLARE_BLITZ,
+    MOVE_HURRICANE,
+    MOVE_MIND_BLOWN,
+    MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sEmeffyumeEggMoveLearnset[] = {
     MOVE_AUTOTOMIZE,
     MOVE_CRITICAL_MASS,
@@ -7516,6 +7536,16 @@ static const u16 sCrolordEggMoveLearnset[] = {
     MOVE_FREEZING_GLARE,
     MOVE_AEROBLAST,
     MOVE_AIR_CUTTER,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sTsemaniEggMoveLearnset[] = {
+    MOVE_DRAGON_HAMMER, //New move replacing dragon darts
+    MOVE_BRINE,
+    MOVE_AQUA_TAIL,
+    MOVE_ACID_SPRAY,
+    MOVE_NOBLE_ROAR,
+    MOVE_MUDDY_WATER,
     MOVE_UNAVAILABLE,
 };
 

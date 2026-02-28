@@ -2308,6 +2308,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Pedestone)
        .levelUpLearnset = sPedestoneLevelUpLearnset,
+       .teachableLearnset = sPedestoneTeachableLearnset,
        .eggMoveLearnset = sPedestoneEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_EROCHRE},
                                {EVO_ITEM, ITEM_MIRACLE_SEED, SPECIES_PILLAIA}),               
@@ -2366,6 +2367,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Erochre)
        .levelUpLearnset = sErochreLevelUpLearnset,
+       .teachableLearnset = sErochreTeachableLearnset,
        .eggMoveLearnset = sPedestoneEggMoveLearnset,
     },
 
@@ -2422,6 +2424,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Pillaia)
        .levelUpLearnset = sPillaiaLevelUpLearnset,
+       .teachableLearnset = sPillaiaTeachableLearnset,
        .eggMoveLearnset = sPedestoneEggMoveLearnset,
     },
 
@@ -2480,6 +2483,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sTriactiteLevelUpLearnset,
        .teachableLearnset = sTriactiteTeachableLearnset,
        .eggMoveLearnset = sWalkalackEggMoveLearnset,
+       .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_WALKALACK}),
     },
 
         [SPECIES_WALKALACK] =
@@ -7005,7 +7009,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 105,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_FAIRY },
-       .abilities = { ABILITY_GLUTTONY, ABILITY_THICK_FAT, ABILITY_STICKY_HOLD, ABILITY_WATER_BUBBLE },
+       .abilities = { ABILITY_OBLIVIOUS, ABILITY_CHEEK_POUCH, ABILITY_MISTY_SURGE, ABILITY_WATER_BUBBLE },
        .bodyColor = BODY_COLOR_PINK,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -7120,7 +7124,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 105,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_LEVITATE, ABILITY_STRONG_JAW, ABILITY_COLOR_CHANGE, ABILITY_KEEN_EYE },
+       .abilities = { ABILITY_LEVITATE, ABILITY_STRONG_JAW, ABILITY_DARK_AURA, ABILITY_MERCILESS },
        .bodyColor = BODY_COLOR_PURPLE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -9435,7 +9439,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_NONE },
-       .abilities = { ABILITY_BRAIN_POWER, ABILITY_NONE, ABILITY_OWN_TEMPO, ABILITY_TRANSFUSION}, 
+       .abilities = { ABILITY_TRANSFUSION, ABILITY_OWN_TEMPO, ABILITY_SYMBIOSIS, ABILITY_BRAIN_POWER}, 
        .bodyColor = BODY_COLOR_PINK,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -9827,7 +9831,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 10,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_WATER_2 },
-       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDRATION, ABILITY_FLAME_BODY, ABILITY_WHITE_SMOKE}, //GTODO Replace soundproof with Concert when ability is finalized
+       .abilities = { ABILITY_HYDROTHERMAL, ABILITY_WHITE_SMOKE, ABILITY_FLAME_BODY, ABILITY_RAIN_DISH}, 
        .bodyColor = BODY_COLOR_RED,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -9883,7 +9887,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 10,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_WATER_2 },
-       .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDROTHERMAL, ABILITY_FLAME_BODY, ABILITY_MISTY_SURGE}, //GTODO Replace soundproof with Concert when ability is finalized
+       .abilities = { ABILITY_HYDROTHERMAL, ABILITY_MISTY_SURGE, ABILITY_FLAME_BODY, ABILITY_HYDRATION},  //GTODO Replace soundproof with Concert when ability is finalized
        .bodyColor = BODY_COLOR_RED,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -11022,7 +11026,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_INTIMIDATE, ABILITY_SECOND_SHADOW, ABILITY_GUTS, ABILITY_LEVITATE}, 
+       .abilities = { ABILITY_INTIMIDATE, ABILITY_LEVITATE, ABILITY_GUTS, ABILITY_SECOND_SHADOW}, 
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -12723,6 +12727,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Epilate)
        .levelUpLearnset = sEpilateLevelUpLearnset,
+       .teachableLearnset = sEpilateTeachableLearnset,
+       .eggMoveLearnset = sEpilateEggMoveLearnset,
     },
 
         [SPECIES_SCHIZSTARF] =
@@ -12891,6 +12897,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -12948,6 +12955,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13005,6 +13014,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13062,6 +13073,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13119,6 +13132,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13176,6 +13191,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13290,6 +13307,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13347,6 +13366,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13404,6 +13425,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13461,6 +13484,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13518,6 +13543,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13575,6 +13602,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13632,6 +13661,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13689,6 +13720,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13746,6 +13779,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13803,6 +13838,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -13860,6 +13897,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
+       .teachableLearnset = sUlmiraintTeachableLearnset,
+       .eggMoveLearnset = sUlmiraintEggMoveLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
        .formChangeTable = sUlmiraintFormChangeTable,
     },
@@ -15034,6 +15073,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ankhira)
        .levelUpLearnset = sAnkhiraLevelUpLearnset,
+       .teachableLearnset = sAnkhhiraTeachableLearnset,
+       .eggMoveLearnset = sAnkhurahEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_ANKHPU}),
     },
         [SPECIES_ANKHPU] =
@@ -15089,6 +15130,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ankhpu)
        .levelUpLearnset = sAnkhpuLevelUpLearnset,
+       .teachableLearnset = sAnkpuTeachableLearnset,
+       .eggMoveLearnset = sAnkhurahEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_ANKHURAH}),
     },
         [SPECIES_ANKHURAH] =
@@ -15144,6 +15187,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ankhurah)
        .levelUpLearnset = sAnkhurahLevelUpLearnset,
+       .teachableLearnset = sAnkhurahTeachableLearnset,
+       .eggMoveLearnset = sAnkhurahEggMoveLearnset,
     },
         [SPECIES_SQUITHEE] =
     { 
@@ -15666,7 +15711,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 44,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_CLEAR_BODY, ABILITY_FLASH_FIRE, ABILITY_GOOEY, ABILITY_TRANSFUSION },
+       .abilities = { ABILITY_TRANSFUSION, ABILITY_CLEAR_BODY, ABILITY_FLASH_FIRE, ABILITY_GOOEY },
        .bodyColor = BODY_COLOR_RED,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -15723,7 +15768,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 44,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_MONSTER },
-       .abilities = { ABILITY_CLEAR_BODY, ABILITY_WATER_ABSORB, ABILITY_GOOEY, ABILITY_TRANSFUSION },
+       .abilities = { ABILITY_TRANSFUSION, ABILITY_CLEAR_BODY, ABILITY_WATER_ABSORB, ABILITY_GOOEY },
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -18844,6 +18889,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Jarumite)
        .levelUpLearnset = sJarumiteLevelUpLearnset,
+       .teachableLearnset = sJarumiteTeachableLearnset,
+       .eggMoveLearnset = sTsemaniEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_SERPOTINE}),
     },
         [SPECIES_SERPOTINE] =
@@ -18899,6 +18946,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Serpotine)
        .levelUpLearnset = sSerpotineLevelUpLearnset,
+       .teachableLearnset = sSerpotineTeachableLearnset,
+       .eggMoveLearnset = sTsemaniEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_TSEMANI}),
     },
         [SPECIES_TSEMANI] =
@@ -18954,6 +19003,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Tsemani)
        .levelUpLearnset = sTsemaniLevelUpLearnset,
+       .teachableLearnset = sTsemaniTeachableLearnset,
+       .eggMoveLearnset = sTsemaniEggMoveLearnset,
     },
         [SPECIES_DREDALISK] =
     { 
