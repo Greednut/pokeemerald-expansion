@@ -7580,6 +7580,16 @@ static const u16 sWawhoEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sAnkhurahEggMoveLearnset[] = {
+    MOVE_HEART_SWAP,
+    MOVE_ENCORE,
+    MOVE_NATURES_MADNESS,
+    MOVE_FIERY_DANCE,
+    MOVE_HEAL_PULSE,
+    MOVE_NOBLE_ROAR,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sLarvatriceEggMoveLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_SKY_ATTACK,
