@@ -6949,8 +6949,8 @@ static const u16 sWattitudeEggMoveLearnset[] = {
 
 static const u16 sMaleentisEggMoveLearnset[] = {
     MOVE_ACID_REFLEX,
-    MOVE_HEAD_CHARGE,
-    MOVE_STICKY_WEB,
+    MOVE_POISON_FANG,
+    MOVE_FUTURE_SIGHT,
     MOVE_DUAL_CHOP,
     MOVE_BRUTAL_SWING,
     MOVE_AQUA_TAIL,
