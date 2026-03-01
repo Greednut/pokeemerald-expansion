@@ -7000,10 +7000,10 @@ static const u16 sZillichinaEggMoveLearnset[] = {
 };
 
 static const u16 sLunabbitEggMoveLearnset[] = {
-    MOVE_ENCORE,
+    MOVE_HEAL_PULSE,
     MOVE_FAKE_OUT,
     MOVE_COSMIC_POWER,
-    MOVE_WAKE_UP_SLAP,
+    MOVE_DREAM_EATER,
     MOVE_WISH,
     MOVE_BELLY_DRUM,
     MOVE_UNAVAILABLE,
