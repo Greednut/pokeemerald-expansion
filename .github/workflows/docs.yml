@@ -31,8 +31,7 @@ jobs:
         id: check_pages
         continue-on-error: true
         with:
-          route: GET /repos/{repo}/pages
-          repo: ${{ github.repository }}
+          route: GET /repos/${{ github.repository }}/pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Pages

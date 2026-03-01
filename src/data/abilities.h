@@ -2751,4 +2751,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_LEECH] =
+    {
+        .name = _("Leech"),
+        .description = COMPOUND_STRING("Attacking moves drain HP."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_HORROR] =
+    {
+        .name = _("Horror"),
+        .description = COMPOUND_STRING("Opponents become Grass-type on\nswitch-in.\nGradually boosts Speed."),
+        .aiRating = 8,
+    },
+
 };

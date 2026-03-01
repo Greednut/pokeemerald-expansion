@@ -2138,6 +2138,11 @@
 	.4byte \failInstr
 	.endm
 
+	.macro trysetthirdtypeability battler:req, type:req
+	various \battler, VARIOUS_TRY_THIRD_TYPE_ABILITY
+	.byte \type
+	.endm
+
 	.macro tryaccupressure battler:req, failInstr:req
 	various \battler, VARIOUS_ACUPRESSURE
 	.4byte \failInstr

@@ -1949,6 +1949,7 @@ bool32 ShouldLowerStat(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 stat)
     switch (abilityDef)
     {
     case ABILITY_SPEED_BOOST:
+    case ABILITY_HORROR:
         if (stat == STAT_SPEED)
             return FALSE;
     case ABILITY_HYPER_CUTTER:

@@ -6631,7 +6631,7 @@ static void Cmd_moveend(void)
             gBattleScripting.moveendState++;
             break;
         case MOVEEND_ABSORB:
-            if (moveEffect == EFFECT_ABSORB
+            if ((moveEffect == EFFECT_ABSORB || GetBattlerAbility(gBattlerAttacker) == ABILITY_LEECH)
              && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
              && !(gStatuses3[gBattlerAttacker] & STATUS3_HEAL_BLOCK)
              && IsBattlerAlive(gBattlerAttacker)
@@ -11482,6 +11482,15 @@ static void Cmd_various(void)
             PREPARE_TYPE_BUFFER(gBattleTextBuff1, type);
             gBattlescriptCurrInstr = cmd->nextInstr;
         }
+        return;
+    }
+    case VARIOUS_TRY_THIRD_TYPE_ABILITY:
+    {
+        VARIOUS_ARGS(u8 type);
+        u32 type = cmd->type;
+        gBattleMons[battler].types[2] = type;
+        PREPARE_TYPE_BUFFER(gBattleTextBuff1, type);
+        gBattlescriptCurrInstr = cmd->nextInstr;
         return;
     }
     case VARIOUS_DESTROY_ABILITY_POPUP:
