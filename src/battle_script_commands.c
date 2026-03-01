@@ -18489,14 +18489,20 @@ void BS_TryGulpMissile(void)
 {
     NATIVE_ARGS();
 
-    if ((gBattleMons[gBattlerAttacker].species == SPECIES_CRAMORANT)
+    if ( ((gBattleMons[gBattlerAttacker].species == SPECIES_CRAMORANT)
      && (gCurrentMove == MOVE_DIVE)
      && (GetBattlerAbility(gBattlerAttacker) == ABILITY_GULP_MISSILE)
-     && TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_HP_PERCENT))
+     && TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_HP_PERCENT)) 
+     ||
+     ((gBattleMons[gBattlerAttacker].species == SPECIES_SHIRIBIKO)
+     && (GetBattlerAbility(gBattlerAttacker) == ABILITY_ULTRAPOSITION)
+     && (gCurrentMove == MOVE_QUANTUM_POUNCE)
+     && TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_TURN_END)))
         gBattlescriptCurrInstr = BattleScript_GulpMissileFormChange;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
 }
+
 
 void BS_TryActivateGulpMissile(void)
 {
@@ -18531,19 +18537,6 @@ void BS_TryActivateGulpMissile(void)
         }
     }
     gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_TryUltraposition(void)
-{
-    NATIVE_ARGS();
-
-    if ((gBattleMons[gBattlerAttacker].species == SPECIES_SHIRIBIKO_PLAYING)
-     && (gCurrentMove == MOVE_QUANTUM_POUNCE)
-     && (GetBattlerAbility(gBattlerAttacker) == ABILITY_ULTRAPOSITION)
-     && TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_HP_PERCENT))
-        gBattlescriptCurrInstr = BattleScript_GulpMissileFormChange;
-    else
-        gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 void BS_TryQuash(void)

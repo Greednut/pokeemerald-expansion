@@ -1922,7 +1922,7 @@
 #define SPECIES_MOBLIN                                  1795
 #define SPECIES_FANGSTER                                1796
 #define SPECIES_MAFIADON                                1797
-#define SPECIES_SHIRIBIKO                               SPECIES_SHIRIBIKO_NORMAL
+#define SPECIES_SHIRIBIKO                               SPECIES_SHIRIBIKO_PLAYING
 #define SPECIES_SHIRIBIKO_PLAYING                       1798
 #define SPECIES_SHIRIBIKO_ULTRA                         1799
 #define SPECIES_FLOCKARRION                             1800
