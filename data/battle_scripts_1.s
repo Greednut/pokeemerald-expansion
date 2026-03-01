@@ -7432,7 +7432,7 @@ BattleScript_UltraBurst::
 	switchinabilities BS_SCRIPTING
 	end3
 
-BattleScript_GulpMissileFormChange::
+BattleScript_GulpMissileFormChange:: @ R: Ultraposition also hooks into this
 	call BattleScript_AttackerFormChange
 	goto BattleScript_FromTwoTurnMovesSecondTurnRet
 

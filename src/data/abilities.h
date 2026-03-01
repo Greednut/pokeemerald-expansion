@@ -2736,7 +2736,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ULTRAPOSITION] =
     {
         .name = _("Ultraposition"),
-        .description = COMPOUND_STRING("After disappearing into another dimension, this Pokemon reemerges at full power."),
+        .description = COMPOUND_STRING("After disappearing into \nanother dimension, this Pokemon\nre-emerges at full power."),
         .aiRating = 3,
         .cantBeCopied = TRUE,
         .cantBeSuppressed = TRUE,
