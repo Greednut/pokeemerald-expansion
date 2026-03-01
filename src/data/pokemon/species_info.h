@@ -20185,6 +20185,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Doomsday)
        .levelUpLearnset = sDoomsdayLevelUpLearnset,
+       .teachableLearnset = sDoomsdayTeachableLearnset,
        .formSpeciesIdTable = sDoomsdayFormSpeciesIdTable,
        .formChangeTable = sDoomsdayFormChangeTable,
     },
@@ -20243,6 +20244,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Doomsday)
        .levelUpLearnset = sDoomsdayLevelUpLearnset,
+       .teachableLearnset = sDoomsdayTeachableLearnset,
        .formSpeciesIdTable = sDoomsdayFormSpeciesIdTable,
        .formChangeTable = sDoomsdayFormChangeTable,
     },
