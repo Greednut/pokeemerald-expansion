@@ -15073,7 +15073,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ankhira)
        .levelUpLearnset = sAnkhiraLevelUpLearnset,
-       .teachableLearnset = sAnkhhiraTeachableLearnset,
+       .teachableLearnset = sAnkhiraTeachableLearnset,
        .eggMoveLearnset = sAnkhurahEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_ANKHPU}),
     },
@@ -15130,7 +15130,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Ankhpu)
        .levelUpLearnset = sAnkhpuLevelUpLearnset,
-       .teachableLearnset = sAnkpuTeachableLearnset,
+       .teachableLearnset = sAnkhpuTeachableLearnset,
        .eggMoveLearnset = sAnkhurahEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_ANKHURAH}),
     },

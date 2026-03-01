@@ -568,6 +568,7 @@ extern const u8 BattleScript_AbilityStatusEffectNoPopUp[];
 extern const u8 BattleScript_FrozenBunkerFormChange[];
 extern const u8 BattleScript_OneHPAttackerForExplosion[];
 extern const u8 BattleScript_CollapsingRuinStealthRockActivates[];
+extern const u8 BattleScript_HorrorActivates[];
 
 
 // zmoves

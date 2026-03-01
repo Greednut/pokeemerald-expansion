@@ -1594,6 +1594,46 @@ BattleScript_EffectThirdType::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_HorrorActivates::
+	savetarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	setbyte gBattlerTarget, 0
+BattleScript_HorrorLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_HorrorLoopIncrement
+	jumpiftargetally BattleScript_HorrorLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_HorrorLoopIncrement
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_HorrorLoopIncrement
+	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_HorrorAlreadyGrass
+BattleScript_HorrorEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	trysetthirdtypeability BS_TARGET, TYPE_GRASS
+	printstring STRINGID_THIRDTYPEADDED
+BattleScript_HorrorEffect_WaitString:
+	waitmessage B_WAIT_TIME_LONG
+	saveattacker
+	savetarget
+	copybyte sBATTLER, gBattlerTarget
+	restoreattacker
+	restoretarget
+BattleScript_HorrorLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_HorrorLoop
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	restoretarget
+	pause B_WAIT_TIME_MED
+	end3
+
+BattleScript_HorrorAlreadyGrass::
+	printstring STRINGID_HORRORALREADYGRASS
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_HorrorLoopIncrement
+
+
 BattleScript_EffectFlowerShield::
 	attackcanceler
 	attackstring
