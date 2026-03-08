@@ -1195,6 +1195,9 @@ const u16 gItemIconPalette_Whetstone[] = INCBIN_U16("graphics/items/icon_palette
 const u32 gItemIcon_JoyfulMask[] = INCBIN_U32("graphics/items/icons/joyfulmask.4bpp.lz");
 const u16 gItemIconPalette_JoyfulMask[] = INCBIN_U16("graphics/items/icon_palettes/joyfulmask.gbapal");
 
+const u32 gItemIcon_RagingMask[] = INCBIN_U32("graphics/items/icons/ragingmask.4bpp.lz");
+const u16 gItemIconPalette_RagingMask[] = INCBIN_U16("graphics/items/icon_palettes/ragingmask.gbapal");
+
 // Incenses
 
 const u32 gItemIcon_SeaIncense[] = INCBIN_U32("graphics/items/icons/sea_incense.4bpp.lz");

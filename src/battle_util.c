@@ -8514,7 +8514,9 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, enum InverseBattleCheck
         return FALSE;
     if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
         return FALSE;
-    //if ((holdEffect == HOLD_EFFECT_JOYFUL_MASK && atkBaseSpeciesId == SPECIES_EMOJINN_JOYFUL))
+    if ((holdEffect == HOLD_EFFECT_JOYFUL_MASK && gBattleMons[battler].species == SPECIES_EMOJINN_JOYFUL))
+        return FALSE;
+    if ((holdEffect == HOLD_EFFECT_RAGING_MASK && gBattleMons[battler].species == SPECIES_EMOJINN_RAGING))
         return FALSE;
     if ((gAiLogicData->aiCalcInProgress ? gAiLogicData->abilities[battler] : GetBattlerAbility(battler)) == ABILITY_LEVITATE)
         return FALSE;

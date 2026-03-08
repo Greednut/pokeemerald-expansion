@@ -1391,8 +1391,8 @@ static const struct FormChange sSimionachFormChangeTable[] = {
 static const struct FormChange sEmojinnFormChangeTable[] = {
     {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_NORMAL,             ITEM_NONE},
     {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_SOBBING,       ITEM_WELLSPRING_MASK},
-    {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_RAGING,      ITEM_HEARTHFLAME_MASK},
-    {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_JOYFUL,      ITEM_CORNERSTONE_MASK},
+    {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_RAGING,      ITEM_RAGING_MASK},
+    {FORM_CHANGE_ITEM_HOLD,               SPECIES_EMOJINN_JOYFUL,      ITEM_JOYFUL_MASK},
     {FORM_CHANGE_TERMINATOR},
 };
 

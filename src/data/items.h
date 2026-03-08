@@ -14340,16 +14340,33 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Joyful Mask"),
         .price = 2500,
-        .holdEffect = HOLD_EFFECT_PAINT,
+        .holdEffect = HOLD_EFFECT_JOYFUL_MASK,
         .description = COMPOUND_STRING(
             "A Mask wished upon\n"
-            "by Emojinn to change\n"
-            "it's own form."),
+            "by a Emojinn to\n"
+            "change it's own form."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
         .iconPic = gItemIcon_JoyfulMask,
         .iconPalette = gItemIconPalette_JoyfulMask,
+    },
+
+    [ITEM_RAGING_MASK] =
+    {
+        .name = _("Raging Mask"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_RAGING_MASK,
+        .description = COMPOUND_STRING(
+            "A Mask wished upon\n"
+            "by a Emojinn to\n"
+            "change it's own form."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_RagingMask,
+        .iconPalette = gItemIconPalette_RagingMask,
     },
 };

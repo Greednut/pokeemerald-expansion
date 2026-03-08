@@ -1006,11 +1006,12 @@
 #define ITEM_COBALT_VIOLET_PAINT 838
 #define ITEM_WHETSTONE 839
 #define ITEM_JOYFUL_MASK 840
+#define ITEM_RAGING_MASK 841
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 841
+#define ITEMS_COUNT 842
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

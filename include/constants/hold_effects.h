@@ -150,8 +150,9 @@ enum ItemHoldEffect
     HOLD_EFFECT_SKUB,
     HOLD_EFFECT_PAINT,
     HOLD_EFFECT_JOYFUL_MASK,
+    HOLD_EFFECT_RAGING_MASK,
 };
-
+//GTODO:Probably simply the mask effects into a single mask? just kinda wanna get them working rn but this def can be easily adapted
 #define HOLD_EFFECT_CHOICE(holdEffect) ((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SCARF || holdEffect == HOLD_EFFECT_CHOICE_SPECS))
 
 // Terrain seed params
