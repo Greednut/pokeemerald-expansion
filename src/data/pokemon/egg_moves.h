@@ -6573,6 +6573,16 @@ static const u16 sIbaskEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sScolifexEggMoveLearnset[] = {
+    MOVE_ACID_ARMOR,
+    MOVE_FOLLOW_ME,
+    MOVE_DRAIN_PUNCH,
+    MOVE_EERIE_SPELL,
+    MOVE_EERIE_IMPULSE,
+    MOVE_DREAM_EATER,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sImpfectionEggMoveLearnset[] = {
     MOVE_TRANSFORM,
     MOVE_PARTING_SHOT,
@@ -6996,6 +7006,16 @@ static const u16 sZillichinaEggMoveLearnset[] = {
     MOVE_DRILL_RUN,
     MOVE_HORN_DRILL,
     MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBerfgoyleEggMoveLearnset[] = {
+    MOVE_AMNESIA,
+    MOVE_TOXIC_SPIKES,
+    MOVE_VENOM_DRENCH,
+    MOVE_EXPLOSION,
+    MOVE_MEMENTO,
+    MOVE_DISABLE,
     MOVE_UNAVAILABLE,
 };
 

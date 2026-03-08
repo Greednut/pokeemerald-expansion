@@ -2438,6 +2438,7 @@ static const u8 sText_HoldEffectTerrainExtender[] = _("Terrain Extender");
 static const u8 sText_HoldEffectSeeds[] = _("Seeds");
 static const u8 sText_HoldEffectAdrenalineOrb[] = _("Adrenaline Orb");
 static const u8 sText_HoldEffectMemory[] = _("Memory");
+static const u8 sText_HoldEffectPaint[] = _("Paint");
 static const u8 sText_HoldEffectZCrystal[] = _("Z-Crystal");
 static const u8 sText_HoldEffectPlate[] = _("Plate");
 static const u8 sText_HoldEffectUtilityUmbrella[] = _("Utility Umbrella");
@@ -2591,6 +2592,8 @@ static const u8 *const sHoldEffectNames[] =
     [HOLD_EFFECT_BOOSTER_ENERGY] = sText_HoldEffectBoosterEnergy,
     [HOLD_EFFECT_OGERPON_MASK] = sText_HoldEffectOgerponMask,
     [HOLD_EFFECT_BERSERK_GENE] = sText_HoldEffectBerserkGene,
+    [HOLD_EFFECT_PAINT] = sText_HoldEffectPaint,
+    [HOLD_EFFECT_JOYFUL_MASK] = sText_HoldEffectJoyfulMask,
 };
 static const u8 *GetHoldEffectName(enum ItemHoldEffect holdEffect)
 {

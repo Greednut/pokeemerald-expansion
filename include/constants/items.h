@@ -998,11 +998,19 @@
 #define ITEM_CURSED_FANG 830
 #define ITEM_CRIMSON_LENS 831
 #define ITEM_SKUB 832
+#define ITEM_MICROPHONE 833
+#define ITEM_MALACHITE_PAINT 834
+#define ITEM_INSANITY_MASK 835
+#define ITEM_POTER_PINK_PAINT 836
+#define ITEM_LEAD_WHITE_PAINT 837
+#define ITEM_COBALT_VIOLET_PAINT 838
+#define ITEM_WHETSTONE 839
+#define ITEM_JOYFUL_MASK 840
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 833
+#define ITEMS_COUNT 841
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

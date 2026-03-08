@@ -6,7 +6,7 @@
     #define EVO_HELD_ITEM_FIELD_FUNC ItemUseOutOfBattle_CannotUse
 #endif
 
-#define GEM_BOOST_PARAM ((I_GEM_BOOST_POWER >= GEN_6) ? 30 : 50)
+#define GEM_BOOST_PARAM ((I_GEM_BOOST_POWER >= GEN_6) ? 33 : 50)
 #define TYPE_BOOST_PARAM ((I_TYPE_BOOST_POWER >= GEN_4) ? 20 : 10) // For non Pokémon-specific type-boosting held items.
 #define POWER_ITEM_BOOST ((I_POWER_ITEM_BOOST >= GEN_7) ? 8 : 4)
 
@@ -14210,5 +14210,146 @@ const struct Item gItemsInfo[] =
         .flingPower = 120,
         .iconPic = gItemIcon_Skub,
         .iconPalette = gItemIconPalette_Skub,
+    },
+
+    [ITEM_MICROPHONE] =
+    {
+        .name = _("Charged Microphone"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_LIGHT_BALL,
+        .description = COMPOUND_STRING(
+            "A hold item that\n"
+            "raises the Atk and\n"
+            "Sp. Atk of Ampstar."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_Microphone,
+        .iconPalette = gItemIconPalette_Microphone,
+    },
+
+    [ITEM_WHETSTONE] =
+    {
+        .name = _("Whetstone"),
+        .price = 1500,
+        .holdEffect = HOLD_EFFECT_WHETSTONE,
+        .description = COMPOUND_STRING(
+            "Boosts blade moves\n"
+            "slightly and stops\n"
+            "Attack lowering."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_GHOST,
+        .flingPower = 60,
+        .iconPic = gItemIcon_Whetstone,
+        .iconPalette = gItemIconPalette_Whetstone,
+    },
+
+    [ITEM_MALACHITE_PAINT] =
+    {
+        .name = _("Malachite Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_BUG,
+        .flingPower = 60,
+        .iconPic = gItemIcon_MalachitePaint,
+        .iconPalette = gItemIconPalette_MalachitePaint,
+    },
+
+    [ITEM_INSANITY_MASK] =
+    {
+        .name = _("Madness Mask"),
+        .price = 1500,
+        .holdEffect = HOLD_EFFECT_THICK_CLUB,
+        .description = COMPOUND_STRING(
+            "A hold item that \n"
+            "raises Bandicute or\n"
+            "Naughtycoot's Attack."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 90,
+        .iconPic = gItemIcon_InsanityMask,
+        .iconPalette = gItemIconPalette_InsanityMask,
+    },
+
+    [ITEM_POTER_PINK_PAINT] =
+    {
+        .name = _("Poter Pink Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_FAIRY,
+        .flingPower = 60,
+        .iconPic = gItemIcon_PoterPinkPaint,
+        .iconPalette = gItemIconPalette_PoterPinkPaint,
+    },
+
+    [ITEM_LEAD_WHITE_PAINT] =
+    {
+        .name = _("Lead White Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_STEEL,
+        .flingPower = 60,
+        .iconPic = gItemIcon_LeadWhitePaint,
+        .iconPalette = gItemIconPalette_LeadWhitePaint,
+    },
+
+    [ITEM_COBALT_VIOLET_PAINT] =
+    {
+        .name = _("Cobalt Violet Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_GHOST,
+        .flingPower = 60,
+        .iconPic = gItemIcon_CobaltVioletPaint,
+        .iconPalette = gItemIconPalette_CobaltVioletPaint,
+    },
+
+    [ITEM_JOYFUL_MASK] =
+    {
+        .name = _("Joyful Mask"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A Mask wished upon\n"
+            "by Emojinn to change\n"
+            "it's own form."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_JoyfulMask,
+        .iconPalette = gItemIconPalette_JoyfulMask,
     },
 };

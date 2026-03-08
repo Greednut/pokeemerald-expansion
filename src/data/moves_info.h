@@ -9381,7 +9381,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_FLYING,
         .accuracy = 0,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 5 : 10,
+        .pp = 5,
         .target = MOVE_TARGET_USER,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -11684,17 +11684,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Judgment"),
         .description = COMPOUND_STRING(
-            "The type varies with the\n"
-            "kind of Plate held."),
+            "The held Paint color\n"
+            "changes the attack type\n"
+            "used to judge foes."),
         .effect = EFFECT_CHANGE_TYPE_ON_ITEM,
-        .power = 100,
+        .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .argument = { .holdEffect = HOLD_EFFECT_PLATE },
+        .argument = { .holdEffect = HOLD_EFFECT_PAINT },
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -11854,7 +11855,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_BUG,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .target = MOVE_TARGET_USER,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -17157,17 +17158,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Multi-Attack"),
         .description = COMPOUND_STRING(
-            "An attack that changes\n"
-            "with Memories."),
+            "The held Paint color\n"
+            "changes the attack type."),
         .effect = EFFECT_CHANGE_TYPE_ON_ITEM,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 120 : 90,
+        .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .holdEffect = HOLD_EFFECT_MEMORY },
+        .argument = { .holdEffect = HOLD_EFFECT_PAINT },
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -23447,10 +23448,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Alla Prima"),
         .description = COMPOUND_STRING(
-            "A tide of paint that deals\n"
-            "super-effective damage\n"
-            "to Water-types. Heals for\n"
-            "half the damage dealt."),
+            "Paint that washes over Water-types\n"
+            "dealing super-effective damage.\n"
+            "Heals for half the damage dealt."),
         .effect = EFFECT_ALLA_PRIMA,
         .power = 70,
         .type = TYPE_WATER,
@@ -23466,7 +23466,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
-        .battleAnimScript = gBattleAnimMove_Scald,
+        .battleAnimScript = gBattleAnimMove_Surf,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_EROSION_WAVE] =
+    {
+        .name = COMPOUND_STRING("Erosion Wave"),
+        .description = COMPOUND_STRING(
+            "A powerful wave of eroded\n"
+            "rock that may lower Sp. Def."),
+        .effect = EFFECT_HIT,
+        .power = 95,
+        .type = TYPE_ROCK,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Surf,
         .validApprenticeMove = TRUE,
     },
 

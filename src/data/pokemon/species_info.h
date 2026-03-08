@@ -3860,7 +3860,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_WATER_3 },
-       .abilities = { ABILITY_OVERCOAT, ABILITY_SYNCHRONIZE, ABILITY_KLUTZ, ABILITY_TRIAGE }, //GTODO: Add Ability Leech
+       .abilities = { ABILITY_LEECH, ABILITY_SYNCHRONIZE, ABILITY_KLUTZ, ABILITY_OVERCOAT }, //GTODO: Add Ability Leech
        .bodyColor = BODY_COLOR_GREEN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -3896,6 +3896,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Sycosect)
        .levelUpLearnset = sSycosectLevelUpLearnset,
+       .teachableLearnset = sSycosectTeachableLearnset,
+       .eggMoveLearnset = sScolifexEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BELIEECH}),
     },
         [SPECIES_BELIEECH] = 
@@ -3915,7 +3917,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 100,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_WATER_3 },
-       .abilities = { ABILITY_OVERCOAT, ABILITY_SYNCHRONIZE, ABILITY_MAGIC_BOUNCE, ABILITY_TRIAGE }, //GTODO: Add Ability Leech
+       .abilities = { ABILITY_LEECH, ABILITY_SYNCHRONIZE, ABILITY_MAGIC_BOUNCE, ABILITY_OVERCOAT }, //GTODO: Add Ability Leech
        .bodyColor = BODY_COLOR_GREEN,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -3950,7 +3952,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconSprite = gMonIcon_Belieech,
        .iconPalIndex = 1,
        FOOTPRINT(Belieech)
-       .levelUpLearnset = sBelieechLevelUpLearnset,
+       .levelUpLearnset = sScolifexLevelUpLearnset,
+       .teachableLearnset = sScolifexTeachableLearnset,
+       .eggMoveLearnset = sScolifexEggMoveLearnset,
     },
         [SPECIES_IMPFECTION] =
     { 
@@ -7444,6 +7448,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Tadpoison)
        .levelUpLearnset = sTadpoisonLevelUpLearnset,
+       .teachableLearnset = sTadpoisonTeachableLearnset,
+       .eggMoveLearnset = sBerfgoyleEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BRETKHELM}),
     },
         [SPECIES_BRETKHELM] =
@@ -7499,6 +7505,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Bretkhelm)
        .levelUpLearnset = sBretkhelmLevelUpLearnset,
+       .teachableLearnset = sBretkhelmTeachableLearnset,
+       .eggMoveLearnset = sBerfgoyleEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BERFGOYLE}),
     },
         [SPECIES_BERFGOYLE] =
@@ -7554,6 +7562,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Berfgoyle)
        .levelUpLearnset = sBerfgoyleLevelUpLearnset,
+       .teachableLearnset = sBerfgoyleTeachableLearnset,
+       .eggMoveLearnset = sBerfgoyleEggMoveLearnset,
+
     },
 
         [SPECIES_FLUBUNNY] =

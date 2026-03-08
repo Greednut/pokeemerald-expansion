@@ -1171,6 +1171,30 @@ const u16 gItemIconPalette_CrimsonLens[] = INCBIN_U16("graphics/items/icon_palet
 const u32 gItemIcon_Skub[] = INCBIN_U32("graphics/items/icons/skub.4bpp.lz");
 const u16 gItemIconPalette_Skub[] = INCBIN_U16("graphics/items/icon_palettes/skub.gbapal");
 
+const u32 gItemIcon_Microphone[] = INCBIN_U32("graphics/items/icons/microphone.4bpp.lz");
+const u16 gItemIconPalette_Microphone[] = INCBIN_U16("graphics/items/icon_palettes/microphone.gbapal");
+
+const u32 gItemIcon_MalachitePaint[] = INCBIN_U32("graphics/items/icons/malachitepaint.4bpp.lz");
+const u16 gItemIconPalette_MalachitePaint[] = INCBIN_U16("graphics/items/icon_palettes/malachitepaint.gbapal");
+
+const u32 gItemIcon_InsanityMask[] = INCBIN_U32("graphics/items/icons/insanitymask.4bpp.lz");
+const u16 gItemIconPalette_InsanityMask[] = INCBIN_U16("graphics/items/icon_palettes/insanitymask.gbapal");
+
+const u32 gItemIcon_PoterPinkPaint[] = INCBIN_U32("graphics/items/icons/poterpinkpaint.4bpp.lz");
+const u16 gItemIconPalette_PoterPinkPaint[] = INCBIN_U16("graphics/items/icon_palettes/poterpinkpaint.gbapal");
+
+const u32 gItemIcon_LeadWhitePaint[] = INCBIN_U32("graphics/items/icons/leadwhitepaint.4bpp.lz");
+const u16 gItemIconPalette_LeadWhitePaint[] = INCBIN_U16("graphics/items/icon_palettes/leadwhitepaint.gbapal");
+
+const u32 gItemIcon_CobaltVioletPaint[] = INCBIN_U32("graphics/items/icons/cobaltvioletpaint.4bpp.lz");
+const u16 gItemIconPalette_CobaltVioletPaint[] = INCBIN_U16("graphics/items/icon_palettes/cobaltvioletpaint.gbapal");
+
+const u32 gItemIcon_Whetstone[] = INCBIN_U32("graphics/items/icons/whetstone.4bpp.lz");
+const u16 gItemIconPalette_Whetstone[] = INCBIN_U16("graphics/items/icon_palettes/whetstone.gbapal");
+
+const u32 gItemIcon_JoyfulMask[] = INCBIN_U32("graphics/items/icons/joyfulmask.4bpp.lz");
+const u16 gItemIconPalette_JoyfulMask[] = INCBIN_U16("graphics/items/icon_palettes/joyfulmask.gbapal");
+
 // Incenses
 
 const u32 gItemIcon_SeaIncense[] = INCBIN_U32("graphics/items/icons/sea_incense.4bpp.lz");

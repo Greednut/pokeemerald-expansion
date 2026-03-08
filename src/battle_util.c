@@ -8514,6 +8514,8 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, enum InverseBattleCheck
         return FALSE;
     if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
         return FALSE;
+    //if ((holdEffect == HOLD_EFFECT_JOYFUL_MASK && atkBaseSpeciesId == SPECIES_EMOJINN_JOYFUL))
+        return FALSE;
     if ((gAiLogicData->aiCalcInProgress ? gAiLogicData->abilities[battler] : GetBattlerAbility(battler)) == ABILITY_LEVITATE)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!(checkInverse == INVERSE_BATTLE) || (!FlagGet(B_FLAG_INVERSE_BATTLE)) || !(gFieldStatuses & STATUS_FIELD_INVERSE_ROOM)))
