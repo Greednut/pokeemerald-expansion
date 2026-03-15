@@ -21653,18 +21653,19 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Mud Maelstrom"),
         .description = COMPOUND_STRING(
             "Torrents the foe with mud\n"
-            "which may reduce Speed."),
+            "which damage the foe over\n"
+            "time."),
         .effect = EFFECT_HIT,
-        .power = 110,
+        .power = 100,
         .type = TYPE_GROUND,
-        .accuracy = 90,
+        .accuracy = 80,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 30,
+            .moveEffect = MOVE_EFFECT_MUD_MAELSTROM,
+            .chance = 100,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -23493,6 +23494,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
         .battleAnimScript = gBattleAnimMove_Surf,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_BRACKISH_GASH] =
+    {
+        .name = COMPOUND_STRING("Brackish Gash"),
+        .description = COMPOUND_STRING(
+            "Slicing attack cuts\n"
+            "Two turns damage will not heal"),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PSYCHIC_NOISE,
+            .chance = 100,
+        }),
+        .slicingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Slash,
         .validApprenticeMove = TRUE,
     },
 

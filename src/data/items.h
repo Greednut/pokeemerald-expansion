@@ -14369,4 +14369,72 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_RagingMask,
         .iconPalette = gItemIconPalette_RagingMask,
     },
+
+    [ITEM_SOBBING_MASK] =
+    {
+        .name = _("Sobbing Mask"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_SOBBING_MASK,
+        .description = COMPOUND_STRING(
+            "A Mask wished upon\n"
+            "by a Emojinn to\n"
+            "change it's own form."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_SobbingMask,
+        .iconPalette = gItemIconPalette_SobbingMask,
+    },
+
+    [ITEM_SUBLIME_KEY] =
+    {
+        .name = _("Sublime Key"),
+        .price = 5,
+        .holdEffect = HOLD_EFFECT_SUBLIME_KEY,
+        .description = COMPOUND_STRING(
+            "A key of intense heat.\n"
+            "If held it will free an\n"
+            "imprisoned Pokemon."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_SublimeKey,
+        .iconPalette = gItemIconPalette_SublimeKey,
+    },
+
+    [ITEM_PILFERED_FLAME] =
+    {
+        .name = _("Pilfered Flame"),
+        .price = 3000,
+        .holdEffect = HOLD_EFFECT_FLAME_ORB,
+        .description = COMPOUND_STRING(
+            "A unchained flame\n"
+            "that yearns for a \n"
+            "new vessel."),
+        .pocket = POCKET_ITEMS,
+        .type = EVO_HELD_ITEM_TYPE,
+        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 80,
+        .iconPic = gItemIcon_PilferedFlame,
+        .iconPalette = gItemIconPalette_PilferedFlame,
+    },
+
+    [ITEM_BROKEN_CONTROLLER] =
+    {
+        .name = _("Broken Controller"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A seemingly useless\n"
+            "controller that\n"
+            "has 64 sides."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_BrokenController,
+        .iconPic = gItemIcon_BrokenController,
+        .iconPalette = gItemIconPalette_BrokenController,
+    },
 };

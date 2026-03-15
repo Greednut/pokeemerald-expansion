@@ -6573,6 +6573,16 @@ static const u16 sIbaskEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sTurturretEggMoveLearnset[] = {
+    MOVE_HYDRO_PUMP,
+    MOVE_THUNDER_CAGE,
+    MOVE_AMNESIA,
+    MOVE_HEAL_PULSE,
+    MOVE_LASER_FOCUS,
+    MOVE_FINAL_GAMBIT,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sScolifexEggMoveLearnset[] = {
     MOVE_ACID_ARMOR,
     MOVE_FOLLOW_ME,
@@ -6987,6 +6997,16 @@ static const u16 sMolterraEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sShaikleEggMoveLearnset[] = {
+    MOVE_FLAIL,
+    MOVE_FALSE_SURRENDER,
+    MOVE_BORE_BITE,
+    MOVE_REVENGE,
+    MOVE_FOLLOW_ME,
+    MOVE_BELLY_DRUM, 
+    MOVE_UNAVAILABLE, 
+};
+
 static const u16 sDraklownEggMoveLearnset[] = {
     MOVE_COPYCAT, 
     MOVE_DESTINY_BOND, 
@@ -7046,6 +7066,16 @@ static const u16 sCamerexEggMoveLearnset[] = {
     MOVE_GEAR_UP,
     MOVE_METAL_BURST,
     MOVE_FLATTER,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sTamanautEggMoveLearnset[] = {
+    MOVE_PARTING_SHOT,
+    MOVE_RECOVER,
+    MOVE_SYNCHRONOISE,
+    MOVE_IMPRISON,
+    MOVE_DISCHARGE,
+    MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
 };
 
@@ -7175,6 +7205,16 @@ static const u16 sLeopawnEggMoveLearnset[] = {
     MOVE_POWER_TRIP,
     MOVE_QUICK_GUARD,
     MOVE_TEETER_DANCE,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFaustivalEggMoveLearnset[] = {
+    MOVE_ICICLE_CRASH, 
+    MOVE_PETAL_DANCE, 
+    MOVE_MYSTICAL_FIRE, 
+    MOVE_LEECH_SEED, 
+    MOVE_FROST_BREATH, 
+    MOVE_FIRE_LASH,
     MOVE_UNAVAILABLE,
 };
 
@@ -7392,6 +7432,16 @@ static const u16 sEpilateEggMoveLearnset[] = {
     MOVE_HURRICANE,
     MOVE_MIND_BLOWN,
     MOVE_ZAP_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sQrakenmarkEggMoveLearnset[] = {
+    MOVE_ACID_ARMOR,
+    MOVE_BATON_PASS,
+    MOVE_SHADOW_FORCE,
+    MOVE_SOAK,
+    MOVE_WATER_SPOUT,
+    MOVE_WAVE_CRASH,
     MOVE_UNAVAILABLE,
 };
 
@@ -7675,7 +7725,7 @@ static const u16 sGuertenityEggMoveLearnset[] = {
 };
 
 static const u16 sSchizstarfEggMoveLearnset[] = {
-    MOVE_BATON_PASS, 
+    MOVE_BATON_PASS,
     MOVE_CLOSE_COMBAT,
     MOVE_HYDRO_PUMP,
     MOVE_LANDS_WRATH,

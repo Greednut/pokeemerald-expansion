@@ -104,6 +104,12 @@ enum {
     MENU_CATALOG_FRIDGE,
     MENU_CATALOG_FAN,
     MENU_CATALOG_MOWER,
+    MENU_POLYGON,
+    MENU_SAMURAI,
+    MENU_WHIP,
+    MENU_DIVINE,
+    MENU_PEDESTAL,
+    MENU_PUNCTURE,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
     MENU_FIELD_MOVES
@@ -126,6 +132,7 @@ enum {
     ACTIONS_SPIN_TRADE,
     ACTIONS_TAKEITEM_TOSS,
     ACTIONS_ROTOM_CATALOG,
+    ACTIONS_BROKEN_CONTROLLER,
     ACTIONS_ZYGARDE_CUBE,
 };
 
@@ -512,6 +519,12 @@ static void CursorCb_CatalogWashing(u8);
 static void CursorCb_CatalogFridge(u8);
 static void CursorCb_CatalogFan(u8);
 static void CursorCb_CatalogMower(u8);
+static void CursorCb_Polygon(u8);
+static void CursorCb_Samurai(u8);
+static void CursorCb_Whip(u8);
+static void CursorCb_Divine(u8);
+static void CursorCb_Pedestal(u8);
+static void CursorCb_Puncture(u8);
 static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
 static bool8 SetUpFieldMove_Surf(void);
@@ -2725,6 +2738,9 @@ void DisplayPartyMenuStdMessage(u32 stringId)
             break;
         case PARTY_MSG_WHICH_APPLIANCE:
             *windowPtr = AddWindow(&sOrderWhichApplianceMsgWindowTemplate);
+            break;
+        case PARTY_MSG_CHOOSE_FIGHTER:
+            *windowPtr = AddWindow(&sOrderChooseFighterMsgWindowTemplate);
             break;
         default:
             *windowPtr = AddWindow(&sDefaultPartyMsgWindowTemplate);
@@ -6699,6 +6715,55 @@ static void CursorCb_CatalogMower(u8 taskId)
     gSpecialVar_0x8000 = ROTOM_MOW_MOVE;
     TryMultichoiceFormChange(taskId);
 }
+
+void ItemUseCB_BrokenController(u8 taskId, TaskFunc task)
+{
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_BROKEN_CONTROLLER);
+    DisplaySelectionWindow(SELECTWINDOW_CATALOG);
+    DisplayPartyMenuStdMessage(PARTY_MSG_CHOOSE_FIGHTER);
+    gTasks[taskId].data[0] = 0xFF;
+    gTasks[taskId].func = Task_HandleSelectionMenuInput;
+}
+
+
+static void CursorCb_Polygon(u8 taskId)
+{
+    gSpecialVar_Result = 0;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_Samurai(u8 taskId)
+{
+    gSpecialVar_Result = 1;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_Whip(u8 taskId)
+{
+    gSpecialVar_Result = 2;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_Divine(u8 taskId)
+{
+    gSpecialVar_Result = 3;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_Pedestal(u8 taskId)
+{
+    gSpecialVar_Result = 4;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_Puncture(u8 taskId)
+{
+    gSpecialVar_Result = 5;
+    TryMultichoiceFormChange(taskId);
+}
+
 
 void ItemUseCB_ZygardeCube(u8 taskId, TaskFunc task)
 {

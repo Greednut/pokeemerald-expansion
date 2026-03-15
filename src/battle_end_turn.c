@@ -37,6 +37,7 @@ enum EndTurnResolutionOrder
     ENDTURN_CURSE,
     ENDTURN_WRAP,
     ENDTURN_SALT_CURE,
+    ENDTURN_MUD_MAELSTROM,
     ENDTURN_OCTOLOCK,
     ENDTURN_SYRUP_BOMB,
     ENDTURN_TAUNT,
@@ -815,6 +816,29 @@ static bool32 HandleEndTurnSaltCure(u32 battler)
 
     return effect;
 }
+static bool32 HandleEndTurnMudMaelstrom(u32 battler)
+{
+    bool32 effect = FALSE;
+
+    gBattleStruct->turnEffectsBattlerId++;
+
+    if (gStatuses4[battler] & STATUS4_MUD_MAELSTROM
+     && IsBattlerAlive(battler)
+     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+    {
+        if (IS_BATTLER_ANY_TYPE(battler, TYPE_FLYING))
+            gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 8;
+        else
+            gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 8;
+        if (gBattleStruct->moveDamage[battler] == 0)
+            gBattleStruct->moveDamage[battler] = 1;
+        PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_MUD_MAELSTROM);
+        BattleScriptExecute(BattleScript_SaltCureExtraDamage);
+        effect = TRUE;
+    }
+
+    return effect;
+}
 
 static bool32 HandleEndTurnOctolock(u32 battler)
 {
@@ -1547,6 +1571,7 @@ static bool32 (*const sEndTurnEffectHandlers[])(u32 battler) =
     [ENDTURN_CURSE] = HandleEndTurnCurse,
     [ENDTURN_WRAP] = HandleEndTurnWrap,
     [ENDTURN_SALT_CURE] = HandleEndTurnSaltCure,
+    [ENDTURN_MUD_MAELSTROM] = HandleEndTurnMudMaelstrom,
     [ENDTURN_OCTOLOCK] = HandleEndTurnOctolock,
     [ENDTURN_SYRUP_BOMB] = HandleEndTurnSyrupBomb,
     [ENDTURN_TAUNT] = HandleEndTurnTaunt,

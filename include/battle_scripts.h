@@ -897,6 +897,7 @@ extern const u8 BattleScript_EffectSnow[];
 extern const u8 BattleScript_EffectTakeHeart[];
 extern const u8 BattleScript_EffectCorrosiveGas[];
 extern const u8 BattleScript_MoveEffectSaltCure[];
+extern const u8 BattleScript_MoveEffectMudMaelstrom[];
 extern const u8 BattleScript_EffectChillyReception[];
 extern const u8 BattleScript_EffectMaxMove[];
 extern const u8 BattleScript_EffectGlaiveRush[];

@@ -8518,6 +8518,8 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, enum InverseBattleCheck
         return FALSE;
     if ((holdEffect == HOLD_EFFECT_RAGING_MASK && gBattleMons[battler].species == SPECIES_EMOJINN_RAGING))
         return FALSE;
+    if ((holdEffect == HOLD_EFFECT_SOBBING_MASK && gBattleMons[battler].species == SPECIES_EMOJINN_SOBBING))
+        return FALSE;
     if ((gAiLogicData->aiCalcInProgress ? gAiLogicData->abilities[battler] : GetBattlerAbility(battler)) == ABILITY_LEVITATE)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!(checkInverse == INVERSE_BATTLE) || (!FlagGet(B_FLAG_INVERSE_BATTLE)) || !(gFieldStatuses & STATUS_FIELD_INVERSE_ROOM)))
@@ -9402,6 +9404,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
     case HOLD_EFFECT_GRISEOUS_ORB:
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_GIRATINA && (moveType == TYPE_GHOST || moveType == TYPE_DRAGON))
+            modifier = uq4_12_multiply(modifier, holdEffectModifier);
+        break;
+        case HOLD_EFFECT_SUBLIME_KEY:
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_ARCTIGLOBE && (moveType == TYPE_FIRE))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_SOUL_DEW:

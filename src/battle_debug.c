@@ -189,6 +189,7 @@ enum
     LIST_STATUS4_MUD_SPORT,
     LIST_STATUS4_WATER_SPORT,
     LIST_STATUS4_SALT_CURE,
+    LIST_STATUS4_MUD_MAELSTROM,
     LIST_STATUS4_SYRUP_BOMB,
     LIST_STATUS4_GLAIVE_RUSH,
     LIST_STATUS4_GASTRO_ACID,
@@ -371,6 +372,7 @@ static const u8 sText_MudSport[] = _("Mud Sport");
 static const u8 sText_WaterSport[] = _("Water Sport");
 static const u8 sText_InfiniteConfusion[] = _("Infinite Confusion");
 static const u8 sText_SaltCure[] = _("Salt Cure");
+static const u8 sText_Mud_Maelstrom[] = _("Mud Maelstrom");
 static const u8 sText_SyrupBomb[] = _("Syrup Bomb");
 static const u8 sText_GlaiveRush[] = _("Glaive Rush");
 static const u8 sText_Reflect[] = _("Reflect");
@@ -619,6 +621,7 @@ static const struct ListMenuItem sStatus4ListItems[] =
     {sText_MudSport, LIST_STATUS4_MUD_SPORT},
     {sText_WaterSport, LIST_STATUS4_WATER_SPORT},
     {sText_SaltCure, LIST_STATUS4_SALT_CURE},
+    {sText_SaltCure, LIST_STATUS4_MUD_MAELSTROM},
     {sText_SyrupBomb, LIST_STATUS4_SYRUP_BOMB},
     {sText_GlaiveRush, LIST_STATUS4_GLAIVE_RUSH},
     {sText_GastroAcid, LIST_STATUS4_GASTRO_ACID},
@@ -2596,6 +2599,7 @@ static const u8 *const sHoldEffectNames[] =
     [HOLD_EFFECT_PAINT] = sText_HoldEffectPaint,
     [HOLD_EFFECT_JOYFUL_MASK] = sText_HoldEffectJoyfulMask,
     [HOLD_EFFECT_RAGING_MASK] = sText_HoldEffectJoyfulMask,
+    [HOLD_EFFECT_SOBBING_MASK] = sText_HoldEffectJoyfulMask,
 };
 static const u8 *GetHoldEffectName(enum ItemHoldEffect holdEffect)
 {

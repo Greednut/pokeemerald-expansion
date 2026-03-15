@@ -669,6 +669,9 @@ const u16 gItemIconPalette_MasterpieceTeacup[] = INCBIN_U16("graphics/items/icon
 const u32 gItemIcon_MetalAlloy[] = INCBIN_U32("graphics/items/icons/metal_alloy.4bpp.lz");
 const u16 gItemIconPalette_MetalAlloy[] = INCBIN_U16("graphics/items/icon_palettes/metal_alloy.gbapal");
 
+const u32 gItemIcon_PilferedFlame[] = INCBIN_U32("graphics/items/icons/pilferedflame.4bpp.lz");
+const u16 gItemIconPalette_PilferedFlame[] = INCBIN_U16("graphics/items/icon_palettes/pilferedflame.gbapal");
+
 // Nectars
 
 const u32 gItemIcon_RedNectar[] = INCBIN_U32("graphics/items/icons/red_nectar.4bpp.lz");
@@ -1197,6 +1200,15 @@ const u16 gItemIconPalette_JoyfulMask[] = INCBIN_U16("graphics/items/icon_palett
 
 const u32 gItemIcon_RagingMask[] = INCBIN_U32("graphics/items/icons/ragingmask.4bpp.lz");
 const u16 gItemIconPalette_RagingMask[] = INCBIN_U16("graphics/items/icon_palettes/ragingmask.gbapal");
+
+const u32 gItemIcon_SobbingMask[] = INCBIN_U32("graphics/items/icons/sobbingmask.4bpp.lz");
+const u16 gItemIconPalette_SobbingMask[] = INCBIN_U16("graphics/items/icon_palettes/sobbingmask.gbapal");
+
+const u32 gItemIcon_SublimeKey[] = INCBIN_U32("graphics/items/icons/sublimekey.4bpp.lz");
+const u16 gItemIconPalette_SublimeKey[] = INCBIN_U16("graphics/items/icon_palettes/sublimekey.gbapal");
+
+const u32 gItemIcon_BrokenController[] = INCBIN_U32("graphics/items/icons/brokencontroller.4bpp.lz");
+const u16 gItemIconPalette_BrokenController[] = INCBIN_U16("graphics/items/icon_palettes/brokencontroller.gbapal");
 
 // Incenses
 

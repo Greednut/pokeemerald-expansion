@@ -4208,6 +4208,14 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gBattlescriptCurrInstr = BattleScript_MoveEffectSaltCure;
                 }
                 break;
+            case MOVE_EFFECT_MUD_MAELSTROM:
+                if (!(gStatuses4[gBattlerTarget] & STATUS4_MUD_MAELSTROM))
+                {
+                    gStatuses4[gBattlerTarget] |= STATUS4_MUD_MAELSTROM;
+                    BattleScriptPush(gBattlescriptCurrInstr + 1);
+                    gBattlescriptCurrInstr = BattleScript_MoveEffectMudMaelstrom;
+                }
+                break;
             case MOVE_EFFECT_EERIE_SPELL:
                 if (gLastMoves[gBattlerTarget] != MOVE_NONE && gLastMoves[gBattlerTarget] != 0xFFFF)
                 {
@@ -17911,6 +17919,15 @@ void BS_ApplySaltCure(void)
 
     u8 battler = GetBattlerForBattleScript(cmd->battler);
     gStatuses4[battler] |= STATUS4_SALT_CURE;
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_ApplyMudMaelstrom(void) //Maybe add the BS thing somewhere too?
+{
+    NATIVE_ARGS(u8 battler);
+
+    u8 battler = GetBattlerForBattleScript(cmd->battler);
+    gStatuses4[battler] |= STATUS4_MUD_MAELSTROM;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 

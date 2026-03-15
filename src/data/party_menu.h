@@ -493,6 +493,17 @@ static const struct WindowTemplate sOrderWhichApplianceMsgWindowTemplate =
     .baseBlock = 0x299,
 };
 
+static const struct WindowTemplate sOrderChooseFighterMsgWindowTemplate =
+{
+    .bg = 2,
+    .tilemapLeft = 1,
+    .tilemapTop = 15,
+    .width = 14,
+    .height = 4,
+    .paletteNum = 15,
+    .baseBlock = 0x299,
+};
+
 static const struct WindowTemplate sItemGiveTakeWindowTemplate =
 {
     .bg = 2,
@@ -658,6 +669,7 @@ static const u8 *const sActionStringTable[] =
     [PARTY_MSG_DO_WHAT_WITH_MAIL]      = gText_DoWhatWithMail,
     [PARTY_MSG_ALREADY_HOLDING_ONE]    = gText_AlreadyHoldingOne,
     [PARTY_MSG_WHICH_APPLIANCE]        = gText_WhichAppliance,
+    [PARTY_MSG_CHOOSE_FIGHTER]         = gText_ChooseFighter,
     [PARTY_MSG_CHOOSE_SECOND_FUSION]   = gText_NextFusionMon,
     [PARTY_MSG_NO_POKEMON]             = COMPOUND_STRING("You have no POKéMON."),
     [PARTY_MSG_CHOOSE_MON_FOR_BOX]     = gText_SendWhichMonToPC,
@@ -723,6 +735,12 @@ struct
     [MENU_CATALOG_FRIDGE]  = {COMPOUND_STRING("Refrigerator"),    CursorCb_CatalogFridge},
     [MENU_CATALOG_FAN]     = {COMPOUND_STRING("Electric fan"),    CursorCb_CatalogFan},
     [MENU_CATALOG_MOWER]   = {COMPOUND_STRING("Lawn mower"),      CursorCb_CatalogMower},
+    [MENU_POLYGON]         = {COMPOUND_STRING("Polygon"),         CursorCb_Polygon},
+    [MENU_SAMURAI]         = {COMPOUND_STRING("Samurai"),         CursorCb_Samurai},
+    [MENU_WHIP]            = {COMPOUND_STRING("Whip"),            CursorCb_Whip},
+    [MENU_DIVINE]          = {COMPOUND_STRING("Divine"),          CursorCb_Divine},
+    [MENU_PEDESTAL]        = {COMPOUND_STRING("Pedestal"),        CursorCb_Pedestal},
+    [MENU_PUNCTURE]        = {COMPOUND_STRING("Puncture"),        CursorCb_Puncture},
     [MENU_CHANGE_FORM]     = {COMPOUND_STRING("Change form"),     CursorCb_ChangeForm},
     [MENU_CHANGE_ABILITY]  = {COMPOUND_STRING("Change Ability"),  CursorCb_ChangeAbility},
 };
@@ -741,6 +759,7 @@ static const u8 sPartyMenuAction_TradeSummaryCancel1[] = {MENU_TRADE1, MENU_SUMM
 static const u8 sPartyMenuAction_TradeSummaryCancel2[] = {MENU_TRADE2, MENU_SUMMARY, MENU_CANCEL1};
 static const u8 sPartyMenuAction_TakeItemTossCancel[] = {MENU_TAKE_ITEM, MENU_TOSS, MENU_CANCEL1};
 static const u8 sPartyMenuAction_RotomCatalog[] = {MENU_CATALOG_BULB, MENU_CATALOG_OVEN, MENU_CATALOG_WASHING, MENU_CATALOG_FRIDGE, MENU_CATALOG_FAN, MENU_CATALOG_MOWER, MENU_CANCEL1};
+static const u8 sPartyMenuAction_BrokenController[] = {MENU_POLYGON, MENU_SAMURAI, MENU_WHIP, MENU_DIVINE, MENU_PEDESTAL, MENU_PUNCTURE, MENU_CANCEL1};
 static const u8 sPartyMenuAction_ZygardeCube[] = {MENU_CHANGE_FORM, MENU_CHANGE_ABILITY, MENU_CANCEL1};
 
 
@@ -762,6 +781,7 @@ static const u8 *const sPartyMenuActions[] =
     [ACTIONS_SPIN_TRADE]    = sPartyMenuAction_TradeSummaryCancel2,
     [ACTIONS_TAKEITEM_TOSS] = sPartyMenuAction_TakeItemTossCancel,
     [ACTIONS_ROTOM_CATALOG] = sPartyMenuAction_RotomCatalog,
+    [ACTIONS_BROKEN_CONTROLLER] = sPartyMenuAction_BrokenController,
     [ACTIONS_ZYGARDE_CUBE]  = sPartyMenuAction_ZygardeCube,
 };
 
@@ -782,6 +802,7 @@ static const u8 sPartyMenuActionCounts[] =
     [ACTIONS_SPIN_TRADE]    = ARRAY_COUNT(sPartyMenuAction_TradeSummaryCancel2),
     [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel),
     [ACTIONS_ROTOM_CATALOG] = ARRAY_COUNT(sPartyMenuAction_RotomCatalog),
+    [ACTIONS_BROKEN_CONTROLLER] = ARRAY_COUNT(sPartyMenuAction_BrokenController),
     [ACTIONS_ZYGARDE_CUBE]  = ARRAY_COUNT(sPartyMenuAction_ZygardeCube),
 };
 

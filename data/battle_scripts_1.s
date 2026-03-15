@@ -446,6 +446,20 @@ BattleScript_SaltCureExtraDamage::
 	tryfaintmon BS_ATTACKER
 	end2
 
+BattleScript_MoveEffectMudMaelstrom::
+	printstring STRINGID_TARGETISBEINGMUDMAELSTORMED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_MudMaelstromExtraDamage::
+	playanimation BS_ATTACKER, B_ANIM_SALT_CURE_DAMAGE, NULL
+	waitanimation
+	call BattleScript_HurtTarget_NoString
+	printstring STRINGID_TARGETISHURTBYMUDMAELSTORM
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_ATTACKER
+	end2
+
 BattleScript_HurtTarget_NoString:
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	healthbarupdate BS_TARGET

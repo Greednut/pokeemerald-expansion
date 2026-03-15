@@ -209,6 +209,7 @@ enum BattlerId
 #define STATUS4_GASTRO_ACID             (1 << 7)
 #define STATUS4_BURIED                  (1 << 8)
 #define STATUS4_TEMP_TRAPPED            (1 << 9)
+#define STATUS4_MUD_MAELSTROM           (1 << 10)
 
 
 #define HITMARKER_UNUSED_1              (1 << 4)
@@ -480,6 +481,7 @@ enum MoveEffects
     MOVE_EFFECT_EVOCATION,
     MOVE_EFFECT_BRUTAL_PUNISHMENT,
     MOVE_EFFECT_BRUTAL_PUNISHMENT2,
+    MOVE_EFFECT_MUD_MAELSTROM,
     NUM_MOVE_EFFECTS
 };
 

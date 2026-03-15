@@ -1007,11 +1007,15 @@
 #define ITEM_WHETSTONE 839
 #define ITEM_JOYFUL_MASK 840
 #define ITEM_RAGING_MASK 841
+#define ITEM_SOBBING_MASK 842
+#define ITEM_SUBLIME_KEY 843
+#define ITEM_PILFERED_FLAME 844
+#define ITEM_BROKEN_CONTROLLER 845
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 842
+#define ITEMS_COUNT 846
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

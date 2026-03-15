@@ -537,7 +537,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 76,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_NONE },
-       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_SHEER_FORCE },
+       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_NO_GUARD },
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -595,7 +595,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 76,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_NONE },
-       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_SHEER_FORCE },
+       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_NO_GUARD },
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -639,10 +639,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         [SPECIES_LEMIRETHUN] =
     { 
        .baseHP        = 110,
-       .baseAttack    = 60,
-       .baseDefense   = 90,
+       .baseAttack    = 85,
+       .baseDefense   = 80,
        .baseSpeed     = 45,
-       .baseSpAttack  = 125,
+       .baseSpAttack  = 110,
        .baseSpDefense = 100,
        .types = { TYPE_WATER, TYPE_GROUND },
        .catchRate = 3,
@@ -653,7 +653,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .friendship = 76,
        .growthRate = GROWTH_MEDIUM_SLOW,
        .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_NONE },
-       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_SHEER_FORCE },
+       .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_STORM_DRAIN, ABILITY_NO_GUARD },
        .bodyColor = BODY_COLOR_BLUE,
        .isLegendary = FALSE,
        .perfectIVCount = FALSE,
@@ -2883,6 +2883,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Turtini)
        .levelUpLearnset = sTurtiniLevelUpLearnset,
+       .teachableLearnset = sTurtiniTeachableLearnset,
+       .eggMoveLearnset = sTurturretEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TURTURRET}),
     },
 
@@ -2939,6 +2941,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Turturret)
        .levelUpLearnset = sTurturretLevelUpLearnset,
+       .teachableLearnset = sTurturretTeachableLearnset,
+       .eggMoveLearnset = sTurturretEggMoveLearnset,
     },
 
         [SPECIES_MIMIKRAB] =
@@ -5617,7 +5621,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Meatier,
        .shinyPalette = gMonShinyPalette_Meatier,
        .iconSprite = gMonIcon_Meatier,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Meatier)
        .levelUpLearnset = sMeatierLevelUpLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_TUNGHASKA}),
@@ -5673,7 +5677,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Tunghaska,
        .shinyPalette = gMonShinyPalette_Tunghaska,
        .iconSprite = gMonIcon_Tunghaska,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Tunghaska)
        .levelUpLearnset = sTunghaskaLevelUpLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_BRAXITYTAN}),
@@ -8016,6 +8020,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Tamanaut)
        .levelUpLearnset = sTamanautLevelUpLearnset,
+       .teachableLearnset = sTamanautTeachableLearnset,
+       .eggMoveLearnset = sTamanautEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DAWN_STONE, SPECIES_STARHIRO},
                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_DOUBTLAW}), 
     },
@@ -8073,6 +8079,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Starhiro)
        .levelUpLearnset = sStarhiroLevelUpLearnset,
+       .teachableLearnset = sStarhiroTeachableLearnset,
+       .eggMoveLearnset = sTamanautEggMoveLearnset,
     },
 
         [SPECIES_DOUBTLAW] =
@@ -8128,6 +8136,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 2,
        FOOTPRINT(Doubtlaw)
        .levelUpLearnset = sDoubtlawLevelUpLearnset,
+       .teachableLearnset = sDoubtlawTeachableLearnset,
+       .eggMoveLearnset = sTamanautEggMoveLearnset,
     },
     
         [SPECIES_SHROOMALICE] =
@@ -15591,6 +15601,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Kramberry)
        .levelUpLearnset = sKramberryLevelUpLearnset,
+       .teachableLearnset = sKramberryTeachableLearnset,
+       .eggMoveLearnset = sFaustivalEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_FAUSTIVAL}),
     },
         [SPECIES_FAUSTIVAL] =
@@ -15646,6 +15658,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Faustival)
        .levelUpLearnset = sFaustivalLevelUpLearnset,
+       .teachableLearnset = sFaustivalTeachableLearnset,
+       .eggMoveLearnset = sFaustivalEggMoveLearnset,
     },
 
         [SPECIES_BAMBUYA] =
@@ -17490,6 +17504,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Fettorch)
        .levelUpLearnset = sFettorchLevelUpLearnset,
+       .teachableLearnset = sFettorchTeachableLearnset,
+       .eggMoveLearnset = sShaikleEggMoveLearnset,
        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_MANICLE}),
     },
 
@@ -17546,7 +17562,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Manicle)
        .levelUpLearnset = sManicleLevelUpLearnset,
-       .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SHAIKLE}),
+       .teachableLearnset = sManicleTeachableLearnset,
+       .eggMoveLearnset = sShaikleEggMoveLearnset,
+       .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SHAIKLE, CONDITIONS({IF_HOLD_ITEM, ITEM_PILFERED_FLAME})}), 
     },
 
         [SPECIES_SHAIKLE] =
@@ -17602,6 +17620,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 0,
        FOOTPRINT(Shaikle)
        .levelUpLearnset = sShaikleLevelUpLearnset,
+       .teachableLearnset = sShaikleTeachableLearnset,
+       .eggMoveLearnset = sShaikleEggMoveLearnset,
     },
 
         [SPECIES_TRICKLING] =
@@ -19563,6 +19583,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .iconPalIndex = 1,
        FOOTPRINT(Seraphill)
        .levelUpLearnset = sSeraphillLevelUpLearnset,
+       .teachableLearnset = sSeraphillTeachableLearnset,
     },
     
         [SPECIES_SHIRIBIKO_PLAYING] =
