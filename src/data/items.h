@@ -14284,7 +14284,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_POTER_PINK_PAINT] =
     {
-        .name = _("Poter Pink Paint"),
+        .name = _("Potter Pink Paint"),
         .price = 2500,
         .holdEffect = HOLD_EFFECT_PAINT,
         .description = COMPOUND_STRING(
@@ -14334,6 +14334,240 @@ const struct Item gItemsInfo[] =
         .flingPower = 60,
         .iconPic = gItemIcon_CobaltVioletPaint,
         .iconPalette = gItemIconPalette_CobaltVioletPaint,
+    },
+
+    [ITEM_PHTHALO_GREEN_PAINT] =
+    {
+        .name = _("Phthalo Green Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_GRASS,
+        .flingPower = 60,
+        .iconPic = gItemIcon_PhthaloGreenPaint,
+        .iconPalette = gItemIconPalette_PhthaloGreenPaint,
+    },
+
+    [ITEM_AZUMARITE_PAINT] =
+    {
+        .name = _("Azumarite Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_WATER,
+        .flingPower = 60,
+        .iconPic = gItemIcon_AzumaritePaint,
+        .iconPalette = gItemIconPalette_AzumaritePaint,
+    },
+
+    [ITEM_PYRROLE_ORANGE_PAINT] =
+    {
+        .name = _("Pyrrole Red Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_FIRE,
+        .flingPower = 60,
+        .iconPic = gItemIcon_PyrroleOrangePaint,
+        .iconPalette = gItemIconPalette_PyrroleOrangePaint,
+    },
+
+    [ITEM_HANSA_YELLOW_PAINT] =
+    {
+        .name = _("Hansa Yellow Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_ELECTRIC,
+        .flingPower = 60,
+        .iconPic = gItemIcon_HansaYellowPaint,
+        .iconPalette = gItemIconPalette_HansaYellowPaint,
+    },
+
+    [ITEM_CARBON_BLACK_PAINT] =
+    {
+        .name = _("Carbon Black Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_DARK,
+        .flingPower = 60,
+        .iconPic = gItemIcon_CarbonBlackPaint,
+        .iconPalette = gItemIconPalette_CarbonBlackPaint,
+    },
+
+    [ITEM_ULTRAMARINE_PAINT] =
+    {
+        .name = _("Ultramarine Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_DRAGON,
+        .flingPower = 60,
+        .iconPic = gItemIcon_UltramarinePaint,
+        .iconPalette = gItemIconPalette_UltramarinePaint,
+    },
+
+    [ITEM_BURNT_SIENNA_PAINT] =
+    {
+        .name = _("Burnt Sienna Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_FIGHTING,
+        .flingPower = 60,
+        .iconPic = gItemIcon_BurntSiennaPaint,
+        .iconPalette = gItemIconPalette_BurntSiennaPaint,
+    },
+
+    [ITEM_CERULEAN_BLUE_PAINT] =
+    {
+        .name = _("Cerulean Blue Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_FLYING,
+        .flingPower = 60,
+        .iconPic = gItemIcon_BurntSiennaPaint,
+        .iconPalette = gItemIconPalette_BurntSiennaPaint,
+    },
+
+    [ITEM_UMBER_PAINT] =
+    {
+        .name = _("Umber Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_GROUND,
+        .flingPower = 60,
+        .iconPic = gItemIcon_UmberPaint,
+        .iconPalette = gItemIconPalette_UmberPaint,
+    },
+
+    [ITEM_TITANIUM_WHITE_PAINT] =
+    {
+        .name = _("Powder blue paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_ICE,
+        .flingPower = 60,
+        .iconPic = gItemIcon_TitaniumWhitePaint,
+        .iconPalette = gItemIconPalette_TitaniumWhitePaint,
+    },
+
+    [ITEM_HELIOTROPE_PAINT] =
+    {
+        .name = _("Heliotrope Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_POISON,
+        .flingPower = 60,
+        .iconPic = gItemIcon_HeliotropePaint,
+        .iconPalette = gItemIconPalette_HeliotropePaint,
+    },
+
+    [ITEM_QUINACRIDONE_PAINT] =
+    {
+        .name = _("Quinacridone Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_PSYCHIC,
+        .flingPower = 60,
+        .iconPic = gItemIcon_QuinacridonePaint,
+        .iconPalette = gItemIconPalette_QuinacridonePaint,
+    },
+
+    [ITEM_YELLOW_OCHRE_PAINT] =
+    {
+        .name = _("Yellow Ochre Paint"),
+        .price = 2500,
+        .holdEffect = HOLD_EFFECT_PAINT,
+        .description = COMPOUND_STRING(
+            "A special paint that\n"
+            "changes the type of\n"
+            "Ulmiraint."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_PSYCHIC,
+        .flingPower = 60,
+        .iconPic = gItemIcon_YellowOchrePaint,
+        .iconPalette = gItemIconPalette_YellowOchrePaint,
     },
 
     [ITEM_JOYFUL_MASK] =

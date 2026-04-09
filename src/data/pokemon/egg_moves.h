@@ -6583,6 +6583,16 @@ static const u16 sTurturretEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sSpycrabEggMoveLearnset[] = {
+    MOVE_ICE_SHARD,
+    MOVE_FAKE_OUT,
+    MOVE_DETECT,
+    MOVE_SWITCHEROO,
+    MOVE_COPYCAT,
+    MOVE_FINAL_GAMBIT,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sScolifexEggMoveLearnset[] = {
     MOVE_ACID_ARMOR,
     MOVE_FOLLOW_ME,
@@ -6640,6 +6650,16 @@ static const u16 sIndigniflyEggMoveLearnset[] = {
     MOVE_WHIRLWIND,
     MOVE_HEAL_BLOCK,
     MOVE_PSYCHO_SHIFT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sVanitwinEggMoveLearnset[] = {
+    MOVE_AFTER_YOU,
+    MOVE_ASTONISH,
+    MOVE_MACH_PUNCH,
+    MOVE_PUNISHMENT,
+    MOVE_SHADOW_PUNCH,
+    MOVE_TOPSY_TURVY,
     MOVE_UNAVAILABLE,
 };
 
@@ -6823,6 +6843,15 @@ static const u16 sAnkhurahEggMoveLearnset[] = {
     MOVE_HEAL_PULSE,
     MOVE_NOBLE_ROAR,
     MOVE_UNAVAILABLE,
+};
+
+static const u16 sWarghorkEggMoveLearnset[] = {
+    MOVE_ZAP_CANNON,
+    MOVE_CHARM,
+    MOVE_FAIRY_LOCK,
+    MOVE_HEAVY_SLAM,
+    MOVE_BARRAGE,
+    MOVE_FORCE_PALM,
     MOVE_UNAVAILABLE,
 };
 
@@ -7576,6 +7605,16 @@ static const u16 sColomboltEggMoveLearnset[] = {
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
+
+static const u16 sRevelorosEggMoveLearnset[] = {
+    MOVE_BORE_BITE,
+    MOVE_LUNAR_DANCE,
+    MOVE_QUICK_GUARD,
+    MOVE_TAIL_SLAP,
+    MOVE_MOONLIGHT,
+    MOVE_ELECTRO_BALL,
+    MOVE_UNAVAILABLE,
+}; 
 
 static const u16 sEmojinnEggMoveLearnset[] = {
     MOVE_FOLLOW_ME,

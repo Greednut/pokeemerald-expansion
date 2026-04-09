@@ -16631,7 +16631,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An intense kick from the\n"
             "tropics. Lowers Attack."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 85,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,

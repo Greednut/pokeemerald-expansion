@@ -1192,6 +1192,45 @@ const u16 gItemIconPalette_LeadWhitePaint[] = INCBIN_U16("graphics/items/icon_pa
 const u32 gItemIcon_CobaltVioletPaint[] = INCBIN_U32("graphics/items/icons/cobaltvioletpaint.4bpp.lz");
 const u16 gItemIconPalette_CobaltVioletPaint[] = INCBIN_U16("graphics/items/icon_palettes/cobaltvioletpaint.gbapal");
 
+const u32 gItemIcon_PhthaloGreenPaint[] = INCBIN_U32("graphics/items/icons/phthalogreenpaint.4bpp.lz");
+const u16 gItemIconPalette_PhthaloGreenPaint[] = INCBIN_U16("graphics/items/icon_palettes/phthalogreenpaint.gbapal");
+
+const u32 gItemIcon_AzumaritePaint[] = INCBIN_U32("graphics/items/icons/azumaritepaint.4bpp.lz");
+const u16 gItemIconPalette_AzumaritePaint[] = INCBIN_U16("graphics/items/icon_palettes/azumaritepaint.gbapal");
+
+const u32 gItemIcon_PyrroleOrangePaint[] = INCBIN_U32("graphics/items/icons/pyrroleorangepaint.4bpp.lz");
+const u16 gItemIconPalette_PyrroleOrangePaint[] = INCBIN_U16("graphics/items/icon_palettes/pyrroleorangepaint.gbapal");
+
+const u32 gItemIcon_HansaYellowPaint[] = INCBIN_U32("graphics/items/icons/hansayellowpaint.4bpp.lz");
+const u16 gItemIconPalette_HansaYellowPaint[] = INCBIN_U16("graphics/items/icon_palettes/hansayellowpaint.gbapal");
+
+const u32 gItemIcon_CarbonBlackPaint[] = INCBIN_U32("graphics/items/icons/carbonblackpaint.4bpp.lz");
+const u16 gItemIconPalette_CarbonBlackPaint[] = INCBIN_U16("graphics/items/icon_palettes/carbonblackpaint.gbapal");
+
+const u32 gItemIcon_UltramarinePaint[] = INCBIN_U32("graphics/items/icons/ultramarinepaint.4bpp.lz");
+const u16 gItemIconPalette_UltramarinePaint[] = INCBIN_U16("graphics/items/icon_palettes/ultramarinepaint.gbapal");
+
+const u32 gItemIcon_BurntSiennaPaint[] = INCBIN_U32("graphics/items/icons/burntsiennapaint.4bpp.lz");
+const u16 gItemIconPalette_BurntSiennaPaint[] = INCBIN_U16("graphics/items/icon_palettes/burntsiennapaint.gbapal");
+
+const u32 gItemIcon_CeruleanBluePaint[] = INCBIN_U32("graphics/items/icons/ceruleanbluepaint.4bpp.lz");
+const u16 gItemIconPalette_CeruleanBluePaint[] = INCBIN_U16("graphics/items/icon_palettes/ceruleanbluepaint.gbapal");
+
+const u32 gItemIcon_UmberPaint[] = INCBIN_U32("graphics/items/icons/umberpaint.4bpp.lz");
+const u16 gItemIconPalette_UmberPaint[] = INCBIN_U16("graphics/items/icon_palettes/umberpaint.gbapal");
+
+const u32 gItemIcon_TitaniumWhitePaint[] = INCBIN_U32("graphics/items/icons/titaniumwhitepaint.4bpp.lz");
+const u16 gItemIconPalette_TitaniumWhitePaint[] = INCBIN_U16("graphics/items/icon_palettes/titaniumwhitepaint.gbapal");
+
+const u32 gItemIcon_HeliotropePaint[] = INCBIN_U32("graphics/items/icons/heliotropepaint.4bpp.lz");
+const u16 gItemIconPalette_HeliotropePaint[] = INCBIN_U16("graphics/items/icon_palettes/heliotropepaint.gbapal");
+
+const u32 gItemIcon_QuinacridonePaint[] = INCBIN_U32("graphics/items/icons/quinacridonepaint.4bpp.lz");
+const u16 gItemIconPalette_QuinacridonePaint[] = INCBIN_U16("graphics/items/icon_palettes/quinacridonepaint.gbapal");
+
+const u32 gItemIcon_YellowOchrePaint[] = INCBIN_U32("graphics/items/icons/yellowochrepaint.4bpp.lz");
+const u16 gItemIconPalette_YellowOchrePaint[] = INCBIN_U16("graphics/items/icon_palettes/yellowochrepaint.gbapal");
+
 const u32 gItemIcon_Whetstone[] = INCBIN_U32("graphics/items/icons/whetstone.4bpp.lz");
 const u16 gItemIconPalette_Whetstone[] = INCBIN_U16("graphics/items/icon_palettes/whetstone.gbapal");
 
