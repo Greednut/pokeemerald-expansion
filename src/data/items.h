@@ -4084,8 +4084,8 @@ const struct Item gItemsInfo[] =
             "held by Dragon-\n"
             "type Pokémon."),
         .pocket = POCKET_ITEMS,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
         .iconPic = gItemIcon_DragonScale,
@@ -4102,7 +4102,7 @@ const struct Item gItemsInfo[] =
             "by Silph Co."),
         .pocket = POCKET_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
         .iconPic = gItemIcon_Upgrade,
@@ -7872,8 +7872,8 @@ const struct Item gItemsInfo[] =
             "raises the power of\n"
             "Steel-type moves."),
         .pocket = POCKET_ITEMS,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .secondaryId = TYPE_STEEL,
         .flingPower = 30,
@@ -14476,8 +14476,8 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
         .flingPower = 60,
-        .iconPic = gItemIcon_BurntSiennaPaint,
-        .iconPalette = gItemIconPalette_BurntSiennaPaint,
+        .iconPic = gItemIcon_CeruleanBluePaint,
+        .iconPalette = gItemIconPalette_CeruleanBluePaint,
     },
 
     [ITEM_UMBER_PAINT] =

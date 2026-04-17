@@ -2516,7 +2516,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_POLLUTION] =
     {
         .name = _("Pollution"),
-        .description = COMPOUND_STRING("Water/Ground/Flying weak to Dark."),
+        .description = COMPOUND_STRING("Water/Ground/Flying weak to\n Poison."),
         .aiRating = 7,
     },
     [ABILITY_SOUSAPHONE] =

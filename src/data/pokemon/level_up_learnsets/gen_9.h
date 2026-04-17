@@ -25099,7 +25099,6 @@ static const struct LevelUpMove sRetwinaLevelUpLearnset[] = {
    LEVEL_UP_MOVE(58, MOVE_APPLE_ACID),
    LEVEL_UP_MOVE(62, MOVE_SOLAR_BEAM),
    LEVEL_UP_MOVE(68, MOVE_HYPER_BEAM),
-
    LEVEL_UP_END
    };
 static const struct LevelUpMove sHooklingLevelUpLearnset[] = {

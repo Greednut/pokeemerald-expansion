@@ -54606,6 +54606,7 @@ static const u16 sYuukiinoTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_CURSE,
     MOVE_FROSTBITE,
+    MOVE_ICE_BEAM,
     MOVE_UNAVAILABLE,
 };
 static const u16 sAquadiivaTeachableLearnset[] = {
@@ -54672,6 +54673,7 @@ static const u16 sAquadiivaTeachableLearnset[] = {
     MOVE_SURF,
     MOVE_WATERFALL,
     MOVE_DIVE,
+    MOVE_ICE_BEAM,
     MOVE_UNAVAILABLE,
 };
 static const u16 sRendalopodTeachableLearnset[] = { 

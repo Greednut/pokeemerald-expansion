@@ -589,10 +589,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Flies up on the first turn,\n"
             "then strikes the next turn."),
         .effect = EFFECT_SEMI_INVULNERABLE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 90 : 70,
+        .power =90,
         .type = TYPE_FLYING,
-        .accuracy = 95,
-        .pp = 15,
+        .accuracy = 100,
+        .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -21230,7 +21230,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hits hard and first.\n"
             "Only works first turn."),
         .effect = EFFECT_FIRST_TURN_ONLY,
-        .power = 45,
+        .power = 50,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 16,
@@ -21628,7 +21628,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Brands and curses the target,\n"
             "disabling their ability."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_RECOIL,
         .power = 120,
         .type = TYPE_STEEL,
         .accuracy = 100,
@@ -21938,7 +21938,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A life-risking slash that\n"
             "also hurts the user. Edgy!"),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_RECOIL,
         .power = 120,
         .type = TYPE_DARK,
         .accuracy = 100,
@@ -22186,13 +22186,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Sets a tailwind and\n"
             "switches the user out."),
         .effect = EFFECT_BACKDRAFT,
-        .power = 65,
+        .power = 70,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
         .makesContact = FALSE,
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,

@@ -12068,20 +12068,21 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4885
-            .species = SPECIES_MAGNETON,
+            .species = SPECIES_KRISSY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4887
-            .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
+            .iv = TRAINER_PARTY_IVS(31, 26, 31, 31, 26, 26),
 #line 4886
-            .lvl = 22,
-            .nature = NATURE_HARDY,
+            .lvl = 23,
+            .ability = ABILITY_LEVITATE,
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4888
-                MOVE_SUPERSONIC,
+                MOVE_CONFUSE_RAY,
                 MOVE_SHOCK_WAVE,
                 MOVE_THUNDER_WAVE,
-                MOVE_SONIC_BOOM,
+                MOVE_SNARL,
             },
             },
             {
