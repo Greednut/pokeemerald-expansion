@@ -8051,7 +8051,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
         case HOLD_EFFECT_MOLUGANION:
             if ((CanBeConfused(battler)) && (gBattleMons[battler].species != SPECIES_NOXILIUM))
             {
-                effect = ITEM_STATUS_CHANGE;
+                effect = ITEM_VOLATILE_STATUS_CHANGE;
                 gBattleMons[battler].status2 = STATUS2_CONFUSION;
                 BattleScriptExecute(BattleScript_MoluganionConfuse);
                 RecordItemEffectBattle(battler, battlerHoldEffect);
@@ -8064,6 +8064,10 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
         if (effect == ITEM_STATUS_CHANGE)
         {
             BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[battler].status1);
+            MarkBattlerForControllerExec(battler);
+        }
+        else if (effect == ITEM_VOLATILE_STATUS_CHANGE)
+        {
             BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[battler].status2);
             MarkBattlerForControllerExec(battler);
         }
