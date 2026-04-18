@@ -2470,9 +2470,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_MADMAN] =
+    [ABILITY_DELIRIOUS] =
     {
-        .name = _("Madman"),
+        .name = _("Delirious"),
         .description = COMPOUND_STRING("Contact moves confuse."),
         .aiRating = 2,
         .breakable = TRUE,
