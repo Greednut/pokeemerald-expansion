@@ -2612,6 +2612,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
+    [ABILITY_CROWN_OF_THORNS] =
+    {
+        .name = _("Crown of Thorns"),
+        .description = COMPOUND_STRING("Sets a layer of spikes on\nyour side upon switch."),
+        .aiRating = 4,
+    },
+
     [ABILITY_STORM_SHELTER] =
     {
         .name = _("Storm Shelter"),
