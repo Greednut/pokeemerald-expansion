@@ -21847,7 +21847,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Erupts the ground below the\n"
             "target, hurting the user."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_RECOIL,
         .power = 120,
         .type = TYPE_GROUND,
         .accuracy = 100,
