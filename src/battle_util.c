@@ -3891,7 +3891,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_COLOSSAL:
+        case ABILITY_COLOSSUS:
             if (TryChangeBattleTerrain (battler, STATUS_FIELD_GRAVITY, &gFieldTimers.gravityTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_BigGuyActivates);

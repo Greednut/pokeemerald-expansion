@@ -2485,9 +2485,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
 
-    [ABILITY_COLOSSAL] =
+    [ABILITY_COLOSSUS] =
     {
-        .name = _("Colossal"),
+        .name = _("Colossus"),
         .description = COMPOUND_STRING("Sets Gravity upon switch in."),
         .aiRating = 10,
     },
