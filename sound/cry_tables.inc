@@ -3040,6 +3040,8 @@ gCryTable::
 	cry Cry_Eccosmic
 
 	cry Cry_Nebulite
+
+	cry Cry_Merulin
 .endif
 
 	.align 2

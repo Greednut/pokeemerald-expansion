@@ -28824,6 +28824,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u8 gMonIcon_Empidae[] = INCBIN_U8("graphics/pokemon/empidae/icon.4bpp");
    const u8 gMonFootprint_Empidae[] = INCBIN_U8("graphics/pokemon/empidae/footprint.1bpp");
 
+   const u32 gMonFrontPic_Merulin[] = INCBIN_U32("graphics/pokemon/merulin/front.4bpp.lz");
+   const u32 gMonBackPic_Merulin[] = INCBIN_U32("graphics/pokemon/merulin/back.4bpp.lz");
+   const u16 gMonPalette_Merulin[] = INCBIN_U16("graphics/pokemon/merulin/normal.gbapal");
+   const u16 gMonShinyPalette_Merulin[] = INCBIN_U16("graphics/pokemon/merulin/shiny.gbapal");
+   const u8 gMonIcon_Merulin[] = INCBIN_U8("graphics/pokemon/merulin/icon.4bpp");
+   const u8 gMonFootprint_Merulin[] = INCBIN_U8("graphics/pokemon/merulin/footprint.1bpp");
+
    const u32 gMonFrontPic_Phantorney[] = INCBIN_U32("graphics/pokemon/phantorney/front.4bpp.lz");
    const u32 gMonBackPic_Phantorney[] = INCBIN_U32("graphics/pokemon/phantorney/back.4bpp.lz");
    const u16 gMonPalette_Phantorney[] = INCBIN_U16("graphics/pokemon/phantorney/normal.gbapal");

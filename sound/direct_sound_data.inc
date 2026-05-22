@@ -7386,6 +7386,10 @@ Cry_Eccosmic::
 	.align 2	
 Cry_Nebulite::
 	.incbin "sound/direct_sound_samples/cries/nebulite.bin"
+
+	.align 2	
+Cry_Merulin::
+	.incbin "sound/direct_sound_samples/cries/merulin.bin"
 	
 	.align 2
 .endif @ P_CRIES_ENABLED

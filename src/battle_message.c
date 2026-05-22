@@ -915,6 +915,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_FLAREHEALHPUP]                        = COMPOUND_STRING("The burning healed {B_ATK_NAME_WITH_PREFIX}\na little bit!"),
     [STRINGID_PKMNSITEMPREVENTSYLOSS]               = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nprevents {B_BUFF1} loss!"),
     [STRINGID_COLLAPSINGRUINSTEALTHROCKS]           = COMPOUND_STRING("Rocks exploded from {B_ATK_NAME_WITH_PREFIX}\ninto the opposing field!"),
+    [STRINGID_DEEPBLUE]                             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is evoking a move."),
     [STRINGID_BLOCKEDBYSLEEPCLAUSE]                 = COMPOUND_STRING("Sleep Clause kept {B_DEF_NAME_WITH_PREFIX2} awake!"),
     [STRINGID_SUPEREFFECTIVETWOFOES]                = COMPOUND_STRING("It's super effective on {B_DEF_NAME_WITH_PREFIX2} and {B_DEF_PARTNER_NAME}!"),
     [STRINGID_NOTVERYEFFECTIVETWOFOES]              = COMPOUND_STRING("It's not very effective on {B_DEF_NAME_WITH_PREFIX2} and {B_DEF_PARTNER_NAME}!"),

@@ -17611,7 +17611,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .mimicBanned = TRUE,
         .encoreBanned = TRUE,
@@ -23521,6 +23520,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
         .battleAnimScript = gBattleAnimMove_Slash,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_DEEP_BLUE] =
+    {
+        .name = COMPOUND_STRING("Deep Blue"),
+        .description = COMPOUND_STRING(
+            "A bewildering tactic that goes\n"
+            "last. The user calls a random\n"
+            "move that it knows after. "),
+        .effect = EFFECT_DEEP_BLUE,
+        .power = 55,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = -3,
+        .sleepTalkBanned = TRUE,
+        .sketchBanned = TRUE,
+        .assistBanned = TRUE,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Waterfall,
         .validApprenticeMove = TRUE,
     },
 

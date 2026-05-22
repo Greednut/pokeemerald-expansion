@@ -2007,8 +2007,9 @@
 #define SPECIES_NEBULITE_QUASAR                         1873
 #define SPECIES_NEBULITE_NEBULA                         1874
 #define SPECIES_NEBULITE_MILKY                          1875
+#define SPECIES_MERULIN                          1876
 
-#define SPECIES_EGG (SPECIES_NEBULITE_MILKY + 1)
+#define SPECIES_EGG (SPECIES_MERULIN + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

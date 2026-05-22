@@ -940,5 +940,9 @@ extern const u8 BattleScript_EffectBrutalPunishment[];
 extern const u8 BattleScript_EffectAllaPrima[];
 extern const u8 BattleScript_EffectBoreBite[];
 extern const u8 BattleScript_EffectFlintFang[];
+extern const u8 BattleScript_EffectDeepBlue[];
+extern const u8 BattleScript_DeepBlueSelectMove[];
+extern const u8 BattleScript_DeepBlueUsingMove[];
+extern const u8 BattleScript_EffectHitDeepBlue[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

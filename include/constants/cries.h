@@ -2735,6 +2735,7 @@ enum {
     CRY_PEASOL,
     CRY_ECCOSMIC,
     CRY_NEBULITE,
+    CRY_MERULIN,
     CRY_COUNT,
 };
 

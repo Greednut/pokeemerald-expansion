@@ -4302,6 +4302,43 @@ BattleScript_SleepTalkUsingMove::
 	waitanimation
 	jumptocalledmove TRUE
 
+BattleScript_EffectDeepBlue::
+	attackcanceler
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	call BattleScript_EffectHitDeepBlue
+	goto BattleScript_ButItFailed
+BattleScript_EffectHitDeepBlue::
+	attackcanceler
+	jumpifability BS_ATTACKER, ABILITY_BEAST_BOOST, BattleScript_DeepBlueSelectMove
+BattleScript_DeepBlueSelectMove::
+	printstring STRINGID_DEEPBLUE
+	waitmessage B_WAIT_TIME_LONG
+	statusanimation BS_ATTACKER
+	attackstring
+	orword gHitMarker, HITMARKER_NO_PPDEDUCT
+	trychoosesleeptalkmove BattleScript_DeepBlueUsingMove
+	pause B_WAIT_TIME_LONG
+	goto BattleScript_ButItFailed
+BattleScript_DeepBlueUsingMove::
+	attackanimation
+	waitanimation
+	jumptocalledmove TRUE
+
 BattleScript_EffectDestinyBond::
 	attackcanceler
 	attackstring
