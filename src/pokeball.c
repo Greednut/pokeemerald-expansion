@@ -107,6 +107,7 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     [BALL_PARK]    = {gBallGfx_Park,    384, GFX_TAG_PARK_BALL},
     [BALL_BEAST]   = {gBallGfx_Beast,   384, GFX_TAG_BEAST_BALL},
     [BALL_CHERISH] = {gBallGfx_Cherish, 384, GFX_TAG_CHERISH_BALL},
+    [BALL_GOOF]    = {gBallGfx_Cherish, 384, GFX_TAG_CHERISH_BALL},
 };
 
 const struct SpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
@@ -139,6 +140,7 @@ const struct SpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     [BALL_PARK]    = {gBallPal_Park,    GFX_TAG_PARK_BALL},
     [BALL_BEAST]   = {gBallPal_Beast,   GFX_TAG_BEAST_BALL},
     [BALL_CHERISH] = {gBallPal_Cherish, GFX_TAG_CHERISH_BALL},
+    [BALL_GOOF]    = {gBallPal_Goof,    GFX_TAG_CHERISH_BALL},
 };
 
 static const struct OamData sBallOamData =
@@ -527,6 +529,16 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .callback = SpriteCB_BallThrow,
     },
     [BALL_CHERISH] =
+    {
+        .tileTag = GFX_TAG_CHERISH_BALL,
+        .paletteTag = GFX_TAG_CHERISH_BALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+    [BALL_GOOF] =
     {
         .tileTag = GFX_TAG_CHERISH_BALL,
         .paletteTag = GFX_TAG_CHERISH_BALL,

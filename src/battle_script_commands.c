@@ -16419,6 +16419,11 @@ static void Cmd_handleballthrow(void)
             else
                 ballMultiplier = 10;
         }
+         if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].isGoofy)
+        {
+            if (ballId == BALL_GOOF)
+                ballMultiplier = 300;
+        }        
         else
         {
             switch (ballId)
@@ -16575,6 +16580,9 @@ static void Cmd_handleballthrow(void)
                 break;
             case BALL_BEAST:
                 ballMultiplier = 10;
+                break;
+            case BALL_GOOF:
+                ballMultiplier = 100;
                 break;
             }
         }

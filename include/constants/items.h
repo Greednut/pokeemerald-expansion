@@ -1024,11 +1024,12 @@
 #define ITEM_HELIOTROPE_PAINT 856
 #define ITEM_QUINACRIDONE_PAINT 857
 #define ITEM_YELLOW_OCHRE_PAINT 858
+#define ITEM_GOOFBALL 859
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 859
+#define ITEMS_COUNT 860
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

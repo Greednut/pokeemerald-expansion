@@ -589,6 +589,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_BeastBall,
     },
 
+    [ITEM_GOOFBALL] =
+    {
+        .name = _("Goof Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A Ball designed to\n"
+            "catch Pokemon\n"
+            "that look goofy."),
+        .pocket = POCKET_POKE_BALLS,
+        .type = ITEM_USE_BAG_MENU,
+        .battleUsage = EFFECT_ITEM_THROW_BALL,
+        .secondaryId = BALL_GOOF,
+        .iconPic = gItemIcon_GoofBall,
+        .iconPalette = gItemIconPalette_GoofBall,
+    },
+
     [ITEM_CHERISH_BALL] =
     {
         .name = _("Cherish Ball"),
