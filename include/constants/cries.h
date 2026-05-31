@@ -2736,6 +2736,7 @@ enum {
     CRY_ECCOSMIC,
     CRY_NEBULITE,
     CRY_MERULIN,
+    CRY_ARCRIDGET,
     CRY_COUNT,
 };
 

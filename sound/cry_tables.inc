@@ -3042,6 +3042,8 @@ gCryTable::
 	cry Cry_Nebulite
 
 	cry Cry_Merulin
+
+	cry Cry_Arcridget
 .endif
 
 	.align 2

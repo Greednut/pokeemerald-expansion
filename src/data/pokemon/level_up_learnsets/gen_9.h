@@ -27420,6 +27420,10 @@ static const struct LevelUpMove sJumblinartLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_WATER_SPOUT),
    LEVEL_UP_END
    };
+static const struct LevelUpMove sArcridgetLevelUpLearnset[] = {
+   LEVEL_UP_MOVE( 1, MOVE_GEAR_GRIND),  
+   LEVEL_UP_END
+};
 static const struct LevelUpMove sPolybrawnLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REVENGE),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_CAGE),

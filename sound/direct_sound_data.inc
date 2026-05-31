@@ -7390,6 +7390,10 @@ Cry_Nebulite::
 	.align 2	
 Cry_Merulin::
 	.incbin "sound/direct_sound_samples/cries/merulin.bin"
+
+	.align 2	
+Cry_Arcridget::
+	.incbin "sound/direct_sound_samples/cries/arcridget.bin"
 	
 	.align 2
 .endif @ P_CRIES_ENABLED

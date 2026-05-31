@@ -29069,6 +29069,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u8 gMonIcon_Vriskeleton[] = INCBIN_U8("graphics/pokemon/vriskeleton/icon.4bpp");
    const u8 gMonFootprint_Vriskeleton[] = INCBIN_U8("graphics/pokemon/vriskeleton/footprint.1bpp");
 
+   const u32 gMonFrontPic_Arcridget[] = INCBIN_U32("graphics/pokemon/arcridget/front.4bpp.lz");
+   const u32 gMonBackPic_Arcridget[] = INCBIN_U32("graphics/pokemon/arcridget/back.4bpp.lz");
+   const u16 gMonPalette_Arcridget[] = INCBIN_U16("graphics/pokemon/arcridget/normal.gbapal");
+   const u16 gMonShinyPalette_Arcridget[] = INCBIN_U16("graphics/pokemon/arcridget/shiny.gbapal");
+   const u8 gMonIcon_Arcridget[] = INCBIN_U8("graphics/pokemon/arcridget/icon.4bpp");
+   const u8 gMonFootprint_Arcridget[] = INCBIN_U8("graphics/pokemon/arcridget/footprint.1bpp");
+
    const u32 gMonFrontPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/front.4bpp.lz");
    const u32 gMonBackPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/back.4bpp.lz");
    const u16 gMonPalette_Cofferule[] = INCBIN_U16("graphics/pokemon/cofferule/normal.gbapal");
