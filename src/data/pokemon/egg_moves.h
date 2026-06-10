@@ -7277,6 +7277,16 @@ static const u16 sJumblinartEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sArcridgetEggMoveLearnset[] = {
+    MOVE_HEART_SWAP,
+    MOVE_CROSS_CHOP,
+    MOVE_FLYING_PRESS,
+    MOVE_CONFIDE,
+    MOVE_BABY_DOLL_EYES,
+    MOVE_FLAME_WHEEL,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sOnsenpuraEggMoveLearnset[] = {
     MOVE_FIRE_LASH,
     MOVE_LAVA_PLUME,

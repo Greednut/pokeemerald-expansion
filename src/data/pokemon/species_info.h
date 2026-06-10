@@ -15941,6 +15941,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        FOOTPRINT(Arcridget)
        .levelUpLearnset = sArcridgetLevelUpLearnset,
        .teachableLearnset = sArcridgetTeachableLearnset,
+       .eggMoveLearnset = sArcridgetEggMoveLearnset,
     },
 
         [SPECIES_POLYBRAWN_NORMAL] =

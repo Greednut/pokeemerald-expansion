@@ -6912,6 +6912,7 @@ Cry_Triderling::
 Cry_Tarantagon::
 	.incbin "sound/direct_sound_samples/cries/tarantagon.bin"
 
+    .align 2
 Cry_Konekoth::
 	.incbin "sound/direct_sound_samples/cries/konekoth.bin"
 
