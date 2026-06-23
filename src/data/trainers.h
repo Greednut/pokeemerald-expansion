@@ -12071,11 +12071,10 @@ F_TRAINER_FEMALE |
             .species = SPECIES_KRISSY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4887
-            .iv = TRAINER_PARTY_IVS(31, 26, 31, 31, 26, 26),
+            .iv = TRAINER_PARTY_IVS(31, 26, 31, 26, 31, 26),
 #line 4886
             .lvl = 23,
-            .ability = ABILITY_LEVITATE,
-            .nature = NATURE_TIMID,
+            .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4888
@@ -23742,8 +23741,10 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9513
-            .species = SPECIES_TREECKO,
+            .species = SPECIES_LARVITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 9513
+            .heldItem = ITEM_ORAN_BERRY,
 #line 9515
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 9514
@@ -23882,8 +23883,10 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9568
-            .species = SPECIES_TORCHIC,
+            .species = SPECIES_LARVITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 9568
+            .heldItem = ITEM_ORAN_BERRY,
 #line 9570
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 9569
@@ -24022,8 +24025,10 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9623
-            .species = SPECIES_MUDKIP,
+            .species = SPECIES_LARVITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 9623
+            .heldItem = ITEM_ORAN_BERRY,
 #line 9625
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 9624
