@@ -6070,6 +6070,10 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     {
         return TYPE_DARK;
     }
+    else if (gMovesInfo[move].soundMove && ability == ABILITY_SOUL_SYMPHONY)
+    {
+        return TYPE_GHOST;
+    }
 
     return TYPE_NONE;
 }

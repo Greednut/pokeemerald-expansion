@@ -937,6 +937,7 @@ extern const u8 gBattleAnimMove_GMaxSteelsurge[];
 extern const u8 gBattleAnimMove_GMaxDepletion[];
 extern const u8 gBattleAnimMove_GMaxOneBlow[];
 extern const u8 gBattleAnimMove_GMaxRapidFlow[];
+extern const u8 gBattleAnimMove_DeadSilence[];
 
 // CAPRICCIO MOVES
 extern const u8 Move_STARSEED_BLAST[];

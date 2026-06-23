@@ -29076,6 +29076,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u8 gMonIcon_Arcridget[] = INCBIN_U8("graphics/pokemon/arcridget/icon.4bpp");
    const u8 gMonFootprint_Arcridget[] = INCBIN_U8("graphics/pokemon/arcridget/footprint.1bpp");
 
+   const u32 gMonFrontPic_Escarphone[] = INCBIN_U32("graphics/pokemon/escarphone/front.4bpp.lz");
+   const u32 gMonBackPic_Escarphone[] = INCBIN_U32("graphics/pokemon/escarphone/back.4bpp.lz");
+   const u16 gMonPalette_Escarphone[] = INCBIN_U16("graphics/pokemon/escarphone/normal.gbapal");
+   const u16 gMonShinyPalette_Escarphone[] = INCBIN_U16("graphics/pokemon/escarphone/shiny.gbapal");
+   const u8 gMonIcon_Escarphone[] = INCBIN_U8("graphics/pokemon/escarphone/icon.4bpp");
+   const u8 gMonFootprint_Escarphone[] = INCBIN_U8("graphics/pokemon/escarphone/footprint.1bpp");
+
    const u32 gMonFrontPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/front.4bpp.lz");
    const u32 gMonBackPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/back.4bpp.lz");
    const u16 gMonPalette_Cofferule[] = INCBIN_U16("graphics/pokemon/cofferule/normal.gbapal");

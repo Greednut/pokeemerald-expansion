@@ -4133,6 +4133,12 @@ BattleScript_EffectLeechSeedPlanted::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectDeadSilence::
+	trysetperishsong BattleScript_ButItFailed
+	printstring STRINGID_DEADSILENCE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectDoNothing::
 	attackcanceler
 	attackstring

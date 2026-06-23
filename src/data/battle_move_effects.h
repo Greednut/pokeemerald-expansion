@@ -2450,4 +2450,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectDeepBlue,
         .battleTvScore = 4,
     },
+
+    [EFFECT_DEAD_SILENCE] =
+    {
+        .battleScript = BattleScript_EffectDeadSilence,
+        .battleTvScore = 4,
+    },
 };

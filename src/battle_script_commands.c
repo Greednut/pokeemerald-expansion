@@ -3990,6 +3990,14 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gBattlescriptCurrInstr = BattleScript_EffectPhantomFangCurse;
                 }
                 break;
+            case MOVE_EFFECT_PERISH_SONG:
+                if (!(gStatuses3[gBattlerTarget] & STATUS3_PERISH_SONG) 
+                || !(gBattleMons[gBattlerTarget].status2 & STATUS2_SUBSTITUTE))
+                {
+                    BattleScriptPush(gBattlescriptCurrInstr + 1);
+                    gBattlescriptCurrInstr = BattleScript_EffectDeadSilence;
+                }
+                break;
             case MOVE_EFFECT_LEECH_SEED_ON_HIT:
                 if (!(gStatuses3[gBattlerTarget] & STATUS3_LEECHSEED) 
                 || !(gBattleMons[gBattlerTarget].status2 & STATUS2_SUBSTITUTE))

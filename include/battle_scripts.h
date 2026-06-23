@@ -944,5 +944,6 @@ extern const u8 BattleScript_EffectDeepBlue[];
 extern const u8 BattleScript_DeepBlueSelectMove[];
 extern const u8 BattleScript_DeepBlueUsingMove[];
 extern const u8 BattleScript_EffectHitDeepBlue[];
+extern const u8 BattleScript_EffectDeadSilence[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -3044,6 +3044,8 @@ gCryTable::
 	cry Cry_Merulin
 
 	cry Cry_Arcridget
+
+	cry Cry_Escarphone
 .endif
 
 	.align 2
@@ -6089,4 +6091,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Eccosmic
 
 	cry_reverse Cry_Nebulite
+
+	cry_reverse Cry_Merulin
+
+	cry_reverse Cry_Arcridget
+
+	cry_reverse Cry_Escarphone
 .endif

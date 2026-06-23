@@ -2009,8 +2009,9 @@
 #define SPECIES_NEBULITE_MILKY                          1875
 #define SPECIES_MERULIN                                 1876
 #define SPECIES_ARCRIDGET                               1877
+#define SPECIES_ESCARPHONE                              1878
 
-#define SPECIES_EGG (SPECIES_ARCRIDGET + 1)
+#define SPECIES_EGG (SPECIES_ESCARPHONE + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

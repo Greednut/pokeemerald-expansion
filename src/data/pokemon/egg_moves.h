@@ -7287,6 +7287,17 @@ static const u16 sArcridgetEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+static const u16 sEscarphoneEggMoveLearnset[] = {
+    MOVE_AMNESIA,
+    MOVE_CLEAR_SMOG,
+    MOVE_DESTINY_BOND,
+    MOVE_MUDDY_WATER,
+    MOVE_SPITE,
+    MOVE_TEETER_DANCE,
+    MOVE_VENOM_DRENCH,
+    MOVE_UNAVAILABLE,
+};
+
 static const u16 sOnsenpuraEggMoveLearnset[] = {
     MOVE_FIRE_LASH,
     MOVE_LAVA_PLUME,

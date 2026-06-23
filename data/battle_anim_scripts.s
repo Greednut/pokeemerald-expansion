@@ -25702,6 +25702,23 @@ gBattleAnimMove_NightShade::
 	waitbgfadein
 	end
 
+gBattleAnimMove_DeadSilence::
+	monbg ANIM_ATK_PARTNER
+    panse SE_M_PERISH_SONG, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +5, 0
+    createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, ANIM_ATTACKER, 0, 0, 16, RGB_BLACK
+    waitforvisualfinish
+    createvisualtask AnimTask_SetAllNonAttackersInvisiblity, 5, TRUE
+    waitforvisualfinish
+    playsewithpan SE_M_PERISH_SONG, SOUND_PAN_ATTACKER
+    createvisualtask AnimTask_NightShadeClone, 5, 85
+    delay 80
+    createvisualtask AnimTask_SetAllNonAttackersInvisiblity, 5, FALSE
+    waitforvisualfinish
+    createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, ANIM_ATTACKER, 0, 16, 0, RGB_BLACK
+    waitforvisualfinish
+    clearmonbg ANIM_ATK_PARTNER
+	end
+
 gBattleAnimMove_EggBomb::
 	loadspritegfx ANIM_TAG_EXPLOSION
 	loadspritegfx ANIM_TAG_LARGE_FRESH_EGG

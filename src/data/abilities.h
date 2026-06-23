@@ -2772,4 +2772,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_SOUL_SYMPHONY] =
+    {
+        .name = _("Soul Symphony"),
+        .description = COMPOUND_STRING("Makes sound moves Ghost."),
+        .aiRating = 5,
+    },
+
 };

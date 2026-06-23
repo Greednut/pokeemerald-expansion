@@ -23549,6 +23549,35 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+    [MOVE_DEAD_SILENCE] =
+    {
+        .name = COMPOUND_STRING("Dead Silence"),
+        .description = COMPOUND_STRING(
+            "Inflicts Perish Song\n"
+            "on Hit."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PERISH_SONG,
+            .self = TRUE,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_PERISH_SONG,
+            .chance = 100,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_LEER, COMBO_STARTER_SCARY_FACE},
+        .battleAnimScript = gBattleAnimMove_DeadSilence,
+    },
+
 
 
     

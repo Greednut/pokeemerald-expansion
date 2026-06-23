@@ -892,6 +892,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_WAGGLINGAFINGER]                      = COMPOUND_STRING("Waggling a finger let it use {B_CURRENT_MOVE}!"),
     [STRINGID_WEATHERBECAMECLEAR]                   = COMPOUND_STRING("The weather became clear!"),
     [STRINGID_PHANTOMFANGCURSE]                     = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} laid a CURSE\non {B_DEF_NAME_WITH_PREFIX}!"),
+    [STRINGID_DEADSILENCE]                          = COMPOUND_STRING("A dreadful quiet befalls the\nbattlefield."),
     [STRINGID_SHARPENALREADYPUMPED]                 = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is already\npumped!"),
     [STRINGID_BACKDRAFTALREADYTAILWIND]             = COMPOUND_STRING("There is already a\nBackdraft!"),
     [STRINGID_TARGETPURGED]                         = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} was purged of\nits status ailment!"),
