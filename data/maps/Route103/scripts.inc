@@ -318,15 +318,15 @@ Route103_Text_BrendanRoute103Pokemon:
 	.string "that one that live on ROUTE 103…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
+	.string "{PLAYER}! Welcome back!\p"
 	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Man, why does everyone say that in\n"
+	.string "all caps? It's weird.\p"
+	.string "Anyways have fun testing whatever…\p"
+	.string "But only after this battle!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "And that should be it, {PLAYER}!$"
 
 Route103_Text_BrendanTimeToHeadBack:
 	.string "BRENDAN: I think I get it.\n"
