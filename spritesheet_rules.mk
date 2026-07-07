@@ -188,6 +188,9 @@ $(OBJEVENTGFXDIR)/people/cameraman.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/camper.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+	
+$(OBJEVENTGFXDIR)/people/cider.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/contest_judge.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -246,6 +249,9 @@ $(OBJEVENTGFXDIR)/people/twin.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/little_girl.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
+$(OBJEVENTGFXDIR)/people/maiden.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/people/man_1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
@@ -284,6 +290,9 @@ $(OBJEVENTGFXDIR)/people/mom.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/mystery_event_deliveryman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/neet.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
 $(OBJEVENTGFXDIR)/people/nurse.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -456,6 +465,9 @@ $(OBJEVENTGFXDIR)/pokemon_old/rayquaza_cutscene.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
 $(OBJEVENTGFXDIR)/pokemon_old/skitty.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+
+$(OBJEVENTGFXDIR)/pokemon_old/strollge.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(OBJEVENTGFXDIR)/pokemon_old/sudowoodo_tree.4bpp: %.4bpp: %.png

@@ -489,6 +489,54 @@ static const struct SpriteFrameImage sPicTable_MagmaMemberF[] = {
     overworld_ascending_frames(gObjectEventPic_MagmaMemberF, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Maiden[] = {
+    overworld_ascending_frames(gObjectEventPic_Maiden, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Neet[] = {
+    overworld_ascending_frames(gObjectEventPic_Neet, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Cider[] = {
+    overworld_ascending_frames(gObjectEventPic_Cider, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LoitumaStill[] = {
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+    obj_frame_tiles(gObjectEventPic_LoitumaStill),
+};
+
+static const struct SpriteFrameImage sPicTable_Strollge[] = {
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Strollge, 2, 2, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_GoneStill[] = {
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+    obj_frame_tiles(gObjectEventPic_GoneStill),
+};
+
 static const struct SpriteFrameImage sPicTable_Sidney[] = {
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),

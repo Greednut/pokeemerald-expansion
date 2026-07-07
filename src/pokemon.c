@@ -6126,12 +6126,12 @@ u16 GetBattleBGM(void)
         case SPECIES_KYOGRE:
         case SPECIES_GROUDON:
             return MUS_VS_KYOGRE_GROUDON;
-        case SPECIES_REGIROCK:
-        case SPECIES_REGICE:
-        case SPECIES_REGISTEEL:
-        case SPECIES_REGIGIGAS:
-        case SPECIES_REGIELEKI:
-        case SPECIES_REGIDRAGO:
+        case SPECIES_REGIRODE:
+        case SPECIES_REGIMELT:
+        case SPECIES_REGIRUST:
+        case SPECIES_REGIGIGONE:
+        case SPECIES_REGISHORT:
+        case SPECIES_REGICIDE:
             return MUS_VS_REGI;
         default:
             return MUS_RG_VS_LEGEND;

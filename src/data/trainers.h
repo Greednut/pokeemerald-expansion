@@ -27707,9 +27707,9 @@ F_TRAINER_FEMALE |
 #line 11048
         .trainerName = _("TIANA"),
 #line 11049
-        .trainerClass = TRAINER_CLASS_LASS,
+        .trainerClass = TRAINER_CLASS_NEET,
 #line 11050
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerPic = TRAINER_PIC_NEET,
         .encounterMusic_gender =
 #line 11051
 F_TRAINER_FEMALE | 

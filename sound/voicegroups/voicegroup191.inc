@@ -1,6 +1,6 @@
 	.align 2
 voicegroup191::                                                                                            @ Instruments (Eventually we can fill in the rest of these if y'all so desire)
-	voice_keysplit_all voicegroup002                                                                       @   0: Drums
+	voice_keysplit_all voicegroup002                                                                     @   0: Drums
 	voice_keysplit voicegroup005, KeySplitTable1                                                           @   1: Bright Piano
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                @   2: -- FREE --
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                @   3: -- FREE --

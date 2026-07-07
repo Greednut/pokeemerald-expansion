@@ -240,6 +240,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BallLight;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maiden;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Neet;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cider;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LoitumaStill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Strollge;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GoneStill;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
@@ -492,6 +498,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
+    [OBJ_EVENT_GFX_MAIDEN] =                   &gObjectEventGraphicsInfo_Maiden,
+    [OBJ_EVENT_GFX_NEET] =                     &gObjectEventGraphicsInfo_Neet,
+    [OBJ_EVENT_GFX_CIDER] =                    &gObjectEventGraphicsInfo_Cider,
+    [OBJ_EVENT_GFX_LOITUMA_STILL] =            &gObjectEventGraphicsInfo_LoitumaStill,
+    [OBJ_EVENT_GFX_STROLLGE] =                 &gObjectEventGraphicsInfo_Strollge,
+    [OBJ_EVENT_GFX_GONE_STILL] =               &gObjectEventGraphicsInfo_GoneStill,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

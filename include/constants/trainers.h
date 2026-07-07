@@ -108,7 +108,10 @@
 #define TRAINER_PIC_LEAF                  90
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
-#define TRAINER_PIC_COUNT                 93
+#define TRAINER_PIC_MAIDEN                93
+#define TRAINER_PIC_NEET                  94
+#define TRAINER_PIC_CIDER                 95
+#define TRAINER_PIC_COUNT                 96
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -286,7 +289,7 @@
 #define RS_FACILITY_CLASSES_COUNT               0x4D
 
 #define TRAINER_CLASS_PKMN_TRAINER_1 0x0  // Unused
-#define TRAINER_CLASS_PKMN_TRAINER_2 0x1  // Unused
+#define TRAINER_CLASS_MAIDEN 0x1  // Unused
 #define TRAINER_CLASS_HIKER          0x2
 #define TRAINER_CLASS_TEAM_AQUA      0x3
 #define TRAINER_CLASS_PKMN_BREEDER   0x4
@@ -351,7 +354,8 @@
 #define TRAINER_CLASS_PIKE_QUEEN     0x3f
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
-#define TRAINER_CLASS_COUNT          0x42
+#define TRAINER_CLASS_NEET           0x42
+#define TRAINER_CLASS_COUNT          0x43
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

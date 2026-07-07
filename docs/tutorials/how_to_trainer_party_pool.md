@@ -56,7 +56,7 @@ By default, only `POOL_PRUNE_NONE`, which doesn't remove anything from the pool,
 ```
 === TRAINER_TIANA ===
 Name: TIANA
-Class: Lass
+Class: Maiden
 Pic: Lass
 Gender: Female
 Music: Female

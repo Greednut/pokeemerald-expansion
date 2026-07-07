@@ -305,7 +305,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
     [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{PKMN} TRAINER") },
-    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{PKMN} TRAINER") },
+    [TRAINER_CLASS_MAIDEN] = { _("MAIDEN"), 11, BALL_PREMIER },
     [TRAINER_CLASS_HIKER] = { _("HIKER"), 10 },
     [TRAINER_CLASS_TEAM_AQUA] = { _("TEAM AQUA") },
     [TRAINER_CLASS_PKMN_BREEDER] = { _("{PKMN} BREEDER"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
@@ -354,7 +354,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_SAILOR] = { _("SAILOR"), 8 },
     [TRAINER_CLASS_COOLTRAINER_2] = { _("COOLTRAINER"), 5, BALL_ULTRA },
     [TRAINER_CLASS_MAGMA_ADMIN] = { _("MAGMA ADMIN"), 10 },
-    [TRAINER_CLASS_RIVAL] = { _("{PKMN} TRAINER"), 15 },
+    [TRAINER_CLASS_RIVAL] = { _("RIVAL"), 15 },
     [TRAINER_CLASS_BUG_CATCHER] = { _("BUG CATCHER"), 4 },
     [TRAINER_CLASS_PKMN_RANGER] = { _("{PKMN} RANGER"), 12 },
     [TRAINER_CLASS_MAGMA_LEADER] = { _("MAGMA LEADER"), 20, BALL_MASTER },
@@ -370,6 +370,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PIKE_QUEEN] = { _("PIKE QUEEN") },
     [TRAINER_CLASS_PYRAMID_KING] = { _("PYRAMID KING") },
     [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} TRAINER") },
+    [TRAINER_CLASS_NEET] = { _("NEET"), 2, BALL_DUSK },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =

@@ -294,6 +294,12 @@ const u32 gFieldEffectObjectPic_ShadowMedium[] = INCBIN_U32("graphics/field_effe
 const u32 gFieldEffectObjectPic_ShadowLarge[] = INCBIN_U32("graphics/field_effects/pics/shadow_large.4bpp");
 const u32 gFieldEffectObjectPic_ShadowExtraLarge[] = INCBIN_U32("graphics/field_effects/pics/shadow_extra_large.4bpp");
 const u32 gFieldEffectObjectPic_BallLight[] = INCBIN_U32("graphics/object_events/pics/misc/light.4bpp");
+const u32 gObjectEventPic_Maiden[] = INCBIN_U32("graphics/object_events/pics/people/maiden.4bpp");
+const u32 gObjectEventPic_Neet[] = INCBIN_U32("graphics/object_events/pics/people/neet.4bpp");
+const u32 gObjectEventPic_Cider[] = INCBIN_U32("graphics/object_events/pics/people/cider.4bpp");
+const u32 gObjectEventPic_LoitumaStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/loituma_still.4bpp");
+const u32 gObjectEventPic_Strollge[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/strollge.4bpp");
+const u32 gObjectEventPic_GoneStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gone_still.4bpp");
 const u32 gFieldEffectObjectPic_PokeCenterLight[] = INCBIN_U32("graphics/object_events/pics/misc/poke_center_light.4bpp");
 const u32 gFieldEffectObjectPic_MartLight[] = INCBIN_U32("graphics/object_events/pics/misc/mart_light.4bpp");
 const u8 gFieldEffectPic_CutGrass[] = INCBIN_U8("graphics/field_effects/pics/cut_grass.4bpp");
@@ -388,6 +394,10 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/pics
 
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 const u16 gObjectEventPaletteNeonLight[] = INCBIN_U16("graphics/object_events/palettes/neon_light.gbapal");
+
+const u16 gObjectEventPal_Junkneet[] = INCBIN_U16("graphics/object_events/palettes/junkneet.gbapal");
+
+const u16 gObjectEventPal_Gone[] = INCBIN_U16("graphics/object_events/palettes/gone.gbapal");
 
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
