@@ -537,6 +537,26 @@ static const struct SpriteFrameImage sPicTable_GoneStill[] = {
     obj_frame_tiles(gObjectEventPic_GoneStill),
 };
 
+static const struct SpriteFrameImage sPicTable_AstrologistMale[] = {
+    overworld_ascending_frames(gObjectEventPic_AstrologistMale, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AstrologistFemale[] = {
+    overworld_ascending_frames(gObjectEventPic_AstrologistFemale, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diva[] = {
+    overworld_ascending_frames(gObjectEventPic_Diva, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Mafia[] = {
+    overworld_ascending_frames(gObjectEventPic_Mafia, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Chef[] = {
+    overworld_ascending_frames(gObjectEventPic_Chef, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Sidney[] = {
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),

@@ -300,6 +300,11 @@ const u32 gObjectEventPic_Cider[] = INCBIN_U32("graphics/object_events/pics/peop
 const u32 gObjectEventPic_LoitumaStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/loituma_still.4bpp");
 const u32 gObjectEventPic_Strollge[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/strollge.4bpp");
 const u32 gObjectEventPic_GoneStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gone_still.4bpp");
+const u32 gObjectEventPic_AstrologistMale[] = INCBIN_U32("graphics/object_events/pics/people/astrologist_male.4bpp");
+const u32 gObjectEventPic_AstrologistFemale[] = INCBIN_U32("graphics/object_events/pics/people/astrologist_female.4bpp");
+const u32 gObjectEventPic_Diva[] = INCBIN_U32("graphics/object_events/pics/people/diva.4bpp");
+const u32 gObjectEventPic_Mafia[] = INCBIN_U32("graphics/object_events/pics/people/mafia.4bpp");
+const u32 gObjectEventPic_Chef[] = INCBIN_U32("graphics/object_events/pics/people/chef.4bpp");
 const u32 gFieldEffectObjectPic_PokeCenterLight[] = INCBIN_U32("graphics/object_events/pics/misc/poke_center_light.4bpp");
 const u32 gFieldEffectObjectPic_MartLight[] = INCBIN_U32("graphics/object_events/pics/misc/mart_light.4bpp");
 const u8 gFieldEffectPic_CutGrass[] = INCBIN_U8("graphics/field_effects/pics/cut_grass.4bpp");
@@ -398,6 +403,10 @@ const u16 gObjectEventPaletteNeonLight[] = INCBIN_U16("graphics/object_events/pa
 const u16 gObjectEventPal_Junkneet[] = INCBIN_U16("graphics/object_events/palettes/junkneet.gbapal");
 
 const u16 gObjectEventPal_Gone[] = INCBIN_U16("graphics/object_events/palettes/gone.gbapal");
+
+const u16 gObjectEventPal_Astrologist[] = INCBIN_U16("graphics/object_events/palettes/astrologist.gbapal");
+
+const u16 gObjectEventPal_Mona[] = INCBIN_U16("graphics/object_events/palettes/mona.gbapal");
 
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");

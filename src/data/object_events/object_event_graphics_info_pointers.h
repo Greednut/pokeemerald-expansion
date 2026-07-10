@@ -246,6 +246,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cider;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LoitumaStill;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Strollge;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GoneStill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AstrologistMale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AstrologistFemale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diva;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mafia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chef;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
@@ -504,6 +509,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LOITUMA_STILL] =            &gObjectEventGraphicsInfo_LoitumaStill,
     [OBJ_EVENT_GFX_STROLLGE] =                 &gObjectEventGraphicsInfo_Strollge,
     [OBJ_EVENT_GFX_GONE_STILL] =               &gObjectEventGraphicsInfo_GoneStill,
+    [OBJ_EVENT_GFX_ASTROLOGIST_MALE] =         &gObjectEventGraphicsInfo_AstrologistMale,
+    [OBJ_EVENT_GFX_ASTROLOGIST_FEMALE] =       &gObjectEventGraphicsInfo_AstrologistFemale,
+    [OBJ_EVENT_GFX_DIVA] =                     &gObjectEventGraphicsInfo_Diva,
+    [OBJ_EVENT_GFX_MAFIA] =                    &gObjectEventGraphicsInfo_Mafia,
+    [OBJ_EVENT_GFX_CHEF] =                     &gObjectEventGraphicsInfo_Chef,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

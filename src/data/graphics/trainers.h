@@ -289,6 +289,21 @@ const u16 gTrainerPalette_Neet[] = INCBIN_U16("graphics/trainers/front_pics/neet
 const u32 gTrainerFrontPic_Cider[] = INCBIN_U32("graphics/trainers/front_pics/cider.4bpp.lz");
 const u16 gTrainerPalette_Cider[] = INCBIN_U16("graphics/trainers/front_pics/cider.gbapal");
 
+const u32 gTrainerFrontPic_AstrologistMale[] = INCBIN_U32("graphics/trainers/front_pics/astrologist_male.4bpp.lz");
+const u16 gTrainerPalette_AstrologistMale[] = INCBIN_U16("graphics/trainers/front_pics/astrologist_male.gbapal");
+
+const u32 gTrainerFrontPic_AstrologistFemale[] = INCBIN_U32("graphics/trainers/front_pics/astrologist_female.4bpp.lz");
+const u16 gTrainerPalette_AstrologistFemale[] = INCBIN_U16("graphics/trainers/front_pics/astrologist_female.gbapal");
+
+const u32 gTrainerFrontPic_Diva[] = INCBIN_U32("graphics/trainers/front_pics/diva.4bpp.lz");
+const u16 gTrainerPalette_Diva[] = INCBIN_U16("graphics/trainers/front_pics/diva.gbapal");
+
+const u32 gTrainerFrontPic_Mafia[] = INCBIN_U32("graphics/trainers/front_pics/mafia.4bpp.lz");
+const u16 gTrainerPalette_Mafia[] = INCBIN_U16("graphics/trainers/front_pics/mafia.gbapal");
+
+const u32 gTrainerFrontPic_Chef[] = INCBIN_U32("graphics/trainers/front_pics/chef.4bpp.lz");
+const u16 gTrainerPalette_Chef[] = INCBIN_U16("graphics/trainers/front_pics/chef.gbapal");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -413,6 +428,11 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_MAIDEN, gTrainerFrontPic_Maiden, gTrainerPalette_Maiden),
     TRAINER_SPRITE(TRAINER_PIC_NEET, gTrainerFrontPic_Neet, gTrainerPalette_Neet),
     TRAINER_SPRITE(TRAINER_PIC_CIDER, gTrainerFrontPic_Cider, gTrainerPalette_Cider),
+    TRAINER_SPRITE(TRAINER_PIC_ASTROLOGIST_MALE, gTrainerFrontPic_AstrologistMale, gTrainerPalette_AstrologistMale),
+    TRAINER_SPRITE(TRAINER_PIC_ASTROLOGIST_FEMALE, gTrainerFrontPic_AstrologistFemale, gTrainerPalette_AstrologistFemale),
+    TRAINER_SPRITE(TRAINER_PIC_DIVA, gTrainerFrontPic_Diva, gTrainerPalette_Diva),
+    TRAINER_SPRITE(TRAINER_PIC_MAFIA, gTrainerFrontPic_Mafia, gTrainerPalette_Mafia),
+    TRAINER_SPRITE(TRAINER_PIC_CHEF, gTrainerFrontPic_Chef, gTrainerPalette_Chef),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
