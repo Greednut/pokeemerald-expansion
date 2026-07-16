@@ -2247,6 +2247,7 @@ static const u16 sUlmiraintFormSpeciesIdTable[] = {
     SPECIES_ULMIRAINT_ELECTRIC,
     SPECIES_ULMIRAINT_WATER,
     SPECIES_ULMIRAINT_FIRE,
+    SPECIES_ULMIRAINT_AUTUMN,
     FORM_SPECIES_END,
 };
 static const u16 sSimionachFormSpeciesIdTable[] = {

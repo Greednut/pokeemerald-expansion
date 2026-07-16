@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CHEF",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_MALE",
       "x": 8,
       "y": 7,
       "elevation": 3,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GONE_STILL",
+      "graphics_id": "OBJ_EVENT_GFX_SPENJBAB",
       "x": 4,
       "y": 5,
       "elevation": 0,

@@ -18,7 +18,7 @@
 #define TRAINER_PIC_HIKER                  0
 #define TRAINER_PIC_AQUA_GRUNT_M           1
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
-#define TRAINER_PIC_COOLTRAINER_M          3
+#define TRAINER_PIC_ACE_TRAINER_MALE       3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
 #define TRAINER_PIC_AQUA_GRUNT_F           6
@@ -35,7 +35,7 @@
 #define TRAINER_PIC_INTERVIEWER           17
 #define TRAINER_PIC_TUBER_F               18
 #define TRAINER_PIC_TUBER_M               19
-#define TRAINER_PIC_COOLTRAINER_F         20
+#define TRAINER_PIC_ACE_TRAINER_FEMALE    20
 #define TRAINER_PIC_LADY                  21
 #define TRAINER_PIC_BEAUTY                22
 #define TRAINER_PIC_RICH_BOY              23
@@ -58,7 +58,7 @@
 #define TRAINER_PIC_LEADER_ROXANNE        40
 #define TRAINER_PIC_LEADER_BRAWLY         41
 #define TRAINER_PIC_LEADER_WATTSON        42
-#define TRAINER_PIC_LEADER_FLANNERY       43
+#define TRAINER_PIC_LEADER_SANDRA         43
 #define TRAINER_PIC_LEADER_NORMAN         44
 #define TRAINER_PIC_LEADER_WINONA         45
 #define TRAINER_PIC_LEADER_TATE_AND_LIZA  46
@@ -116,7 +116,18 @@
 #define TRAINER_PIC_DIVA                  98
 #define TRAINER_PIC_MAFIA                 99
 #define TRAINER_PIC_CHEF                  100
-#define TRAINER_PIC_COUNT                 101
+#define TRAINER_PIC_MERCHANT              101
+#define TRAINER_PIC_SWIMMER_FEMALE        102
+#define TRAINER_PIC_SWIMMER_MALE          103
+#define TRAINER_PIC_EXPLORER              104
+#define TRAINER_PIC_AUTUMN                105
+#define TRAINER_PIC_SODA                  106
+#define TRAINER_PIC_FLARHEA_RIDER         107
+#define TRAINER_PIC_FIGHTER               108
+#define TRAINER_PIC_CULTIST_MALE          109
+#define TRAINER_PIC_CULTIST_FEMALE        110
+#define TRAINER_PIC_MOM                   111
+#define TRAINER_PIC_COUNT                 112
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -301,7 +312,7 @@
 #define TRAINER_CLASS_COOLTRAINER    0x5
 #define TRAINER_CLASS_BIRD_KEEPER    0x6
 #define TRAINER_CLASS_COLLECTOR      0x7
-#define TRAINER_CLASS_SWIMMER_M      0x8
+#define TRAINER_CLASS_SWIMMER_MALE   0x8
 #define TRAINER_CLASS_TEAM_MAGMA     0x9
 #define TRAINER_CLASS_EXPERT         0xa
 #define TRAINER_CLASS_AQUA_ADMIN     0xb
@@ -338,10 +349,10 @@
 #define TRAINER_CLASS_NINJA_BOY      0x2a
 #define TRAINER_CLASS_BATTLE_GIRL    0x2b
 #define TRAINER_CLASS_PARASOL_LADY   0x2c
-#define TRAINER_CLASS_SWIMMER_F      0x2d
+#define TRAINER_CLASS_SWIMMER_FEMALE 0x2d
 #define TRAINER_CLASS_TWINS          0x2e
 #define TRAINER_CLASS_SAILOR         0x2f
-#define TRAINER_CLASS_COOLTRAINER_2  0x30 // Used for only one trainer.
+#define TRAINER_CLASS_ACE_TRAINER    0x30 // Replaced CoolTrainer 2 with Ace trainer class
 #define TRAINER_CLASS_MAGMA_ADMIN    0x31
 #define TRAINER_CLASS_RIVAL          0x32
 #define TRAINER_CLASS_BUG_CATCHER    0x33
@@ -364,7 +375,14 @@
 #define TRAINER_CLASS_DIVA           0x44
 #define TRAINER_CLASS_MAFIA          0x45
 #define TRAINER_CLASS_CHEF           0x46
-#define TRAINER_CLASS_COUNT          0x47
+#define TRAINER_CLASS_MERCHANT       0x47
+#define TRAINER_CLASS_EXPLORER       0x48
+#define TRAINER_CLASS_WANDERER       0x49
+#define TRAINER_CLASS_RIDER          0x4a
+#define TRAINER_CLASS_FIGHTER        0x4b
+#define TRAINER_CLASS_CULTIST        0x4c
+#define TRAINER_CLASS_VETERAN        0x4d
+#define TRAINER_CLASS_COUNT          0x4e
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

@@ -28269,6 +28269,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u16 gMonShinyPalette_UlmiraintFire[] = INCBIN_U16("graphics/pokemon/ulmiraint/fire/shiny.gbapal");
    const u8 gMonIcon_UlmiraintFire[] = INCBIN_U8("graphics/pokemon/ulmiraint/fire/icon.4bpp");
 
+   const u32 gMonFrontPic_UlmiraintAutumn[] = INCBIN_U32("graphics/pokemon/ulmiraint/autumn/front.4bpp.lz");
+   const u16 gMonPalette_UlmiraintAutumn[] = INCBIN_U16("graphics/pokemon/ulmiraint/autumn/normal.gbapal");
+   const u32 gMonBackPic_UlmiraintAutumn[] = INCBIN_U32("graphics/pokemon/ulmiraint/autumn/back.4bpp.lz");
+   const u16 gMonShinyPalette_UlmiraintAutumn[] = INCBIN_U16("graphics/pokemon/ulmiraint/autumn/shiny.gbapal");
+   const u8 gMonIcon_UlmiraintAutumn[] = INCBIN_U8("graphics/pokemon/ulmiraint/autumn/icon.4bpp");
+
+
    const u32 gMonFrontPic_Noxilium[] = INCBIN_U32("graphics/pokemon/noxilium/front.4bpp.lz");
    const u32 gMonBackPic_Noxilium[] = INCBIN_U32("graphics/pokemon/noxilium/back.4bpp.lz");
    const u16 gMonPalette_Noxilium[] = INCBIN_U16("graphics/pokemon/noxilium/normal.gbapal");
