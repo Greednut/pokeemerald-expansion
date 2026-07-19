@@ -2011,8 +2011,9 @@
 #define SPECIES_ARCRIDGET                               1877
 #define SPECIES_ULMIRAINT_AUTUMN                        1878
 #define SPECIES_ESCARPHONE                              1879
+#define SPECIES_OBSERVEDA                               1880
 
-#define SPECIES_EGG (SPECIES_ESCARPHONE + 1)
+#define SPECIES_EGG (SPECIES_OBSERVEDA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -2738,6 +2738,7 @@ enum {
     CRY_MERULIN,
     CRY_ARCRIDGET,
     CRY_ESCARPHONE,
+    CRY_OBSERVEDA,
     CRY_COUNT,
 };
 

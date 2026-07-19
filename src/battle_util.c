@@ -9503,6 +9503,19 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             atkStat = gBattleMons[battlerAtk].spDefense;
             atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
         }
+        }
+    else if (moveEffect == EFFECT_MANA_FLUX)
+    {
+        if (IsBattleMoveSpecial(move))
+        {
+            atkStat = gBattleMons[battlerDef].spAttack;
+            atkStage = gBattleMons[battlerDef].statStages[STAT_SPATK];
+        }
+        else
+        {
+            atkStat = gBattleMons[battlerDef].attack;
+            atkStage = gBattleMons[battlerDef].statStages[STAT_ATK];
+        }
     }
     else
     {

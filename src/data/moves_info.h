@@ -23730,6 +23730,38 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DeadSilence,
     },
 
+    [MOVE_MANA_FLUX] =
+    {
+        .name = COMPOUND_STRING("Mana Flux"),
+        .description = COMPOUND_STRING(
+            "The higher the foe's Special\n"
+            "Attack the more damage caused.\n"
+            "Raises Special Attack of both."),
+        .effect = EFFECT_MANA_FLUX,
+        .power = 95,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
+            .self = TRUE,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
+            .chance = 100,
+        }),
+        .makesContact = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_FoulPlay,
+        .validApprenticeMove = TRUE,
+    },
+
 
 
     

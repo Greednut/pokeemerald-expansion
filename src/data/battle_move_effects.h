@@ -2456,4 +2456,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectDeadSilence,
         .battleTvScore = 4,
     },
+
+    [EFFECT_MANA_FLUX] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

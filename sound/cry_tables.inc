@@ -3046,6 +3046,8 @@ gCryTable::
 	cry Cry_Arcridget
 
 	cry Cry_Escarphone
+
+	cry Cry_Observeda
 .endif
 
 	.align 2
@@ -6097,4 +6099,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Arcridget
 
 	cry_reverse Cry_Escarphone
+
+	cry_reverse Cry_Observeda
 .endif

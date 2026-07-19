@@ -7399,6 +7399,10 @@ Cry_Arcridget::
 	.align 2	
 Cry_Escarphone::
 	.incbin "sound/direct_sound_samples/cries/escarphone.bin"
+
+	.align 2	
+Cry_Observeda::
+	.incbin "sound/direct_sound_samples/cries/observeda.bin"
 	
 	.align 2
 .endif @ P_CRIES_ENABLED
