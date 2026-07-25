@@ -29864,6 +29864,6 @@ static const struct LevelUpMove sEscarphoneLevelUpLearnset[] = {
    LEVEL_UP_END
 };
 static const struct LevelUpMove sObservedaLevelUpLearnset[] = {
-   LEVEL_UP_MOVE( 1, MOVE_MANA_FLUX),   
+   LEVEL_UP_MOVE( 1, MOVE_MANA_FLUX),
    LEVEL_UP_END
 };
