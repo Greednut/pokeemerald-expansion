@@ -1658,6 +1658,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         if (IsBattleMovePhysical(move))
             calc = (calc * 80) / 100; // 1.2 hustle loss
         break;
+    case ABILITY_CRUELTY:
+        if (IsBattleMoveSpecial(move))
+            calc = (calc * 80) / 100; // 1.2 hustle loss
+        break;
     case ABILITY_ILLUMINATE:
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
         break;

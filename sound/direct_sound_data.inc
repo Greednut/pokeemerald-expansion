@@ -7403,6 +7403,10 @@ Cry_Escarphone::
 	.align 2	
 Cry_Observeda::
 	.incbin "sound/direct_sound_samples/cries/observeda.bin"
+
+	.align 2	
+Cry_Kurilty::
+	.incbin "sound/direct_sound_samples/cries/kurilty.bin"
 	
 	.align 2
 .endif @ P_CRIES_ENABLED

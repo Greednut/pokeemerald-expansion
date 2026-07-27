@@ -2012,8 +2012,9 @@
 #define SPECIES_ULMIRAINT_AUTUMN                        1878
 #define SPECIES_ESCARPHONE                              1879
 #define SPECIES_OBSERVEDA                               1880
+#define SPECIES_KURILTY                                 1881
 
-#define SPECIES_EGG (SPECIES_OBSERVEDA + 1)
+#define SPECIES_EGG (SPECIES_KURILTY + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -2739,6 +2739,7 @@ enum {
     CRY_ARCRIDGET,
     CRY_ESCARPHONE,
     CRY_OBSERVEDA,
+    CRY_KURILTY,
     CRY_COUNT,
 };
 

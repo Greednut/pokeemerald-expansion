@@ -16185,6 +16185,66 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .teachableLearnset = sObservedaTeachableLearnset,
        .eggMoveLearnset = sObservedaEggMoveLearnset,
     },
+    
+        [SPECIES_KURILTY] =
+    { 
+       .baseHP        = 88,
+       .baseAttack    = 58,
+       .baseDefense   = 54,
+       .baseSpeed     = 22,
+       .baseSpAttack  = 48,
+       .baseSpDefense = 200,
+       .types = { TYPE_DARK, TYPE_WATER },
+       .catchRate = 33,
+       .expYield = 188,
+       .evYield_SpDefense  = 1,
+       .genderRatio = PERCENT_FEMALE(50),
+       .eggCycles = 5,
+       .friendship = 50,
+       .growthRate = GROWTH_MEDIUM_SLOW,
+       .eggGroups = { EGG_GROUP_WATER_2, EGG_GROUP_NONE },
+       .abilities = { ABILITY_CRUELTY, ABILITY_PRESSURE, ABILITY_RAIN_DISH, ABILITY_WONDER_SKIN },
+       .bodyColor = BODY_COLOR_BLUE,
+       .isLegendary = TRUE,
+       .isMythical = TRUE,
+       .dexForceRequired = FALSE,
+       .perfectIVCount = FALSE,
+      .speciesName = _("Kurilty"),
+       .cryId = CRY_KURILTY,
+       .natDexNum = NATIONAL_DEX_KURILTY,
+       .categoryName = _("Bottomless"),
+       .height = 19,
+       .weight = 2505,
+       .description = COMPOUND_STRING(
+           "They anchor themselves to the bottom of\n"
+           "the ocean and snatch up anything that comes\n"
+           "near them. Submersibles have found massive\n"
+           "fields of Kurilty swaying on the sea floor."),
+       .pokemonScale = 356,
+       .pokemonOffset = 16,
+       .trainerScale = 256,
+       .trainerOffset = -2,
+       .frontPic = gMonFrontPic_Kurilty,
+       .frontPicSize = MON_COORDS_SIZE(64, 64),
+       .frontPicYOffset = 0,
+       .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+       .frontAnimId = ANIM_SHAKE_FLASH_YELLOW_FAST,
+       .frontAnimDelay = 15,
+       .enemyMonElevation = 1,
+       .backPic = gMonBackPic_Kurilty,
+       .backPicSize = MON_COORDS_SIZE(64, 64),
+       .backPicYOffset = 0,
+       .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+       SHADOW(0, 10, SHADOW_SIZE_L)
+       .palette = gMonPalette_Kurilty,
+       .shinyPalette = gMonShinyPalette_Kurilty,
+       .iconSprite = gMonIcon_Kurilty,
+       .iconPalIndex = 2,
+       FOOTPRINT(Kurilty)
+       .levelUpLearnset = sKuriltyLevelUpLearnset,
+       .teachableLearnset = sKuriltyTeachableLearnset,
+       .eggMoveLearnset = sKuriltyEggMoveLearnset,
+    },
 
         [SPECIES_POLYBRAWN_NORMAL] =
     { 

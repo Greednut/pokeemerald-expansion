@@ -429,7 +429,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_HUSTLE] =
     {
         .name = _("Hustle"),
-        .description = COMPOUND_STRING("Trades accuracy for power."),
+        .description = COMPOUND_STRING("Physical attacks are stronger,\nbut are less acurate."),
         .aiRating = 7,
     },
 
@@ -2777,6 +2777,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Soul Symphony"),
         .description = COMPOUND_STRING("Makes sound moves Ghost."),
         .aiRating = 5,
+    },
+
+    [ABILITY_CRUELTY] =
+    {
+        .name = _("Cruelty"),
+        .description = COMPOUND_STRING("Special attacks are stronger,\nbut are less acurate."),
+        .aiRating = 7,
     },
 
 };

@@ -29097,6 +29097,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u8 gMonIcon_Observeda[] = INCBIN_U8("graphics/pokemon/observeda/icon.4bpp");
    const u8 gMonFootprint_Observeda[] = INCBIN_U8("graphics/pokemon/observeda/footprint.1bpp");
 
+   const u32 gMonFrontPic_Kurilty[] = INCBIN_U32("graphics/pokemon/kurilty/front.4bpp.lz");
+   const u32 gMonBackPic_Kurilty[] = INCBIN_U32("graphics/pokemon/kurilty/back.4bpp.lz");
+   const u16 gMonPalette_Kurilty[] = INCBIN_U16("graphics/pokemon/kurilty/normal.gbapal");
+   const u16 gMonShinyPalette_Kurilty[] = INCBIN_U16("graphics/pokemon/kurilty/shiny.gbapal");
+   const u8 gMonIcon_Kurilty[] = INCBIN_U8("graphics/pokemon/kurilty/icon.4bpp");
+   const u8 gMonFootprint_Kurilty[] = INCBIN_U8("graphics/pokemon/kurilty/footprint.1bpp");
+
    const u32 gMonFrontPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/front.4bpp.lz");
    const u32 gMonBackPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/back.4bpp.lz");
    const u16 gMonPalette_Cofferule[] = INCBIN_U16("graphics/pokemon/cofferule/normal.gbapal");

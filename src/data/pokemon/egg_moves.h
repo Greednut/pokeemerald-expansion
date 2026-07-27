@@ -7298,7 +7298,18 @@ static const u16 sEscarphoneEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sObservedaEggMoveLearnset[] = {
+static const u16 sObservedaEggMoveLearnset[] = { //KTODO
+    MOVE_AMNESIA,
+    MOVE_CLEAR_SMOG,
+    MOVE_DESTINY_BOND,
+    MOVE_MUDDY_WATER,
+    MOVE_SPITE,
+    MOVE_TEETER_DANCE,
+    MOVE_VENOM_DRENCH,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKuriltyEggMoveLearnset[] = { //KTODO
     MOVE_AMNESIA,
     MOVE_CLEAR_SMOG,
     MOVE_DESTINY_BOND,
