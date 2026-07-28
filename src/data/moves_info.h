@@ -6069,12 +6069,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Rapid Spin"),
         .description = COMPOUND_STRING(
-            "Spins attack that removes\n"
-        #if B_SPEED_BUFFING_RAPID_SPIN >= GEN_8
-            "some effects and ups speed."),
-        #else 
-            "certain effects."),
-        #endif
+            "Spinning attack that removes hazards\n"
+            "and raises the user's Speed."),
         .effect = EFFECT_RAPID_SPIN,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 50 : 20,
         .type = TYPE_NORMAL,
@@ -8009,8 +8005,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Needle Arm"),
          .description = COMPOUND_STRING(
-            "High critical hit ratio. Sets\n"
-            "Splinters that hurt the foe."),
+            "Sets a layer of Spikes on\n"
+            "the target's side."),
         .effect = EFFECT_HIT,
         .power = 65,
         .type = TYPE_GRASS,
@@ -11297,8 +11293,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Defog"),
         .description = COMPOUND_STRING(
-            "Removes obstacles and\n"
-            "lowers evasion."),
+            "Removes hazards and other field\n"
+            "effects and lowers evasion."),
         .effect = EFFECT_DEFOG,
         .power = 0,
         .type = TYPE_FLYING,
@@ -15465,8 +15461,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Geomancy"),
         .description = COMPOUND_STRING(
-            "Raises Sp. Atk, Sp. Def and\n"
-            "Speed on the 2nd turn."),
+            "Charges for a turn, then\n"
+            "sharply raisse Sp. Atk,\n"
+            "Sp. Def and Speed."),
         .effect = EFFECT_GEOMANCY,
         .power = 0,
         .type = TYPE_FAIRY,
@@ -15846,16 +15843,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Land's Wrath"),
         .description = COMPOUND_STRING(
-            "Gathers the energy of the\n"
-            "land to attack every foe."),
+            "An earthly attack that suppresses\n"
+            "the abilities of all foes hit."),
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .zMove = { .powerOverride = 140 },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CORE_ENFORCER,
@@ -21342,8 +21339,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Rocket Punch"),
         .description = COMPOUND_STRING(
-            "A punch that hits before\n"
-            "other priority. Always crits.\n"
+            "A punch that hits before other\n"
+            "priority. Always crits.\n"
             "Only works on the first turn."),
         .effect = EFFECT_FIRST_TURN_ONLY,
         .power = 50,
@@ -21366,10 +21363,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_VOLTAIC_CYCLONE] =
     {
-        .name = COMPOUND_STRING("Voltaic Spin"),
+        .name = COMPOUND_STRING("Voltaic Cyclone"),
         .description = COMPOUND_STRING(
-            "Whips up an electric\n"
-            "cyclone to clear hazards."),
+            "Whips up an electric storm that\n"
+            "frees the user of hazards."),
         .effect = EFFECT_RAPID_SPIN,
         .power = 75,
         .type = TYPE_ELECTRIC,
@@ -21410,9 +21407,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Petrify"),
         .description = COMPOUND_STRING(
-            "Protects the user from\n"
-            "damaging moves and\n"
-            "raises their Defense."),
+            "Protects the user from damaging\n"
+            "moves and raises their Defense."),
         .effect = EFFECT_PROTECT, 
         .power = 0,
         .type = TYPE_ROCK,
@@ -21439,8 +21435,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Faeblade"),
         .description = COMPOUND_STRING(
-            "A soul-cutting blade that\n"
-            "targets the foe's Sp. Def."),
+            "A soul-cutting blade that targets\n"
+            "the foe's Sp. Def."),
         .effect = EFFECT_FAEBLADE,
         .power = 85,
         .type = TYPE_FAIRY,
@@ -21595,8 +21591,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
-        .soundMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
             .self = TRUE,
@@ -21656,8 +21650,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Awaken"),
         .description = COMPOUND_STRING(
-            "Raises Attack, Defense and\n"
-            "Speed on the 2nd turn."),
+            "Charges for a turn, then\n"
+            "sharply raisse Attack,\n"
+            "Defense and Speed."),
         .effect = EFFECT_AWAKEN,
         .power = 0,
         .type = TYPE_FIGHTING,
@@ -21722,8 +21717,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Gazer Beam"),
         .description = COMPOUND_STRING(
-            "Super-effective on Steel-\n"
-            "types. May inflict a burn."),
+            "A searing ray of light that is\n"
+            "super-effective on Steel-types.\n"
+            "This may inflict a burn."),
         .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 70,
         .type = TYPE_STEEL,
@@ -21761,7 +21757,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .argument = { .recoilPercentage = 33 },
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .zMove = { .powerOverride = 140 },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CORE_ENFORCER,
         }),
@@ -21769,7 +21764,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_CoreEnforcer,
+        .battleAnimScript = Move_BRANDING_BLADE,
     },
 
     [MOVE_MUD_MAELSTROM] =
@@ -22849,8 +22844,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Mop"),
         .description = COMPOUND_STRING(
-            "Frees user from hazards\n"
-            "and raises accuracy."),
+            "Frees user from hazards. If any were\n"
+            "removed, raises their accuracy."),
         .effect = EFFECT_MOP,
         .power = 0,
         .type = TYPE_FAIRY,

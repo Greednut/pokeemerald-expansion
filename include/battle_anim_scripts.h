@@ -957,6 +957,7 @@ extern const u8 Move_THINK_FAST[];
 extern const u8 Move_QUICK_SAND[];
 extern const u8 Move_CARVING_BEAK[];
 extern const u8 Move_BLOCK_BUSTER[];
+extern const u8 Move_BRANDING_BLADE[];
 
 // status animations
 extern const u8 gBattleAnimStatus_Poison[];
