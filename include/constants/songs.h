@@ -292,7 +292,7 @@
 #define MUS_ROUTE101                359 // MUS_DOORO1           // Also used in Routes 102 and 103.
 #define MUS_ROUTE110                360 // MUS_DOORO_X1         // Also used in Routes 112, 114, 117, 111's non-desert section and 118's west half.
 #define MUS_ROUTE120                361 // MUS_DOORO_X3         // Also used in Routes 121, 124, 125, 126, 127 and 128.
-#define MUS_PETALBURG               362 // MUS_MACHI_S2         // Also used in Mr. Briney's House and Pretty Petal Flower Shop. Nostalgia Critic Theme
+#define MUS_PETALBURG               362 // MUS_MACHI_S2         // Nostalgia Critic Theme Cover by Melody - Also used in Mr. Briney's House and Pretty Petal Flower Shop. 
 #define MUS_OLDALE                  363 // MUS_MACHI_S4         // Also used in Lavaridge Town.
 #define MUS_GYM                     364 // MUS_GIM
 #define MUS_SURF                    365 // MUS_NAMINORI
@@ -357,7 +357,7 @@
 #define MUS_VICTORY_AQUA_MAGMA      424 // MUS_KACHI4
 #define MUS_CABLE_CAR               425 // MUS_ROPEWAY
 #define MUS_GAME_CORNER             426 // MUS_CASINO
-#define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Also used in Route 109's Seashore house. //Into the Factory Cover by Gojira/POWER PLANT by Gojira
+#define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Into the Factory Cover / POWER PLANT by Gojira - Also used in Route 109's Seashore house.
 #define MUS_SAFARI_ZONE             428 // MUS_SAFARI
 #define MUS_VICTORY_ROAD            429 // MUS_C_ROAD           // Also used in Pokémon League's E4/Champion rooms and halls.
 #define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AJITO
@@ -391,7 +391,7 @@
 #define MUS_B_ARENA                 458 // MUS_B_ARENA
 #define MUS_OBTAIN_B_POINTS         459 // MUS_ME_POINTGET
 #define MUS_REGISTER_MATCH_CALL     460 // MUS_ME_TORE_EYE
-#define MUS_B_PYRAMID               461 // MUS_PYRAMID
+#define MUS_B_PYRAMID               461 // MUS_PYRAMID          // Colosseum of DOOM by Gojira
 #define MUS_B_PYRAMID_TOP           462 // MUS_PYRAMID_TOP
 #define MUS_B_PALACE                463 // MUS_B_PALACE
 #define MUS_RAYQUAZA_APPEARS        464 // MUS_REKKUU_KOURIN
@@ -404,16 +404,16 @@
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
-#define MUS_VS_WILD                 474 // MUS_BATTLE27  //Back in da Wild by Goji
+#define MUS_VS_WILD                 474 // MUS_BATTLE27         // Back in da Wild by Gojira
 #define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
 #define MUS_VS_TRAINER              476 // MUS_BATTLE20
-#define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32  //New Gym Leader Song By Melody
+#define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32         // BATTLE CAPACITY by Melody
 #define MUS_VS_CHAMPION             478 // MUS_BATTLE33
-#define MUS_VS_REGI                 479 // MUS_BATTLE36  //Wrath of The Danmed by Gojira
+#define MUS_VS_REGI                 479 // MUS_BATTLE36         // Wrath of the Damned by Gojira
 #define MUS_VS_KYOGRE_GROUDON       480 // MUS_BATTLE34
 #define MUS_VS_RIVAL                481 // MUS_BATTLE35
 #define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38
-#define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30   //Zealots of the Storm by Gojira
+#define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30         // Zealots of the Storm by Gojira
 // FRLG Music
 #define MUS_RG_FOLLOW_ME            484 // MUS_RG_ANNAI
 #define MUS_RG_GAME_CORNER          485 // MUS_RG_SLOT
