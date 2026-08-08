@@ -5947,7 +5947,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Sanickel,
        .shinyPalette = gMonShinyPalette_Sanickel,
        .iconSprite = gMonIcon_Sanickel,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Sanickel)
        .levelUpLearnset = sSanickelLevelUpLearnset,
        .teachableLearnset = sSanickelTeachableLearnset,
@@ -6005,7 +6005,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Skoxious,
        .shinyPalette = gMonShinyPalette_Skoxious,
        .iconSprite = gMonIcon_Skoxious,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Skoxious)
        .levelUpLearnset = sSkoxiousLevelUpLearnset,
        .teachableLearnset = sSkoxiousTeachableLearnset,
@@ -8246,7 +8246,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .levelUpLearnset = sShroomaliceLevelUpLearnset,
        .teachableLearnset = sShroomaliceTeachableLearnset,
        .eggMoveLearnset = sShroomaliceEggMoveLearnset,
-       },
+    },
     
         [SPECIES_SPORESTOOL] =
     { 
@@ -9041,7 +9041,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Parmiausan,
        .shinyPalette = gMonShinyPalette_Parmiausan,
        .iconSprite = gMonIcon_Parmiausan,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Parmiausan)
        .levelUpLearnset = sParmiausanLevelUpLearnset,
        .teachableLearnset = sParmiausanTeachableLearnset,
@@ -9941,7 +9941,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Tokoyaki,
        .shinyPalette = gMonShinyPalette_Tokoyaki,
        .iconSprite = gMonIcon_Tokoyaki,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Tokoyaki)
        .levelUpLearnset = sTokoyakiLevelUpLearnset,
        .teachableLearnset = sTokoyakiTeachableLearnset,
@@ -9998,7 +9998,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Onsenpura,
        .shinyPalette = gMonShinyPalette_Onsenpura,
        .iconSprite = gMonIcon_Onsenpura,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Onsenpura)
        .levelUpLearnset = sOnsenpuraLevelUpLearnset,
        .teachableLearnset = sOnsenpuraTeachableLearnset,
@@ -11078,7 +11078,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Fucker,
        .shinyPalette = gMonShinyPalette_Fucker,
        .iconSprite = gMonIcon_Fucker,
-       .iconPalIndex = 5,
+       .iconPalIndex = 2,
        FOOTPRINT(Fucker)
        OVERWORLD(
             sPicTable_Fucker,
@@ -14137,7 +14137,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Noxilium,
        .shinyPalette = gMonShinyPalette_Noxilium,
        .iconSprite = gMonIcon_Noxilium,
-       .iconPalIndex = 5,
+       .iconPalIndex = 2,
        FOOTPRINT(Noxilium)
        .levelUpLearnset = sNoxiliumLevelUpLearnset,
        .teachableLearnset = sNoxiliumTeachableLearnset,
