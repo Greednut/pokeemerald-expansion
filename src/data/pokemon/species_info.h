@@ -3412,7 +3412,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Substrale,
    .shinyPalette = gMonShinyPalette_Substrale,
    .iconSprite = gMonIcon_Substrale,
-   .iconPalIndex = 1,
+   .iconPalIndex = 2,
    FOOTPRINT(Substrale)
    .levelUpLearnset = sSubstraleLevelUpLearnset,
    .teachableLearnset = sSubstraleTeachableLearnset,
@@ -3471,7 +3471,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
    .palette = gMonPalette_Permaceros,
    .shinyPalette = gMonShinyPalette_Permaceros,
    .iconSprite = gMonIcon_Permaceros,
-   .iconPalIndex = 0,
+   .iconPalIndex = 2,
    FOOTPRINT(Permaceros)
    .levelUpLearnset = sPermacerosLevelUpLearnset,
    .teachableLearnset = sPermacerosTeachableLearnset,
@@ -3757,7 +3757,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Equuan,
        .shinyPalette = gMonShinyPalette_Equuan,
        .iconSprite = gMonIcon_Equuan,
-       .iconPalIndex = 2,
+       .iconPalIndex = 1,
        FOOTPRINT(Equuan)
        .levelUpLearnset = sEquuanLevelUpLearnset,
        .teachableLearnset = sEquuanTeachableLearnset,
@@ -4329,7 +4329,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Bluduck,
        .shinyPalette = gMonShinyPalette_Bluduck,
        .iconSprite = gMonIcon_Bluduck,
-       .iconPalIndex = 0,
+       .iconPalIndex = 1,
        FOOTPRINT(Bluduck)
        .levelUpLearnset = sBluduckLevelUpLearnset,
        .teachableLearnset = sBluduckTeachableLearnset,
@@ -6295,7 +6295,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Carpedian,
        .shinyPalette = gMonShinyPalette_Carpedian,
        .iconSprite = gMonIcon_Carpedian,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Carpedian)
        .levelUpLearnset = sCarpedianLevelUpLearnset,
        .teachableLearnset = sCarpedianTeachableLearnset,
@@ -7333,7 +7333,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Wattitude,
        .shinyPalette = gMonShinyPalette_Wattitude,
        .iconSprite = gMonIcon_Wattitude,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Wattitude)
        .levelUpLearnset = sWattitudeLevelUpLearnset,
     },
@@ -8526,7 +8526,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Yuukiino,
        .shinyPalette = gMonShinyPalette_Yuukiino,
        .iconSprite = gMonIcon_Yuukiino,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Yuukiino)
        .levelUpLearnset = sYuukiinoLevelUpLearnset,
        .teachableLearnset = sYuukiinoTeachableLearnset,
@@ -14367,7 +14367,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Dinomight,
        .shinyPalette = gMonShinyPalette_Dinomight,
        .iconSprite = gMonIcon_Dinomight,
-       .iconPalIndex = 5,
+       .iconPalIndex = 1,
        FOOTPRINT(Dinomight)
        .levelUpLearnset = sDinomightLevelUpLearnset,
        .teachableLearnset = sDinomightTeachableLearnset,

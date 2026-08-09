@@ -1252,6 +1252,9 @@ const u16 gItemIconPalette_SublimeKey[] = INCBIN_U16("graphics/items/icon_palett
 const u32 gItemIcon_BrokenController[] = INCBIN_U32("graphics/items/icons/brokencontroller.4bpp.lz");
 const u16 gItemIconPalette_BrokenController[] = INCBIN_U16("graphics/items/icon_palettes/brokencontroller.gbapal");
 
+const u32 gItemIcon_SterilizingAmpoule[] = INCBIN_U32("graphics/items/icons/sterilizing_ampoule.4bpp.lz");
+const u16 gItemIconPalette_SterilizingAmpoule[] = INCBIN_U16("graphics/items/icon_palettes/sterilizing_ampoule.gbapal");
+
 // Incenses
 
 const u32 gItemIcon_SeaIncense[] = INCBIN_U32("graphics/items/icons/sea_incense.4bpp.lz");

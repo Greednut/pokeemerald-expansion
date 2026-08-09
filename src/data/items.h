@@ -14837,4 +14837,21 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_BrokenController,
         .iconPalette = gItemIconPalette_BrokenController,
     },
+
+    [ITEM_STERILIZING_AMPOULE] =
+    {
+        .name = _("Sterilizing Ampoule"),
+        .price = 1500,
+        .holdEffect = HOLD_EFFECT_UPGRADE,
+        .description = COMPOUND_STRING(
+            "A powerful flask\n"
+            "that disables\n"
+            "abilities."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 120,
+        .iconPic = gItemIcon_SterilizingAmpoule,
+        .iconPalette = gItemIconPalette_SterilizingAmpoule,
+    },
 };

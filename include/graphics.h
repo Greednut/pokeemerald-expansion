@@ -1150,6 +1150,7 @@ extern const u16 gItemIconPalette_SobbingMask[];
 extern const u16 gItemIconPalette_SublimeKey[];
 extern const u16 gItemIconPalette_PilferedFlame[];
 extern const u16 gItemIconPalette_BrokenController[];
+extern const u16 gItemIconPalette_SterilizingAmpoule[];
 // Incenses
 extern const u32 gItemIcon_SeaIncense[];
 extern const u16 gItemIconPalette_SeaIncense[];
@@ -1761,6 +1762,7 @@ extern const u32 gItemIcon_SobbingMask[];
 extern const u32 gItemIcon_SublimeKey[];
 extern const u32 gItemIcon_PilferedFlame[];
 extern const u32 gItemIcon_BrokenController[];
+extern const u32 gItemIcon_SterilizingAmpoule[];
 
 extern const u32 gItemIcon_FairyFeather[];
 extern const u16 gItemIconPalette_FairyFeather[];
