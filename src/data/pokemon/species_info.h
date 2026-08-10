@@ -2875,9 +2875,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .weight = 222,
        .description = COMPOUND_STRING(
            "Turtini sit on the beaches they are\n"
-           "born on in large groups to keep \n"
-           "themselves from being picked off at \n"
-           "an early age."),
+           "born on in large groups to keep\n"
+           "themselves from being picked off\n"
+           "at an early age."),
        .pokemonScale = 356,
        .pokemonOffset = 16,
        .trainerScale = 256,
@@ -2886,13 +2886,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .frontPicSize = MON_COORDS_SIZE(64, 64),
        .frontPicYOffset = 4,
        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-       .frontAnimId = ANIM_GROW_VIBRATE,
+       .frontAnimId = ANIM_SHAKE_FLASH_YELLOW_FAST,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
        .backPic = gMonBackPic_Turtini,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+       .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+       .suppressEnemyShadow = TRUE,
        .palette = gMonPalette_Turtini,
        .shinyPalette = gMonShinyPalette_Turtini,
        .iconSprite = gMonIcon_Turtini,
@@ -2944,13 +2945,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .frontPicSize = MON_COORDS_SIZE(64, 64),
        .frontPicYOffset = 4,
        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-       .frontAnimId = ANIM_GROW_VIBRATE,
+       .frontAnimId = ANIM_SHAKE_FLASH_YELLOW_FAST,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
        .backPic = gMonBackPic_Turturret,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+       .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+       SHADOW(4, 9, SHADOW_SIZE_L)
        .palette = gMonPalette_Turturret,
        .shinyPalette = gMonShinyPalette_Turturret,
        .iconSprite = gMonIcon_Turturret,
@@ -2989,25 +2991,26 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .height = 2,
        .weight = 148,
        .description = COMPOUND_STRING(
-           "Mimikrab paint their naturally gray\n"
-           "shells red with berry juice in order\n"
-           "to mimic Poké Balls, though some\n"
-           "trainers pick them up unknowingly."),
+           "Mimikrab dye their shells red with\n"
+           "juice in order to mimic Poké Balls,\n"
+           "though this leads to beachgoers\n"
+           "picking them up on accident."),
        .pokemonScale = 356,
        .pokemonOffset = 16,
        .trainerScale = 256,
        .trainerOffset = -2,
        .frontPic = gMonFrontPic_Mimikrab,
        .frontPicSize = MON_COORDS_SIZE(64, 64),
-       .frontPicYOffset = 4,
+       .frontPicYOffset = 14,
        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-       .frontAnimId = ANIM_GROW_VIBRATE,
+       .frontAnimId = ANIM_H_SHAKE,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
        .backPic = gMonBackPic_Mimikrab,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+       .backAnimId = BACK_ANIM_H_SHAKE,
+       SHADOW(-2, -5, SHADOW_SIZE_S)
        .palette = gMonPalette_Mimikrab,
        .shinyPalette = gMonShinyPalette_Mimikrab,
        .iconSprite = gMonIcon_Mimikrab,
@@ -3057,15 +3060,16 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .trainerOffset = -2,
        .frontPic = gMonFrontPic_Spycrab,
        .frontPicSize = MON_COORDS_SIZE(64, 64),
-       .frontPicYOffset = 4,
+       .frontPicYOffset = 15,
        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-       .frontAnimId = ANIM_GROW_VIBRATE,
+       .frontAnimId = ANIM_H_VIBRATE,
        .frontAnimDelay = 15,
        .enemyMonElevation = 0,
        .backPic = gMonBackPic_Spycrab,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+       .backAnimId = BACK_ANIM_H_SHAKE,
+       SHADOW(-3, -6, SHADOW_SIZE_M)
        .palette = gMonPalette_Spycrab,
        .shinyPalette = gMonShinyPalette_Spycrab,
        .iconSprite = gMonIcon_Spycrab,
