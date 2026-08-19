@@ -13004,7 +13004,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Ulmiraint,
        .shinyPalette = gMonShinyPalette_Ulmiraint,
        .iconSprite = gMonIcon_Ulmiraint,
-       .iconPalIndex = 2,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -13124,7 +13124,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintDark,
        .shinyPalette = gMonShinyPalette_UlmiraintDark,
        .iconSprite = gMonIcon_UlmiraintDark,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -13184,7 +13184,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintSteel,
        .shinyPalette = gMonShinyPalette_UlmiraintSteel,
        .iconSprite = gMonIcon_UlmiraintSteel,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -13364,7 +13364,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintGhost,
        .shinyPalette = gMonShinyPalette_UlmiraintGhost,
        .iconSprite = gMonIcon_UlmiraintGhost,
-       .iconPalIndex = 5,
+       .iconPalIndex = 2,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .formSpeciesIdTable = sUlmiraintFormSpeciesIdTable,
@@ -13422,7 +13422,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintPsychic,
        .shinyPalette = gMonShinyPalette_UlmiraintPsychic,
        .iconSprite = gMonIcon_UlmiraintPsychic,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -13602,7 +13602,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintFairy,
        .shinyPalette = gMonShinyPalette_UlmiraintFairy,
        .iconSprite = gMonIcon_UlmiraintFairy,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -13902,7 +13902,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintElectric,
        .shinyPalette = gMonShinyPalette_UlmiraintElectric,
        .iconSprite = gMonIcon_UlmiraintElectric,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
@@ -14022,7 +14022,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_UlmiraintFire,
        .shinyPalette = gMonShinyPalette_UlmiraintFire,
        .iconSprite = gMonIcon_UlmiraintFire,
-       .iconPalIndex = 1,
+       .iconPalIndex = 0,
        FOOTPRINT(Ulmiraint)
        .levelUpLearnset = sUlmiraintLevelUpLearnset,
        .teachableLearnset = sUlmiraintTeachableLearnset,
