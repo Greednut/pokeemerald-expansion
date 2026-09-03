@@ -23757,6 +23757,57 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+    [MOVE_ENHANCED_FIRE_ORBS] =
+    {
+        .name = COMPOUND_STRING("Enhanced Fire Orbs"),
+        .description = COMPOUND_STRING(
+            "Charges power to boost the\n"
+            "Fire move used next."),
+        .effect = EFFECT_ENHANCED_FIRE_ORBS,
+        .power = 0,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 32,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
+        .snatchAffected = TRUE,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_CHARGE,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Charge,
+    },
+
+    [MOVE_PUMPING_HEART] =
+    {
+        .name = COMPOUND_STRING("Pumping Heart"),
+        .description = COMPOUND_STRING(
+            "Drains health equal to 3/4 of the\n"
+            "damage inflicted. The target is\n"
+            "left with at least 1 HP."),
+        .effect = EFFECT_PUMPING_HEART,
+        .power = 100,
+        .type = TYPE_FAIRY,
+        .accuracy = 0,
+        .pp = 16,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .absorbPercentage = 75 },
+        .ignoresKingsRock = TRUE,
+        .healingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_HeartStamp,
+        .validApprenticeMove = TRUE,
+    },
+
 
 
     

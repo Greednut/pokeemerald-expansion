@@ -172,6 +172,7 @@ enum
     LIST_STATUS3_GRUDGE,
     LIST_STATUS3_FARADAY_CAGE,
     LIST_STATUS3_EMBARGO,
+    LIST_STATUS3_ENHANCED_FIRE_ORBS,
     LIST_STATUS3_UNDERWATER,
     LIST_STATUS3_SMACKED_DOWN,
     LIST_STATUS3_TELEKINESIS,
@@ -613,6 +614,7 @@ static const struct ListMenuItem sStatus3ListItems[] =
     {sText_AquaRing, LIST_STATUS3_AQUA_RING},
     {sText_LaserFocus, LIST_STATUS3_LASER_FOCUS},
     {sText_PowerTrick, LIST_STATUS3_POWER_TRICK},
+    {sText_ChargedUp, LIST_STATUS3_ENHANCED_FIRE_ORBS},
 };
 
 static const struct ListMenuItem sStatus4ListItems[] =

@@ -7407,6 +7407,18 @@ Cry_Observeda::
 	.align 2	
 Cry_Kurilty::
 	.incbin "sound/direct_sound_samples/cries/kurilty.bin"
+
+	.align 2	
+Cry_Velvernean::
+	.incbin "sound/direct_sound_samples/cries/velvernean.bin"
+
+	.align 2	
+Cry_Challiope::
+	.incbin "sound/direct_sound_samples/cries/challiope.bin"
+
+	.align 2	
+Cry_Alclione::
+	.incbin "sound/direct_sound_samples/cries/alclione.bin"
 	
 	.align 2
 .endif @ P_CRIES_ENABLED

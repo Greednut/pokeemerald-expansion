@@ -498,7 +498,7 @@ static void Cmd_setlightscreen(void);
 static void Cmd_tryKO(void);
 static void Cmd_unused_0x94(void);
 static void Cmd_copybidedmg(void);
-static void Cmd_unused_96(void);
+static void Cmd_unused_96(void); //Enhanced Fire orbs
 static void Cmd_tryinfatuating(void);
 static void Cmd_updatestatusicon(void);
 static void Cmd_setmist(void);
@@ -573,7 +573,7 @@ static void Cmd_setuserstatus3(void);
 static void Cmd_assistattackselect(void);
 static void Cmd_trysetmagiccoat(void);
 static void Cmd_trysetsnatch(void);
-static void Cmd_unused2(void);
+static void Cmd_unused2(void); //Velvet Shrimp?
 static void Cmd_switchoutabilities(void);
 static void Cmd_jumpifhasnohp(void);
 static void Cmd_jumpifnotcurrentmoveargtype(void);
@@ -2268,7 +2268,7 @@ static void Cmd_adjustdamage(void)
 
         gPotentialItemEffectBattler = battlerDef;
 
-        if (moveEffect == EFFECT_FALSE_SWIPE)
+        if (moveEffect ==  EFFECT_FALSE_SWIPE || moveEffect == EFFECT_PUMPING_HEART)
         {
             enduredHit = TRUE;
         }
@@ -6706,6 +6706,34 @@ static void Cmd_moveend(void)
             }
             gBattleScripting.moveendState++;
             break;
+            case MOVEEND_PUMPING_HEART:
+            if (moveEffect == EFFECT_PUMPING_HEART
+             && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
+             && !(gStatuses3[gBattlerAttacker] & STATUS3_HEAL_BLOCK)
+             && IsBattlerAlive(gBattlerAttacker)
+             && IsBattlerTurnDamaged(gBattlerTarget))
+            {
+                gBattleStruct->moveDamage[gBattlerAttacker] = max(1, (gBattleStruct->moveDamage[gBattlerTarget] * GetMoveAbsorbPercentage(gCurrentMove) / 100));
+                gBattleStruct->moveDamage[gBattlerAttacker] = GetDrainedBigRootHp(gBattlerAttacker, gBattleStruct->moveDamage[gBattlerAttacker]);
+                gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE;
+                effect = TRUE;
+                if (GetBattlerAbility(gBattlerTarget) == ABILITY_LIQUID_OOZE)
+                {
+                    gBattleStruct->moveDamage[gBattlerAttacker] *= -1;
+                    gHitMarker |= HITMARKER_PASSIVE_DAMAGE;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB_OOZE;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_EffectAbsorbLiquidOoze;
+                }
+                else
+                {
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_EffectAbsorb;
+                }
+            }
+            gBattleScripting.moveendState++;
+            break;
         case MOVEEND_RAGE: // rage check
             if (gBattleMons[gBattlerTarget].status2 & STATUS2_RAGE
                 && IsBattlerAlive(gBattlerTarget)
@@ -7671,6 +7699,9 @@ static void Cmd_moveend(void)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
             if (B_CHARGE >= GEN_9 && moveType == TYPE_ELECTRIC && (IsBattlerTurnDamaged(gBattlerTarget) || gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT))
                 gStatuses3[gBattlerAttacker] &= ~(STATUS3_CHARGED_UP);
+            memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
+            if (B_CHARGE >= GEN_9 && moveType == TYPE_FIRE && (IsBattlerTurnDamaged(gBattlerTarget) || gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT))
+                gStatuses3[gBattlerAttacker] &= ~(STATUS3_ENHANCED_FIRE_ORBS);
             memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
 
             for (i = 0; i < gBattlersCount; i++)
@@ -15975,6 +16006,15 @@ static void Cmd_trysetsnatch(void)
 
 static void Cmd_unused2(void)
 {
+    CMD_ARGS(u8 battler);
+
+    u8 battler = GetBattlerForBattleScript(cmd->battler);
+    gStatuses3[battler] |= STATUS3_ENHANCED_FIRE_ORBS;
+    if (B_CHARGE < GEN_9)
+        gDisableStructs[battler].chargeTimer = 2;
+    else
+        gDisableStructs[battler].chargeTimer = 0;
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 static void Cmd_switchoutabilities(void)

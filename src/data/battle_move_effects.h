@@ -2462,4 +2462,17 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_ENHANCED_FIRE_ORBS] =
+    {
+        .battleScript = BattleScript_EffectEnhancedFireOrbs,
+        .battleTvScore = 4,
+        .encourageEncore = TRUE,
+    },
+
+    [EFFECT_PUMPING_HEART] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 4,
+    },
 };

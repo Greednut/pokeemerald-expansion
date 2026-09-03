@@ -182,6 +182,9 @@ static bool32 HandleEndTurnVarious(u32 battler)
         if (gStatuses3[i] & STATUS3_LASER_FOCUS && gDisableStructs[i].laserFocusTimer == gBattleTurnCounter)
             gStatuses3[i] &= ~STATUS3_LASER_FOCUS;
 
+        if (gDisableStructs[i].chargeTimer && --gDisableStructs[i].chargeTimer == 0)
+            gStatuses3[i] &= ~STATUS3_ENHANCED_FIRE_ORBS;
+
         gBattleStruct->hpBefore[i] = gBattleMons[i].hp;
     }
 

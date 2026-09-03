@@ -5326,6 +5326,25 @@ BattleScript_EffectChargeString:
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectEnhancedFireOrbs::
+	attackcanceler
+	attackstring
+	ppreduce
+	unused2 BS_ATTACKER
+	attackanimation
+	waitanimation
+	setstatchanger STAT_ACC, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_EffectEnhancedFireOrbsString
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_EffectEnhancedFireOrbsString
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_EffectEnhancedFireOrbsString:
+	printstring STRINGID_ENHANCEDFIREORBS
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectTaunt::
 	attackcanceler
 	attackstring

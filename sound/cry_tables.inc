@@ -3050,6 +3050,12 @@ gCryTable::
 	cry Cry_Observeda
 
 	cry Cry_Kurilty
+
+	cry Cry_Velvernean
+
+	cry Cry_Challiope
+
+	cry Cry_Alclione
 .endif
 
 	.align 2
@@ -6105,4 +6111,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Observeda
 
 	cry_reverse Cry_Kurilty
+
+	cry_reverse Cry_Velvernean
+
+	cry_reverse Cry_Challiope
+
+	cry_reverse Cry_Alclione
 .endif

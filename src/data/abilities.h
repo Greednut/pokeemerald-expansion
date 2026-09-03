@@ -2786,4 +2786,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
+    [ABILITY_REASONANT] =
+    {
+        .name = _("Reasonant"),
+        .description = COMPOUND_STRING("Blocks the Effect from Psychic\ntype moves and Boosts\nthe power of sound moves."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
+
 };

@@ -29104,6 +29104,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
    const u8 gMonIcon_Kurilty[] = INCBIN_U8("graphics/pokemon/kurilty/icon.4bpp");
    const u8 gMonFootprint_Kurilty[] = INCBIN_U8("graphics/pokemon/kurilty/footprint.1bpp");
 
+   const u32 gMonFrontPic_Velvernean[] = INCBIN_U32("graphics/pokemon/velvernean/front.4bpp.lz");
+   const u32 gMonBackPic_Velvernean[] = INCBIN_U32("graphics/pokemon/velvernean/back.4bpp.lz");
+   const u16 gMonPalette_Velvernean[] = INCBIN_U16("graphics/pokemon/velvernean/normal.gbapal");
+   const u16 gMonShinyPalette_Velvernean[] = INCBIN_U16("graphics/pokemon/velvernean/shiny.gbapal");
+   const u8 gMonIcon_Velvernean[] = INCBIN_U8("graphics/pokemon/velvernean/icon.4bpp");
+   const u8 gMonFootprint_Velvernean[] = INCBIN_U8("graphics/pokemon/velvernean/footprint.1bpp");
+
+   const u32 gMonFrontPic_Challiope[] = INCBIN_U32("graphics/pokemon/challiope/front.4bpp.lz");
+   const u32 gMonBackPic_Challiope[] = INCBIN_U32("graphics/pokemon/challiope/back.4bpp.lz");
+   const u16 gMonPalette_Challiope[] = INCBIN_U16("graphics/pokemon/challiope/normal.gbapal");
+   const u16 gMonShinyPalette_Challiope[] = INCBIN_U16("graphics/pokemon/challiope/shiny.gbapal");
+   const u8 gMonIcon_Challiope[] = INCBIN_U8("graphics/pokemon/challiope/icon.4bpp");
+   const u8 gMonFootprint_Challiope[] = INCBIN_U8("graphics/pokemon/challiope/footprint.1bpp");
+
+   const u32 gMonFrontPic_Alclione[] = INCBIN_U32("graphics/pokemon/alclione/front.4bpp.lz");
+   const u32 gMonBackPic_Alclione[] = INCBIN_U32("graphics/pokemon/alclione/back.4bpp.lz");
+   const u16 gMonPalette_Alclione[] = INCBIN_U16("graphics/pokemon/alclione/normal.gbapal");
+   const u16 gMonShinyPalette_Alclione[] = INCBIN_U16("graphics/pokemon/alclione/shiny.gbapal");
+   const u8 gMonIcon_Alclione[] = INCBIN_U8("graphics/pokemon/alclione/icon.4bpp");
+   const u8 gMonFootprint_Alclione[] = INCBIN_U8("graphics/pokemon/alclione/footprint.1bpp");
+
    const u32 gMonFrontPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/front.4bpp.lz");
    const u32 gMonBackPic_Cofferule[] = INCBIN_U32("graphics/pokemon/cofferule/back.4bpp.lz");
    const u16 gMonPalette_Cofferule[] = INCBIN_U16("graphics/pokemon/cofferule/normal.gbapal");

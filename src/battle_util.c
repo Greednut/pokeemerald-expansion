@@ -3099,6 +3099,10 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
         if (moveType == TYPE_GROUND)
             effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
         break;
+    case ABILITY_REASONANT:
+        if (moveType == TYPE_PSYCHIC)
+            effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+        break;
     case ABILITY_MOTOR_DRIVE:
         if (moveType == TYPE_ELECTRIC && GetBattlerMoveTargetType(battlerAtk, move) != MOVE_TARGET_ALL_BATTLERS)
         {
@@ -9117,6 +9121,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, uq4_12_add(UQ_4_12(1.0), PercentToUQ4_12(gSpecialStatuses[battlerAtk].gemParam)));
     if (gStatuses3[battlerAtk] & STATUS3_CHARGED_UP && moveType == TYPE_ELECTRIC)
         modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+    if (gStatuses3[battlerAtk] & STATUS3_ENHANCED_FIRE_ORBS && moveType == TYPE_FIRE)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
     if (GetMoveEffect(gChosenMove) == EFFECT_ME_FIRST)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_GRASSY_TERRAIN) && moveType == TYPE_GRASS)
@@ -9221,6 +9227,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_PUNK_ROCK:
+        if (IsSoundMove(move))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            break;
+    case ABILITY_REASONANT:
         if (IsSoundMove(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
@@ -10828,6 +10838,7 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, u8 moveType)
         if ((modifier <= UQ_4_12(1.0)  &&  abilityDef == ABILITY_WONDER_GUARD)
          || (moveType == TYPE_FIRE     &&  abilityDef == ABILITY_FLASH_FIRE)
          || (moveType == TYPE_GRASS    &&  abilityDef == ABILITY_SAP_SIPPER)
+         || (moveType == TYPE_PSYCHIC  &&  abilityDef == ABILITY_REASONANT)
          || (moveType == TYPE_GROUND   && (abilityDef == ABILITY_LEVITATE
                                        ||  abilityDef == ABILITY_EARTH_EATER))
          || (moveType == TYPE_WATER    && (abilityDef == ABILITY_WATER_ABSORB
@@ -10837,6 +10848,7 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, u8 moveType)
          || (moveType == TYPE_ELECTRIC && (abilityDef == ABILITY_LIGHTNING_ROD // TODO: Add Gen 3/4 config check
                                        || abilityDef == ABILITY_VOLT_ABSORB
                                        || abilityDef == ABILITY_MOTOR_DRIVE)))
+        
         {
             modifier = UQ_4_12(0.0);
         }

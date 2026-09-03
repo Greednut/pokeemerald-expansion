@@ -7309,7 +7309,28 @@ static const u16 sObservedaEggMoveLearnset[] = { //KTODO
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKuriltyEggMoveLearnset[] = { //KTODO
+static const u16 sKuriltyEggMoveLearnset[] = { 
+    MOVE_AMNESIA,
+    MOVE_MEMENTO,
+    MOVE_OBSTRUCT,
+    MOVE_OVERBITE,
+    MOVE_RAPID_SPIN,
+    MOVE_WHIRLWIND,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sVelverneanEggMoveLearnset[] = { 
+    MOVE_PYRO_BALL,
+    MOVE_GROWTH,
+    MOVE_CRITICAL_MASS,
+    MOVE_DRAGON_RAGE,
+    MOVE_BREAKING_SWIPE,
+    MOVE_SMOKESCREEN,
+    MOVE_FIRE_LASH,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sChalliopeEggMoveLearnset[] = { //MTODO
     MOVE_AMNESIA,
     MOVE_CLEAR_SMOG,
     MOVE_DESTINY_BOND,
@@ -7317,6 +7338,17 @@ static const u16 sKuriltyEggMoveLearnset[] = { //KTODO
     MOVE_SPITE,
     MOVE_TEETER_DANCE,
     MOVE_VENOM_DRENCH,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sAlclioneEggMoveLearnset[] = { 
+    MOVE_WISH,
+    MOVE_ACID_ARMOR,
+    MOVE_TOXIC_SPIKES,
+    MOVE_AQUA_JET,
+    MOVE_DISABLE,
+    MOVE_HEALING_WISH,
+    MOVE_FROST_BREATH,
     MOVE_UNAVAILABLE,
 };
 

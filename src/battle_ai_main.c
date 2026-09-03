@@ -1393,6 +1393,15 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
               && !BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_SPDEF))
                 ADJUST_SCORE(-5);
             break;
+        case EFFECT_ENHANCED_FIRE_ORBS:
+            if (gStatuses3[battlerAtk] & STATUS3_ENHANCED_FIRE_ORBS)
+                ADJUST_SCORE(-20);
+            else if (!HasMoveWithType(battlerAtk, TYPE_FIRE))
+                ADJUST_SCORE(-10);
+            else if (B_CHARGE_SPDEF_RAISE >= GEN_5
+              && !BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_SPATK))
+                ADJUST_SCORE(-5);
+            break;
         case EFFECT_QUIVER_DANCE:
         case EFFECT_GEOMANCY:
             if (HasBattlerSideAbility(battlerDef, ABILITY_UNAWARE, aiData))
@@ -2061,6 +2070,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         case EFFECT_ALLA_PRIMA:
             if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
                 ADJUST_SCORE(-6);
+        case EFFECT_PUMPING_HEART:
+            if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
+                ADJUST_SCORE(-6);
+            break;
             break;
         case EFFECT_STRENGTH_SAP:
             if (aiData->abilities[battlerDef] == ABILITY_CONTRARY)
@@ -3404,6 +3417,23 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                     isMoveAffectedByPartnerAbility = FALSE;
                 }
                 break;
+                case ABILITY_REASONANT:
+                if (moveType == TYPE_PSYCHIC)
+                {
+                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    {
+                        ADJUST_SCORE(DECENT_EFFECT);
+                    }
+                    if (ShouldTriggerAbility(battlerAtkPartner, atkPartnerAbility))
+                    {
+                        RETURN_SCORE_PLUS(WEAK_EFFECT);
+                    }
+                }
+                else
+                {
+                    isMoveAffectedByPartnerAbility = FALSE;
+                }
+                break;
             case ABILITY_JUSTIFIED:
                 if (moveType == TYPE_DARK && isFriendlyFireOK
                     && !IsBattleMoveStatus(move)
@@ -3876,6 +3906,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_ALLA_PRIMA:
+        if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_BIG_ROOT && effectiveness >= UQ_4_12(1.0))
+            ADJUST_SCORE(DECENT_EFFECT);
+        break;
+    case EFFECT_PUMPING_HEART:
         if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_BIG_ROOT && effectiveness >= UQ_4_12(1.0))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
@@ -5719,6 +5753,7 @@ static s32 AI_HPAware(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         if ((effect == EFFECT_HEAL_PULSE || effect == EFFECT_HIT_ENEMY_HEAL_ALLY)
          || (moveType == TYPE_ELECTRIC && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_VOLT_ABSORB)
          || (moveType == TYPE_GROUND && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_EARTH_EATER)
+         || (moveType == TYPE_PSYCHIC && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_REASONANT)
          || (moveType == TYPE_WATER && (gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_DRY_SKIN || gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_WATER_ABSORB)))
         {
             if (gStatuses3[battlerDef] & STATUS3_HEAL_BLOCK)

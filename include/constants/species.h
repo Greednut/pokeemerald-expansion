@@ -2013,8 +2013,11 @@
 #define SPECIES_ESCARPHONE                              1879
 #define SPECIES_OBSERVEDA                               1880
 #define SPECIES_KURILTY                                 1881
+#define SPECIES_VELVERNEAN                              1882
+#define SPECIES_CHALLIOPE                               1883
+#define SPECIES_ALCLIONE                                1884
 
-#define SPECIES_EGG (SPECIES_KURILTY + 1)
+#define SPECIES_EGG (SPECIES_ALCLIONE + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

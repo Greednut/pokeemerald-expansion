@@ -183,7 +183,7 @@ enum BattlerId
 #define STATUS3_FARADAY_CAGED           (1 << 16)
 #define STATUS3_EMBARGO                 (1 << 17)
 #define STATUS3_UNDERWATER              (1 << 18)
-#define STATUS3_UNUSED_19               (1 << 19)
+#define STATUS3_ENHANCED_FIRE_ORBS      (1 << 19)
 #define STATUS3_UNUSED_20               (1 << 20)
 #define STATUS3_SMACKED_DOWN            (1 << 21)
 #define STATUS3_UNUSED_22               (1 << 22)

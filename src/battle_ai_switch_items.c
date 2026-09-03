@@ -529,6 +529,10 @@ static bool32 FindMonThatAbsorbsOpponentsMove(u32 battler)
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_EARTH_EATER;
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_LEVITATE;
     }
+    else if (incomingType == TYPE_PSYCHIC || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_PSYCHIC))
+    {
+        absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_REASONANT;
+    }
     else if (IsSoundMove(incomingMove) || (isOpposingBattlerChargingOrInvulnerable && IsSoundMove(incomingMove)))
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_SOUNDPROOF;

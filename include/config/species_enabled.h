@@ -9,8 +9,8 @@
 // so Pikachu depends on the Gen 1 setting despite Pichu being the lowest member of the evolution tree.
 // Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Sneasel Family will be disabled
 // (Sneasel + Hisuian, Weavile and Sneasler).
-#define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
-#define P_GEN_2_POKEMON                  TRUE // Generation 2 Pokémon (GSC)
+#define P_GEN_1_POKEMON                  FALSE // Generation 1 Pokémon (RGBY)
+#define P_GEN_2_POKEMON                  FALSE // Generation 2 Pokémon (GSC)
 #define P_GEN_3_POKEMON                  TRUE // Generation 3 Pokémon (RSE, FRLG)
 #define P_GEN_4_POKEMON                  FALSE // Generation 4 Pokémon (DPPt, HGSS)
 #define P_GEN_5_POKEMON                  FALSE // Generation 5 Pokémon (BW, B2W2)
@@ -20,7 +20,7 @@
 #define P_GEN_9_POKEMON                  FALSE // Generation 9 Pokémon (SV)
 
 // Setting this to TRUE will add the new evolutions to the Regional Dex.
-#define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE
+#define P_NEW_EVOS_IN_REGIONAL_DEX       FALSE
 
 // Battle gimmick specific Forms.
 #define P_MEGA_EVOLUTIONS                TRUE
@@ -33,7 +33,7 @@
 #define P_FUSION_FORMS                   TRUE
 
 // Regional Forms. Includes Regional Form evolutions, like Sirfetch'd.
-#define P_REGIONAL_FORMS                 TRUE
+#define P_REGIONAL_FORMS                 FALSE
 #define P_ALOLAN_FORMS                   P_REGIONAL_FORMS
 #define P_GALARIAN_FORMS                 P_REGIONAL_FORMS
 #define P_HISUIAN_FORMS                  P_REGIONAL_FORMS
