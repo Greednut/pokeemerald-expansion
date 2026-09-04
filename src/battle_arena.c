@@ -396,15 +396,15 @@ void BattleArena_AddSkillPoints(u8 battler)
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_MISSED) || gBattleCommunication[MISS_TYPE] != B_MSG_PROTECTED)
                 skillPoints[battler] -= 2;
         }
-        else if ((gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_SUPER_EFFECTIVE) && (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NOT_VERY_EFFECTIVE))
+        else if ((gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_HIGH_EFFECTIVENESS) && (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_LOW_EFFECTIVENESS))
         {
             skillPoints[battler] += 1;
         }
-        else if (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_SUPER_EFFECTIVE)
+        else if (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_HIGH_EFFECTIVENESS)
         {
             skillPoints[battler] += 2;
         }
-        else if (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NOT_VERY_EFFECTIVE)
+        else if (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_LOW_EFFECTIVENESS)
         {
             skillPoints[battler] -= 1;
         }

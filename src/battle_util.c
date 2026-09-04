@@ -6530,7 +6530,7 @@ static enum ItemEffect TrySetEnigmaBerry(u32 battler)
 {
     if (IsBattlerAlive(battler)
      && !DoesSubstituteBlockMove(gBattlerAttacker, battler, gCurrentMove)
-     && ((IsBattlerTurnDamaged(battler) && gBattleStruct->moveResultFlags[battler] & MOVE_RESULT_SUPER_EFFECTIVE) || gBattleScripting.overrideBerryRequirements)
+     && ((IsBattlerTurnDamaged(battler) && gBattleStruct->moveResultFlags[battler] & MOVE_RESULT_HIGH_EFFECTIVENESS) || gBattleScripting.overrideBerryRequirements)
      && !(gBattleScripting.overrideBerryRequirements && gBattleMons[battler].hp == gBattleMons[battler].maxHP)
      && (B_HEAL_BLOCKING < GEN_5 || !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)))
     {
@@ -7882,7 +7882,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
             case HOLD_EFFECT_WEAKNESS_POLICY:
                 if (IsBattlerAlive(battler)
                     && IsBattlerTurnDamaged(gBattlerTarget)
-                    && gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_SUPER_EFFECTIVE)
+                    && gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_HIGH_EFFECTIVENESS)
                 {
                     effect = ITEM_STATS_CHANGE;
                     BattleScriptPushCursor();
@@ -10413,7 +10413,7 @@ static inline s32 DoFixedDamageMoveCalc(struct DamageCalculationData *damageCalc
         return INT32_MAX;
     }
 
-    gBattleStruct->moveResultFlags[damageCalcData->battlerDef] &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE);
+    gBattleStruct->moveResultFlags[damageCalcData->battlerDef] &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE);
 
     if (dmg == 0)
         dmg = 1;
@@ -10633,22 +10633,32 @@ void UpdateMoveResultFlags(uq4_12_t modifier, u16 *resultFlags)
     if (modifier == UQ_4_12(0.0))
     {
         *resultFlags |= MOVE_RESULT_DOESNT_AFFECT_FOE;
-        *resultFlags &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE);
+        *resultFlags &= ~(MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE);
         gBattleStruct->blunderPolicy = FALSE; // Don't activate if missed
     }
     else if (modifier == UQ_4_12(1.0))
     {
-        *resultFlags &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
+        *resultFlags &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
+    }
+    else if (modifier > UQ_4_12(2.0))
+    {
+        *resultFlags |= MOVE_RESULT_EXTREMELY_EFFECTIVE;
+        *resultFlags &= ~(MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
     else if (modifier > UQ_4_12(1.0))
     {
         *resultFlags |= MOVE_RESULT_SUPER_EFFECTIVE;
-        *resultFlags &= ~(MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
+        *resultFlags &= ~(MOVE_RESULT_EXTREMELY_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
-    else //if (modifier < UQ_4_12(1.0))
+    else if (modifier < UQ_4_12(0.5))
+    {
+        *resultFlags |= MOVE_RESULT_MOSTLY_INEFFECTIVE;
+        *resultFlags &= ~(MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
+    }
+    else
     {
         *resultFlags |= MOVE_RESULT_NOT_VERY_EFFECTIVE;
-        *resultFlags &= ~(MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
+        *resultFlags &= ~(MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
 }
 

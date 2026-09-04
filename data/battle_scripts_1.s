@@ -2602,7 +2602,7 @@ BattleScript_EffectMetalBurst::
 	attackstring
 	ppreduce
 	typecalc
-	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE
+	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE
 	adjustdamage
 	goto BattleScript_HitFromAtkAnimation
 
@@ -4199,7 +4199,7 @@ BattleScript_EffectCounter::
 	attackstring
 	ppreduce
 	typecalc
-	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE
+	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE
 	adjustdamage
 	goto BattleScript_HitFromAtkAnimation
 
@@ -4892,7 +4892,7 @@ BattleScript_EffectMirrorCoat::
 	attackstring
 	ppreduce
 	typecalc
-	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE
+	clearmoveresultflags MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE
 	adjustdamage
 	goto BattleScript_HitFromAtkAnimation
 
