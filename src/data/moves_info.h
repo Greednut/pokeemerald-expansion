@@ -7929,7 +7929,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_HIT,
         .power = 85,
         .type = TYPE_FIRE,
-        .accuracy = 90,
+        .accuracy = 100,
         .criticalHitStage = 1,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
@@ -8141,7 +8141,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 170,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 5,
@@ -8167,7 +8167,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 170,
         .type = TYPE_WATER,
         .accuracy = 90,
         .pp = 5,
@@ -8927,7 +8927,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 170,
         .type = TYPE_GRASS,
         .accuracy = 90,
         .pp = 5,
@@ -11464,7 +11464,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Rock Wrecker"),
         .description = sHyperBeamDescription,
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 170,
         .type = TYPE_ROCK,
         .accuracy = 90,
         .pp = 5,
@@ -17083,7 +17083,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A high power laser that\n"
             "forces recharge next turn."),
         .effect = EFFECT_HIT,
-        .power = 160,
+        .power = 180,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 10,
@@ -18495,7 +18495,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks with a thick leek.\n"
             "The user must then rest."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 170,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 5,
@@ -18522,7 +18522,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Eternatus' strongest move.\n"
             "The user rests next turn."),
         .effect = EFFECT_HIT,
-        .power = 160,
+        .power = 180,
         .type = TYPE_DRAGON,
         .accuracy = 90,
         .pp = 5,
@@ -18549,9 +18549,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Fires a beam of steel from\n"
             "its body. It hurts the user."),
         .effect = EFFECT_MAX_HP_50_RECOIL,
-        .power = 140,
+        .power = 150,
         .type = TYPE_STEEL,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
