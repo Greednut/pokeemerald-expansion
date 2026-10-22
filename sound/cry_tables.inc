@@ -2503,6 +2503,10 @@ gCryTable::
 
 	cry Cry_Emeffyume
 
+	cry Cry_Garookie
+
+	cry Cry_Garble
+
 	cry Cry_Gargarramer
 
 	cry Cry_Moltama
@@ -5563,6 +5567,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Jumblinart
 
 	cry_reverse Cry_Emeffyume
+
+	cry_reverse Cry_Garookie
+
+	cry_reverse Cry_Garble
 
 	cry_reverse Cry_Gargarramer
 

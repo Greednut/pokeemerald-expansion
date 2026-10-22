@@ -11,7 +11,7 @@
 // (Sneasel + Hisuian, Weavile and Sneasler).
 #define P_GEN_1_POKEMON                  FALSE // Generation 1 Pokémon (RGBY)
 #define P_GEN_2_POKEMON                  FALSE // Generation 2 Pokémon (GSC)
-#define P_GEN_3_POKEMON                  TRUE // Generation 3 Pokémon (RSE, FRLG)
+#define P_GEN_3_POKEMON                  FALSE // Generation 3 Pokémon (RSE, FRLG)
 #define P_GEN_4_POKEMON                  FALSE // Generation 4 Pokémon (DPPt, HGSS)
 #define P_GEN_5_POKEMON                  FALSE // Generation 5 Pokémon (BW, B2W2)
 #define P_GEN_6_POKEMON                  FALSE // Generation 6 Pokémon (XY, ORAS)

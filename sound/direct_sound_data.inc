@@ -6313,6 +6313,14 @@ Cry_Emeffyume::
 	.incbin "sound/direct_sound_samples/cries/emeffyume.bin"
 
 	.align 2
+Cry_Garookie::
+	.incbin "sound/direct_sound_samples/cries/garookie.bin"
+
+	.align 2
+Cry_Garble::
+	.incbin "sound/direct_sound_samples/cries/garble.bin"
+
+	.align 2
 Cry_Gargarramer::
 	.incbin "sound/direct_sound_samples/cries/gargarramer.bin"
 

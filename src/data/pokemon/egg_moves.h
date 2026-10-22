@@ -6343,12 +6343,12 @@ static const u16 sLemirethunEggMoveLearnset[] = {
 };
 
 static const u16 sBuggyEggMoveLearnset[] = {
+    MOVE_BARRAGE,
+    MOVE_LOCK_ON,
+    MOVE_METAL_BURST,
     MOVE_PIN_MISSILE,
     MOVE_RAGE_POWDER,
-    MOVE_LOCK_ON,
-    MOVE_FAKE_OUT,
-    MOVE_METAL_BURST,
-    MOVE_BARRAGE,
+    MOVE_VOLT_TACKLE,
     MOVE_UNAVAILABLE,
 };
 
@@ -7298,14 +7298,14 @@ static const u16 sEscarphoneEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sObservedaEggMoveLearnset[] = { //KTODO
-    MOVE_AMNESIA,
-    MOVE_CLEAR_SMOG,
-    MOVE_DESTINY_BOND,
-    MOVE_MUDDY_WATER,
-    MOVE_SPITE,
-    MOVE_TEETER_DANCE,
-    MOVE_VENOM_DRENCH,
+static const u16 sObservedaEggMoveLearnset[] = { 
+    MOVE_MOONLIGHT,
+    MOVE_LAST_RESORT,
+    MOVE_NUZZLE,
+    MOVE_WISH,
+    MOVE_ELECTRIFY,
+    MOVE_ELECTROWEB,
+    MOVE_WRING_OUT,
     MOVE_UNAVAILABLE,
 };
 
@@ -7327,17 +7327,18 @@ static const u16 sVelverneanEggMoveLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_SMOKESCREEN,
     MOVE_FIRE_LASH,
+    MOVE_ERUPTION,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sChalliopeEggMoveLearnset[] = { //MTODO
-    MOVE_AMNESIA,
-    MOVE_CLEAR_SMOG,
-    MOVE_DESTINY_BOND,
-    MOVE_MUDDY_WATER,
-    MOVE_SPITE,
-    MOVE_TEETER_DANCE,
-    MOVE_VENOM_DRENCH,
+    MOVE_MOONBLAST,
+    MOVE_SPOOK_OUT,
+    MOVE_FINAL_GAMBIT,
+    MOVE_PARTING_SHOT,
+    MOVE_TOPSY_TURVY,
+    MOVE_SPOTLIGHT,
+    MOVE_CHATTER,
     MOVE_UNAVAILABLE,
 };
 
