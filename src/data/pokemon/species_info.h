@@ -221,7 +221,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        SHADOW(1, 6, SHADOW_SIZE_S)
+       SHADOW(1, 6, SHADOW_SIZE_S)
        .palette = gMonPalette_Maplage,
        .shinyPalette = gMonShinyPalette_Maplage,
        .iconSprite = gMonIcon_Maplage,
@@ -280,7 +280,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        SHADOW(-6, 11, SHADOW_SIZE_M)
+       SHADOW(-6, 11, SHADOW_SIZE_M)
        .palette = gMonPalette_Hazelnaut,
        .shinyPalette = gMonShinyPalette_Hazelnaut,
        .iconSprite = gMonIcon_Hazelnaut,
@@ -339,7 +339,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        SHADOW(2, 13, SHADOW_SIZE_M)
+       SHADOW(2, 13, SHADOW_SIZE_M)
        .palette = gMonPalette_Ginocchio,
        .shinyPalette = gMonShinyPalette_Ginocchio,
        .iconSprite = gMonIcon_Ginocchio,
@@ -397,7 +397,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        SHADOW(-5, 2, SHADOW_SIZE_M)
+       SHADOW(-5, 2, SHADOW_SIZE_M)
        .palette = gMonPalette_Magmata,
        .shinyPalette = gMonShinyPalette_Magmata,
        .iconSprite = gMonIcon_Magmata,
@@ -456,7 +456,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        SHADOW(4, 11, SHADOW_SIZE_L)
+       SHADOW(4, 11, SHADOW_SIZE_L)
        .palette = gMonPalette_Delava,
        .shinyPalette = gMonShinyPalette_Delava,
        .iconSprite = gMonIcon_Delava,
@@ -515,7 +515,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        SHADOW(1, 3, SHADOW_SIZE_XL_BATTLE_ONLY)
+       SHADOW(1, 3, SHADOW_SIZE_XL_BATTLE_ONLY)
        .palette = gMonPalette_Salezerker,
        .shinyPalette = gMonShinyPalette_Salezerker,
        .iconSprite = gMonIcon_Salezerker,
@@ -572,8 +572,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPic = gMonBackPic_Frudge,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL
-        SHADOW(1, 9, SHADOW_SIZE_S)
+       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+       SHADOW(1, 9, SHADOW_SIZE_S)
        .palette = gMonPalette_Frudge,
        .shinyPalette = gMonShinyPalette_Frudge,
        .iconSprite = gMonIcon_Frudge,
@@ -8596,7 +8596,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        SHADOW(-1, 9, SHADOW_SIZE_M)
+       SHADOW(-1, 9, SHADOW_SIZE_M)
        .palette = gMonPalette_Aquadiiva,
        .shinyPalette = gMonShinyPalette_Aquadiiva,
        .iconSprite = gMonIcon_Aquadiiva,
