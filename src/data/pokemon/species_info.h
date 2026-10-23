@@ -572,7 +572,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .backPic = gMonBackPic_Frudge,
        .backPicSize = MON_COORDS_SIZE(64, 64),
        .backPicYOffset = 0,
-       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL
+       .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         SHADOW(1, 9, SHADOW_SIZE_S)
        .palette = gMonPalette_Frudge,
        .shinyPalette = gMonShinyPalette_Frudge,
