@@ -23199,7 +23199,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "user's higher offensive stat.\n"
             "Drops the user's offenses."),
         .effect = EFFECT_PHOTON_GEYSER,
-        .power = 120,
+        .power = 80,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
         .pp = 5,
