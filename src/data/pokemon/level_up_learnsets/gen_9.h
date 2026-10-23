@@ -28367,7 +28367,7 @@ static const struct LevelUpMove sFangsterLevelUpLearnset[] = {
     LEVEL_UP_END
    };
 static const struct LevelUpMove sMafiadonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_MEMENTO),
+    LEVEL_UP_MOVE( 0, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_TEATIME),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
