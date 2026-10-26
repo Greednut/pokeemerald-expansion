@@ -11491,6 +11491,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE114_COPY",
+          "base_label": "gRoute114_COPY",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_AFLOOF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_LARVITTY"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_MONKITE"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_AFLOOF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_MONKITE"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_FLORIBEL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_LARVITTY"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_FLORIBEL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SANICKEL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_KIWI"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_MIMIKRAB"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_TURTINI"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 35,
+                "species": "SPECIES_SEAMAN"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_SEAMAN"
+              },
+              {
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_SEAMAN"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_BARABYSS"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_BARABYSS"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_FLUBBSTER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_FLUBBSTER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 15,
+                "species": "SPECIES_FLUBBSTER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 15,
+                "species": "SPECIES_SKUBA_ANTI"
+              },
+              {
+                "min_level": 10,
+                "max_level": 15,
+                "species": "SPECIES_SKUBA_PRO"
+              },
+              {
+                "min_level": 35,
+                "max_level": 45,
+                "species": "SPECIES_SKUBMARINE_ANTI"
+              },
+              {
+                "min_level": 35,
+                "max_level": 45,
+                "species": "SPECIES_SKUBMARINE_PRO"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_BLUBBASTARD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_BLUBBASTARD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_BLUBBASTARD"
+              }
+            ]
+          }
         }
       ]
     },
