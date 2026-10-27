@@ -11496,7 +11496,7 @@
           "map": "MAP_ROUTE114_COPY",
           "base_label": "gRoute114_COPY",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 2,
@@ -11561,7 +11561,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 8,
             "mons": [
               {
                 "min_level": 20,
@@ -11591,7 +11591,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 5,

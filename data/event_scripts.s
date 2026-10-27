@@ -1159,3 +1159,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/Route114_COPY/scripts.inc"
+
+	.include "data/maps/SidetrackIsle/scripts.inc"

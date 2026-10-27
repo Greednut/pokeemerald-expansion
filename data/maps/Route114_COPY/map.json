@@ -12,20 +12,26 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_SIDETRACK_ISLE",
+      "offset": 11,
+      "direction": "right"
+    }
+  ],
   "object_events": [
     {
       "local_id": "Bugman",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 10,
-      "y": 6,
+      "x": 11,
+      "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TheDock_EventScript_Bugman",
       "flag": "0"
     },
     {
@@ -40,9 +46,30 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "x": 15,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_EventScript_BirchsBag",
+      "flag": "FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE114_COPY",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {
@@ -50,8 +77,16 @@
       "x": 8,
       "y": 13,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_POTION",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TheDock_EventScript_TestSign"
     }
   ]
 }

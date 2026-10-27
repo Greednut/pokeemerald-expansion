@@ -1,0 +1,26 @@
+{
+  "id": "MAP_SIDETRACK_ISLE",
+  "name": "SidetrackIsle",
+  "layout": "LAYOUT_SIDETRACK_ISLE",
+  "music": "MUS_SOOTOPOLIS",
+  "region_map_section": "MAPSEC_ROUTE_114",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE114_COPY",
+      "offset": -11,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route114_COPY/border.bin",
       "blockdata_filepath": "data/layouts/Route114_COPY/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIDETRACK_ISLE",
+      "name": "SidetrackIsle_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/SidetrackIsle/border.bin",
+      "blockdata_filepath": "data/layouts/SidetrackIsle/map.bin"
     }
   ]
 }
