@@ -4424,7 +4424,7 @@
     {
       "id": "LAYOUT_SIDETRACK_ISLE",
       "name": "SidetrackIsle_Layout",
-      "width": 40,
+      "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
