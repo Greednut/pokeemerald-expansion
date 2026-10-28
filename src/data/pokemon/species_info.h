@@ -16026,7 +16026,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .palette = gMonPalette_Jumblinart,
        .shinyPalette = gMonShinyPalette_Jumblinart,
        .iconSprite = gMonIcon_Jumblinart,
-       .iconPalIndex = 0,
+       .iconPalIndex = 2,
        FOOTPRINT(Jumblinart)
        .levelUpLearnset = sJumblinartLevelUpLearnset,
        .teachableLearnset = sJumblinartTeachableLearnset,
