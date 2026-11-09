@@ -356,14 +356,14 @@
 #define MUS_ENCOUNTER_SUSPICIOUS    423 // MUS_AYASII
 #define MUS_VICTORY_AQUA_MAGMA      424 // MUS_KACHI4
 #define MUS_CABLE_CAR               425 // MUS_ROPEWAY
-#define MUS_GAME_CORNER             426 // MUS_CASINO
+#define MUS_GAME_CORNER             426 // MUS_CASINO           // Replaced with Chip Toon by Gojira
 #define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Into the Factory Cover / POWER PLANT by Gojira - Also used in Route 109's Seashore house.
 #define MUS_SAFARI_ZONE             428 // MUS_SAFARI
 #define MUS_VICTORY_ROAD            429 // MUS_C_ROAD           // Also used in Pokémon League's E4/Champion rooms and halls.
 #define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AJITO
 #define MUS_SAILING                 431 // MUS_M_BOAT
 #define MUS_MT_PYRE                 432 // MUS_M_DUNGON         // Also used in New Mauville and Shoal Cave.
-#define MUS_SLATEPORT               433 // MUS_FINECITY         // Also used in Cycling Road's entrances.
+#define MUS_SLATEPORT               433 // MUS_FINECITY         // Replaced with Beach time by Gojira
 #define MUS_MT_PYRE_EXTERIOR        434 // MUS_MACHUPI
 #define MUS_SCHOOL                  435 // MUS_P_SCHOOL
 #define MUS_HALL_OF_FAME            436 // MUS_DENDOU
@@ -399,11 +399,11 @@
 #define MUS_OBTAIN_SYMBOL           466 // MUS_ME_SYMBOLGET
 #define MUS_B_DOME                  467 // MUS_B_DOME
 #define MUS_B_PIKE                  468 // MUS_B_TUBE
-#define MUS_B_FACTORY               469 // MUS_B_FACTORY
+#define MUS_B_FACTORY               469 // MUS_B_FACTORY        //Moonlight Paradise by Gojira
 #define MUS_VS_RAYQUAZA             470 // MUS_VS_REKKU         // Identical to MUS_VS_KYOGRE_GROUDON.
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
-#define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
+#define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1          // Crisis on Set by Gojira
 #define MUS_VS_WILD                 474 // MUS_BATTLE27         // Back in da Wild by Gojira
 #define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
 #define MUS_VS_TRAINER              476 // MUS_BATTLE20
